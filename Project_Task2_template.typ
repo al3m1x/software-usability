@@ -26,7 +26,7 @@
   radius: 2pt,
   width: 100%,
 )[
-  #text(style: "italic", size: 10pt)[💡 #body]
+  #text(style: "italic", size: 10pt)[#body]
 ]
 
 // ── Title ──────────────────────────────────────────────────────────────────
@@ -47,7 +47,8 @@
 
 #text(style: "italic")[Software:]
 
-- *Name, goal* —
+- *Nazwa:* Allegro (serwis internetowy)
+- *Cel:* Największa polska platforma e-commerce typu marketplace, zawierająca rozbudowane bloki filtrów, interaktywne suwaki cenowe oraz dynamicznie ładujące się listy produktów.
 - *Customers, users* (customer ≠ user) —
 - *Context of use* —
 - *Functionality* —
@@ -63,8 +64,26 @@ Identification of the target groups and their descriptions with regard to defici
 
 == Purpose and Scope of the Study
 
-Purpose of the study — name what the study is for; indicate whether this is a
-qualitative / quantitative / mixed study.
+Głównym celem niniejszego badania jest ocena dostępności platformy Allegro dla użytkowników z niepełnosprawnością ruchową, którzy korzystają wyłącznie z klawiatury (bez myszki). Ewaluacja ma na celu identyfikację barier cyfrowych, które mogą uniemożliwiać lub utrudniać samodzielne przeglądanie ofert i finalizację zakupu. Badanie przeprowadzono metodą systematycznej oceny przy użyciu listy kontrolnej opartej na standardzie Web Content Accessibility Guidelines (WCAG 2.1). Celem jest nie tylko wskazanie obszarów niespełniających kryteriów dostępności, ale również ocena użyteczności samej listy kontrolnej jako narzędzia ewaluacyjnego.
+
+Zakres badania obejmuje następujące podstrony platformy Allegro:
+- strona główna,
+- strona wyników wyszukiwania (z panelem filtrów bocznych),
+- strona szczegółów oferty,
+- koszyk i proces składania zamówienia.
+
+*Pytania badawcze (powiązane z kryteriami WCAG):*
+- Czy wszystkie interaktywne elementy strony (linki, przyciski, filtry, suwaki cenowe) są obsługiwalne za pomocą klawiatury? (WCAG 2.1.1)
+- Czy na stronie występują pułapki klawiaturowe - miejsca, z których użytkownik nie może wyjść klawiszem Tab lub Shift+Tab? (WCAG 2.1.2)
+- Czy wskaźnik fokusu klawiatury (obrys zaznaczonego elementu) jest stale widoczny podczas nawigacji? (WCAG 2.4.7)
+- Czy kolejność fokusowania elementów jest logiczna i zgodna z wizualnym układem strony? (WCAG 2.4.3)
+- I pozostałe pytania z listy kontrolnej WCAG
+
+*Metryki:*
+- Liczba pytań kluczowych z listy kontrolnej WCAG z oceną negatywną.
+- Liczba elementów interaktywnych niedostępnych z klawiatury (wynik negatywny dla WCAG 2.1.1).
+- Liczba zidentyfikowanych pułapek klawiaturowych (wynik negatywny dla WCAG 2.1.2).
+- Wskaźnik sukcesu zadania „dodaj przedmiot do koszyka" przy użyciu samej klawiatury (w %).
 
 == Study Plan
 

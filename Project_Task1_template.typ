@@ -26,7 +26,7 @@
   radius: 2pt,
   width: 100%,
 )[
-  #text(style: "italic", size: 10pt)[💡 *Hint:* #body]
+  #text(style: "italic", size: 10pt)[*Hint:* #body]
 ]
 
 // ── Title ──────────────────────────────────────────────────────────────────
@@ -47,7 +47,8 @@
 
 #text(style: "italic")[Software:]
 
-- *Name, goal* —
+- *Nazwa:* Allegro (serwis internetowy / aplikacja mobilna)
+- *Cel:* Największa polska platforma e-commerce typu marketplace. Umożliwia użytkownikom przeglądanie ofert, filtrowanie wyników, porównywanie cen oraz realizację wieloetapowego procesu zakupowego wraz z wyborem metod płatności i dostawy.
 - *Customers, users* (customer ≠ user) —
 - *Context of use* —
 - *Functionality* —
@@ -63,15 +64,16 @@ Identification of the target groups and their descriptions _(please note plural 
 
 == Purpose and Scope of the Study
 
-Purpose of the study — name what the study is for; indicate whether this is a
-qualitative / quantitative / mixed study.
+*Cel (Goal):* Analiza platformy Allegro w celu oceny płynności interakcji i efektywności pod kątem użyteczności z punktu widzenia okazjonalnego kupującego w kontekście wyszukiwania konkretnego produktu z użyciem zaawansowanych filtrów i przejścia przez koszyk do finalizacji zamówienia.
 
-*Sample purposes:*
-- Defining requirements and a differentiator among competitive apps
-- Evaluation of the interaction with the app
-- Looking for improvement (qualitative)
-- Understanding usability needs and constraints of a user
-- …
+*Pytania (Questions):*
+- Jak szybko nowy lub okazjonalny użytkownik potrafi zastosować filtry (np. stan produktu, przedział cenowy, darmowa dostawa), aby znaleźć pożądany przedmiot?
+- Jakie błędy nawigacyjne popełniają użytkownicy na etapie wyboru metody dostawy i płatności?
+
+*Metryki (Metrics):*
+- Czas wykonania zadania od wpisania hasła w wyszukiwarkę do kliknięcia „Kupuję i płacę" (w sekundach).
+- Wskaźnik sukcesu zadania (procent użytkowników, którzy poprawnie przeszli cały proces).
+- Liczba błędów lub zawahań (np. niezamierzone cofnięcie się do poprzednich kroków w koszyku).
 
 #hint[Use the goal template from the GQM technique.]
 
