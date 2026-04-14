@@ -36,6 +36,11 @@
   #text(size: 12pt, style: "italic")[
     Task 1: Evaluate usability and/or user experience of a chosen piece of software.
   ]
+  #v(0.8em)
+  Adrian Szwaczyk s193233 \
+  Juliusz Radziszewski s193504 \
+  Maciej Żuralski s193367 \
+  Sebastian Kwaśniak s188807
 ]
 
 #v(1.5em)
