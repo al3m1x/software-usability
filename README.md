@@ -8,8 +8,8 @@ winget install --id Typst.Typst
 
 Inne typy instalacji: https://github.com/typst/typst?tab=readme-ov-file#installation
 
-Do skompilowania wpisz:
+Do skompilowania wpisz np:
 
 ```
-typst compile main.typ
+typst compile Project_Combined_Notes.typ
 ```
