@@ -48,11 +48,11 @@
 #text(style: "italic")[Software:]
 
 - *Nazwa:* Allegro (serwis internetowy)
-- *Cel:* Największa polska platforma e-commerce typu marketplace, zawierająca rozbudowane bloki filtrów, interaktywne suwaki cenowe oraz dynamicznie ładujące się listy produktów.
-- *Customers, users* (customer ≠ user) —
-- *Context of use* —
-- *Functionality* —
-- *Non-functional requirements* —
+- *Cel:* Umożliwienie użytkownikom swobodnego przeglądania ofert, precyzyjnego filtrowania wyników i porównywania cen na rozbudowanej platformie e-commerce, a także zapewnienie sprawnej realizacji procesu zakupowego, z uwzględnieniem dostępności dla osób o różnych potrzebach ruchowych i sensorycznych.
+- *Klienci, użytkownicy* (klient ≠ użytkownik): Użytkownikami są sprzedawcy oraz wszyscy kupujący, w tym osoby z niepełnosprawnościami (np. ruchowymi, wzrokowymi). Klientami pozostają sprzedawcy (płacący prowizje) oraz kupujący nabywający usługi premium.
+- *Kontekst użycia*: Badanie skupia się na korzystaniu z platformy przed komputerem stacjonarnym w warunkach domowych przez osoby posiadające ograniczenia ruchowe, co wymusza nawigację i pełną obsługę serwisu opierając się wyłącznie na klawiaturze (lub sprzęcie ją emulującym), całkowicie z pominięciem myszki.
+- *Funkcjonalności*: Rozbudowane bloki filtrów w wyszukiwarce, interaktywne suwaki cenowe, dynamicznie ładujące się listy produktów oraz wieloetapowy, skomplikowany formularz koszyka i logowania.
+- *Wymagania niefunkcjonalne*: Pełna zgodność interfejsu klienta ze standardami Web Content Accessibility Guidelines (WCAG 2.1) oraz obsługiwalność wszystkich interaktywnych elementów interfejsu (focusable elements) z poziomu klawiatury bez wizualnych pułapek.
 
 // ── 2. User analysis ──────────────────────────────────────────────────────
 = User Analysis

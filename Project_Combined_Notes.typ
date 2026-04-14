@@ -44,7 +44,7 @@
 = Cel badania (GQM)
 
 *Cel (Goal):*
-Analiza platformy Allegro w celu oceny płynności interakcji i efektywności pod kątem użyteczności z punktu widzenia okazjonalnego kupującego w kontekście wyszukiwania konkretnego produktu z użyciem zaawansowanych filtrów i przejścia przez koszyk do finalizacji zamówienia.
+Analiza platformy Allegro pod kątem użyteczności z punktu widzenia okazjonalnego kupującego. Celem jest ocena płynności interakcji i efektywności podczas wyszukiwania konkretnego produktu z użyciem zaawansowanych filtrów oraz przejścia przez koszyk do finalizacji zamówienia.
 
 *Pytania (Questions):*
 - Jak szybko nowy lub okazjonalny użytkownik potrafi zastosować filtry (np. stan produktu, przedział cenowy, darmowa dostawa), aby znaleźć pożądany przedmiot?

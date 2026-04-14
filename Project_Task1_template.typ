@@ -48,11 +48,11 @@
 #text(style: "italic")[Software:]
 
 - *Nazwa:* Allegro (serwis internetowy / aplikacja mobilna)
-- *Cel:* Największa polska platforma e-commerce typu marketplace. Umożliwia użytkownikom przeglądanie ofert, filtrowanie wyników, porównywanie cen oraz realizację wieloetapowego procesu zakupowego wraz z wyborem metod płatności i dostawy.
-- *Customers, users* (customer ≠ user) —
-- *Context of use* —
-- *Functionality* —
-- *Non-functional requirements* —
+- *Cel:* Umożliwienie użytkownikom swobodnego przeglądania ofert, precyzyjnego filtrowania wyników i porównywania cen na rozbudowanej platformie e-commerce typu marketplace, a także zapewnienie sprawnej i bezpiecznej realizacji wieloetapowego procesu zakupowego wraz z wyborem optymalnych metod płatności i dostawy.
+- *Klienci, użytkownicy* (klient ≠ użytkownik): Użytkownikami są kupujący oraz sprzedawcy wystawiający przedmioty. Klientami (customers, generującymi przychód dla twórców) są przede wszystkim sprzedawcy (płacący prowizje od sprzedaży i opłaty za promowanie ofert) oraz kupujący opłacający usługi dodatkowe, np. Allegro Smart.
+- *Kontekst użycia*: Dla kupujących: korzystanie w warunkach domowych na komputerze (przeglądarka) lub poza domem na urządzeniach mobilnych (aplikacja) w celu poszukiwania produktów, przeglądania okazji czy szybkich zakupów. Dla sprzedawców: praca biurowa/magazynowa skupiona na obsłudze panelu sprzedawcy przed komputerem stacjonarnym, obejmująca wystawianie ofert, zarządzanie cenami i obsługę zamówień.
+- *Funkcjonalności*: Zaawansowana wyszukiwarka z filtrowaniem i kategoryzacją, rekomendacje produktów, wirtualny koszyk, integracja z zewnętrznymi systemami płatności i dostawców, śledzenie przesyłek, system opinii dla ofert/sprzedawców oraz panel zarządzania zamówieniami.
+- *Wymagania niefunkcjonalne*: Wysoka dostępność i skalowalność (obsługa dużego obciążenia), błyskawiczne czasy odpowiedzi przy wyszukiwaniu/filtrowaniu, bezpieczeństwo danych osobowych i transakcji oraz intuicyjna, responsywna nawigacja i dostępność dla różnych typów urządzeń.
 
 // ── 2. User analysis ──────────────────────────────────────────────────────
 = User Analysis
@@ -64,7 +64,7 @@ Identification of the target groups and their descriptions _(please note plural 
 
 == Purpose and Scope of the Study
 
-*Cel (Goal):* Analiza platformy Allegro w celu oceny płynności interakcji i efektywności pod kątem użyteczności z punktu widzenia okazjonalnego kupującego w kontekście wyszukiwania konkretnego produktu z użyciem zaawansowanych filtrów i przejścia przez koszyk do finalizacji zamówienia.
+*Cel (Goal):* Analiza platformy Allegro pod kątem użyteczności z punktu widzenia okazjonalnego kupującego. Celem jest ocena płynności interakcji i efektywności podczas wyszukiwania konkretnego produktu z użyciem zaawansowanych filtrów oraz przejścia przez koszyk do finalizacji zamówienia.
 
 *Pytania (Questions):*
 - Jak szybko nowy lub okazjonalny użytkownik potrafi zastosować filtry (np. stan produktu, przedział cenowy, darmowa dostawa), aby znaleźć pożądany przedmiot?
