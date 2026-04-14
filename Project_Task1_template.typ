@@ -18,20 +18,10 @@
   v(0.3em)
 }
 
-// Hint box component
-#let hint(body) = block(
-  fill: luma(235),
-  stroke: (left: 3pt + rgb("#4a90d9")),
-  inset: (x: 10pt, y: 7pt),
-  radius: 2pt,
-  width: 100%,
-)[
-  #text(style: "italic", size: 10pt)[*Hint:* #body]
-]
 
 // ── Title ──────────────────────────────────────────────────────────────────
 #align(center)[
-  #text(size: 16pt, weight: "bold")[Software Usability Project – Task 1 Template]
+  #text(size: 16pt, weight: "bold")[Software Usability Project – Task 1]
   #v(0.4em)
   #text(size: 12pt, style: "italic")[
     Task 1: Evaluate usability and/or user experience of a chosen piece of software.
@@ -80,7 +70,6 @@ Identification of the target groups and their descriptions _(please note plural 
 - Wskaźnik sukcesu zadania (procent użytkowników, którzy poprawnie przeszli cały proces).
 - Liczba błędów lub zawahań (np. niezamierzone cofnięcie się do poprzednich kroków w koszyku).
 
-#hint[Use the goal template from the GQM technique.]
 
 == Study Plan
 
@@ -92,8 +81,6 @@ shadowing, cognitive walkthrough, thinking-aloud protocol, etc.
 Design the methods in detail (e.g. sample / group, plan, schedule, script,
 content, how you track a user, …).
 
-#hint[In the justification relate the chosen method to the goal.]
-
 == Study Execution
 
 What is the sample characteristics that was actually reached, from which target
@@ -104,18 +91,12 @@ what went wrong, etc.
 
 Detailed results and description.
 
-#hint[This section is for raw results.]
-
 // ── 4. Conclusions ────────────────────────────────────────────────────────
 = Conclusions and Implications of the Study
 
 What are the implications of the study for further development of the app.
 
-#hint[This section refers to the purpose of the study as defined before.]
-
 // ── 5. Lessons learned ────────────────────────────────────────────────────
 = Lessons Learned
 
 What went well, what did you learn, what would you do differently.
-
-#hint[This section refers to your design of the UX/usability study. Be critical!]

@@ -18,20 +18,10 @@
   v(0.3em)
 }
 
-// Note box component
-#let note(body) = block(
-  fill: luma(235),
-  stroke: (left: 3pt + rgb("#4a90d9")),
-  inset: (x: 10pt, y: 7pt),
-  radius: 2pt,
-  width: 100%,
-)[
-  #text(style: "italic", size: 10pt)[#body]
-]
 
 // ── Title ──────────────────────────────────────────────────────────────────
 #align(center)[
-  #text(size: 16pt, weight: "bold")[Software Usability Project – Task 2 Template]
+  #text(size: 16pt, weight: "bold")[Software Usability Project – Task 2]
   #v(0.4em)
   #text(size: 12pt, style: "italic")[
     Task 2: Evaluate accessibility (for various deficits) of a chosen piece of software.
@@ -53,11 +43,11 @@
 #text(style: "italic")[Software:]
 
 - *Nazwa:* Allegro (serwis internetowy)
-- *Cel:* Umożliwienie użytkownikom swobodnego przeglądania ofert, precyzyjnego filtrowania wyników i porównywania cen na rozbudowanej platformie e-commerce, a także zapewnienie sprawnej realizacji procesu zakupowego, z uwzględnieniem dostępności dla osób o różnych potrzebach ruchowych i sensorycznych.
-- *Klienci, użytkownicy* (klient ≠ użytkownik): Użytkownikami są sprzedawcy oraz wszyscy kupujący, w tym osoby z niepełnosprawnościami (np. ruchowymi, wzrokowymi). Klientami pozostają sprzedawcy (płacący prowizje) oraz kupujący nabywający usługi premium.
-- *Kontekst użycia*: Badanie skupia się na korzystaniu z platformy przed komputerem stacjonarnym w warunkach domowych przez osoby posiadające ograniczenia ruchowe, co wymusza nawigację i pełną obsługę serwisu opierając się wyłącznie na klawiaturze (lub sprzęcie ją emulującym), całkowicie z pominięciem myszki.
-- *Funkcjonalności*: Rozbudowane bloki filtrów w wyszukiwarce, interaktywne suwaki cenowe, dynamicznie ładujące się listy produktów oraz wieloetapowy, skomplikowany formularz koszyka i logowania.
-- *Wymagania niefunkcjonalne*: Pełna zgodność interfejsu klienta ze standardami Web Content Accessibility Guidelines (WCAG 2.1) oraz obsługiwalność wszystkich interaktywnych elementów interfejsu (focusable elements) z poziomu klawiatury bez wizualnych pułapek.
+- *Cel:* Umożliwienie użytkownikom swobodnego przeglądania ofert, precyzyjnego filtrowania wyników i porównywania cen na rozbudowanej platformie e-commerce, a także zapewnienie sprawnej realizacji procesu zakupowego, z uwzględnieniem dostępności dla osób z zaburzeniami wzroku i zaburzeniami poznawczymi.
+- *Klienci, użytkownicy* (klient ≠ użytkownik): Użytkownikami są sprzedawcy oraz wszyscy kupujący, w tym osoby niewidome, słabowidzące oraz osoby z dysleksją i innymi zaburzeniami poznawczymi. Klientami pozostają sprzedawcy (płacący prowizje) oraz kupujący nabywający usługi premium.
+- *Kontekst użycia*: Badanie skupia się na korzystaniu z platformy przed komputerem stacjonarnym w warunkach domowych przez dwie grupy docelowe: (1) osoby niewidome i słabowidzące korzystające z czytników ekranu lub powiększaczy, (2) osoby z dysleksją i zaburzeniami poznawczymi korzystające ze standardowych przeglądarek. Ewaluacja obejmuje możliwość samodzielnego i efektywnego korzystania z serwisu bez wspomagających technologii.
+- *Funkcjonalności*: Opisy produktów i obrazy (dla niewidomych), system filtrów i wyszukiwarki, instrukcje i komunikaty błędów (dla dysleksji), wieloetapowy proces koszyka i logowania, suwaki cenowe i filtry dynamiczne.
+- *Wymagania niefunkcjonale*: Pełna zgodność interfejsu ze standardami Web Content Accessibility Guidelines (WCAG 2.1 poziom AA), w szczególności wymagania dotyczące kontrastu kolorów, wielkości tekstu, tekstów alternatywnych, struktury semantycznej HTML, jasności komunikatów i konsystencji nawigacji.
 
 // ── 2. User analysis ──────────────────────────────────────────────────────
 = User Analysis
@@ -69,7 +59,7 @@ Identification of the target groups and their descriptions with regard to defici
 
 == Purpose and Scope of the Study
 
-Głównym celem niniejszego badania jest ocena dostępności platformy Allegro dla użytkowników z niepełnosprawnością ruchową, którzy korzystają wyłącznie z klawiatury (bez myszki). Ewaluacja ma na celu identyfikację barier cyfrowych, które mogą uniemożliwiać lub utrudniać samodzielne przeglądanie ofert i finalizację zakupu. Badanie przeprowadzono metodą systematycznej oceny przy użyciu listy kontrolnej opartej na standardzie Web Content Accessibility Guidelines (WCAG 2.1). Celem jest nie tylko wskazanie obszarów niespełniających kryteriów dostępności, ale również ocena użyteczności samej listy kontrolnej jako narzędzia ewaluacyjnego.
+Głównym celem niniejszego badania jest ocena dostępności platformy Allegro dla dwóch grup użytkowników: (1) osób niewidomych i słabowidzących korzystających z czytników ekranu, (2) osób z dysleksją i zaburzeniami poznawczymi. Ewaluacja ma na celu identyfikację bariér cyfrowych, które mogą uniemożliwiać lub utrudniać samodzielne przeglądanie ofert i finalizację zakupu dla tych grup. Badanie przeprowadzono metodą systematycznej oceny przy użyciu listy kontrolnej opartej na standardzie Web Content Accessibility Guidelines (WCAG 2.1), z uwzględnieniem kryterii istotnych dla wybranych grup docelowych.
 
 Zakres badania obejmuje następujące podstrony platformy Allegro:
 - strona główna,
@@ -77,18 +67,43 @@ Zakres badania obejmuje następujące podstrony platformy Allegro:
 - strona szczegółów oferty,
 - koszyk i proces składania zamówienia.
 
-*Pytania badawcze (powiązane z kryteriami WCAG):*
-- Czy wszystkie interaktywne elementy strony (linki, przyciski, filtry, suwaki cenowe) są obsługiwalne za pomocą klawiatury? (WCAG 2.1.1)
-- Czy na stronie występują pułapki klawiaturowe - miejsca, z których użytkownik nie może wyjść klawiszem Tab lub Shift+Tab? (WCAG 2.1.2)
-- Czy wskaźnik fokusu klawiatury (obrys zaznaczonego elementu) jest stale widoczny podczas nawigacji? (WCAG 2.4.7)
-- Czy kolejność fokusowania elementów jest logiczna i zgodna z wizualnym układem strony? (WCAG 2.4.3)
-- I pozostałe pytania z listy kontrolnej WCAG
+*Pytania badawcze (powiązane z kryteriami WCAG dla wybranych grup):*
+
+*Dla osób niewidomych/słabowidzących:*
+- Czy wszystkie obrazy posiadają teksty alternatywne opisujące ich zawartość? (WCAG 1.1.1)
+- Czy kontrast kolorów tekstu i tła spełnia minimalne wymagania (4.5:1 dla tekstu zwykłego)? (WCAG 1.4.3)
+- Czy rozmiar tekstu jest dostępny do powiększenia do 200% bez utraty funkcjonalności? (WCAG 1.4.4)
+- Czy struktura semantyczna HTML (headingi, listy, etykiety) jest prawidłowa, aby czytnik ekranu mógł prawidłowo interpretować stronę? (WCAG 1.3.1)
+
+*Dla osób z dysleksją/zaburzeniami poznawczymi:*
+- Czy komunikaty błędów w formularzach są jasne, konkretne i wskazują sposób naprawy? (WCAG 3.3.1, 3.3.4)
+- Czy nawigacja serwisu jest konsystentna - elementy pojawiają się w tym samym miejscu na każdej stronie? (WCAG 3.2.3)
+- Czy język na stronie jest prosty, bez niezbędnych żargnonów i skomplikowanych konstrukcji zdaniowych? (WCAG 3.1.5)
+- Czy instrukcje dla złożonych procesów (np. checkout) są jasne, krok po kroku i zawierają potwierdzenia? (WCAG 3.3.2)
+
+*Pytania dotyczące obu grup:*
+- Które z wybranych punktów kontrolnych WCAG 2.1 są niespęłnione?
 
 *Metryki:*
-- Liczba pytań kluczowych z listy kontrolnej WCAG z oceną negatywną.
-- Liczba elementów interaktywnych niedostępnych z klawiatury (wynik negatywny dla WCAG 2.1.1).
-- Liczba zidentyfikowanych pułapek klawiaturowych (wynik negatywny dla WCAG 2.1.2).
-- Wskaźnik sukcesu zadania „dodaj przedmiot do koszyka" przy użyciu samej klawiatury (w %).
+
+Badanie będzie się skupiać na całościowym objęciu i porównaniu wyników dla obu grup docelowych:
+
+*Dla osób niewidomych/słabowidzących:*
+- Liczba obrazów bez tekstów alternatywnych.
+- Liczba elementów strony z niedostatecznym kontrastem kolorów (poniżej 4.5:1).
+- Procent strony dostępny przy powiększeniu tekstu do 200%.
+- Liczba błędów struktury semantycznej HTML wykrytych czytnikiem ekranu.
+
+*Dla osób z dysleksją/zaburzeniami poznawczymi:*
+- Liczba komunikatów błędów, które nie zawierają jasnych wskazówek do naprawy.
+- Liczba niespójności w nawigacji (zmiana lokalizacji elementów między stronami).
+- Średnia długość zdań.
+- Liczba skomplikowanych słów na 100 słów tekstu.
+- Liczba instrukcji dla procesów wieloetapowych, które brakuje lub są niejasne.
+
+*Metryka całościowa:*
+- Całkowita liczba kryterii WCAG 2.1 AA wybranych dla badania, które są spełnione vs niespełnione.
+- Wskaźnik dostępności ogólnej dla obu grup (%).
 
 == Study Plan
 
@@ -108,11 +123,7 @@ Detailed results and description.
 
 What are the implications of the study for further development of the app.
 
-#note[This section refers to the purpose of the study as defined before.]
-
 // ── 5. Lessons learned ────────────────────────────────────────────────────
 = Lessons Learned
 
 What went well, what did you learn, what would you do differently.
-
-#note[This section refers to your design of the accessibility study. Be critical!]
