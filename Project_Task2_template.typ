@@ -42,12 +42,12 @@
 
 #text(style: "italic")[Software:]
 
-- *Nazwa:* Allegro (serwis internetowy)
+- *Nazwa:* Allegro - serwis internetowy e-commerce typu marketplace, analizowany w widoku desktopowym w przeglądarce.
 - *Cel:* Umożliwienie użytkownikom swobodnego przeglądania ofert, precyzyjnego filtrowania wyników i porównywania cen na rozbudowanej platformie e-commerce, a także zapewnienie sprawnej realizacji procesu zakupowego, z uwzględnieniem dostępności dla osób z zaburzeniami wzroku i zaburzeniami poznawczymi.
 - *Klienci, użytkownicy* (klient ≠ użytkownik): Użytkownikami są sprzedawcy oraz wszyscy kupujący, w tym osoby niewidome, słabowidzące oraz osoby z dysleksją i innymi zaburzeniami poznawczymi. Klientami pozostają sprzedawcy (płacący prowizje) oraz kupujący nabywający usługi premium.
-- *Kontekst użycia*: Badanie skupia się na korzystaniu z platformy przed komputerem stacjonarnym w warunkach domowych przez dwie grupy docelowe: (1) osoby niewidome i słabowidzące korzystające z czytników ekranu lub powiększaczy, (2) osoby z dysleksją i zaburzeniami poznawczymi korzystające ze standardowych przeglądarek. Ewaluacja obejmuje możliwość samodzielnego i efektywnego korzystania z serwisu bez wspomagających technologii.
+- *Kontekst użycia*: Badanie skupia się na korzystaniu z serwisu internetowego Allegro w widoku desktopowym, w najnowszej dostępnej wersji przeglądarki Google Chrome, na komputerze lub laptopie, w warunkach domowych przez dwie grupy docelowe: (1) osoby niewidome i słabowidzące korzystające z czytników ekranu lub powiększaczy, (2) osoby z dysleksją i zaburzeniami poznawczymi korzystające ze standardowej przeglądarki. Ewaluacja obejmuje możliwość samodzielnego i efektywnego korzystania z serwisu w takim środowisku.
 - *Funkcjonalności*: Opisy produktów i obrazy (dla niewidomych), system filtrów i wyszukiwarki, instrukcje i komunikaty błędów (dla dysleksji), wieloetapowy proces koszyka i logowania, suwaki cenowe i filtry dynamiczne.
-- *Wymagania niefunkcjonale*: Pełna zgodność interfejsu ze standardami Web Content Accessibility Guidelines (WCAG 2.1 poziom AA), w szczególności wymagania dotyczące kontrastu kolorów, wielkości tekstu, tekstów alternatywnych, struktury semantycznej HTML, jasności komunikatów i konsystencji nawigacji.
+- *Wymagania niefunkcjonalne*: Pełna zgodność interfejsu ze standardami Web Content Accessibility Guidelines (WCAG 2.1 poziom AA), w szczególności wymagania dotyczące kontrastu kolorów, wielkości tekstu, tekstów alternatywnych, struktury semantycznej HTML, jasności komunikatów i konsystencji nawigacji.
 
 // ── 2. User analysis ──────────────────────────────────────────────────────
 = User Analysis
@@ -59,7 +59,9 @@ Identification of the target groups and their descriptions with regard to defici
 
 == Purpose and Scope of the Study
 
-Głównym celem niniejszego badania jest ocena dostępności platformy Allegro dla dwóch grup użytkowników: (1) osób niewidomych i słabowidzących korzystających z czytników ekranu, (2) osób z dysleksją i zaburzeniami poznawczymi. Ewaluacja ma na celu identyfikację bariér cyfrowych, które mogą uniemożliwiać lub utrudniać samodzielne przeglądanie ofert i finalizację zakupu dla tych grup. Badanie przeprowadzono metodą systematycznej oceny przy użyciu listy kontrolnej opartej na standardzie Web Content Accessibility Guidelines (WCAG 2.1), z uwzględnieniem kryterii istotnych dla wybranych grup docelowych.
+*Cel (Goal - GQM):* Analiza serwisu internetowego Allegro w widoku desktopowym, uruchamianego w najnowszej dostępnej wersji przeglądarki Google Chrome, pod kątem dostępności cyfrowej, w celu oceny zgodności wybranych widoków i procesów z kryteriami WCAG 2.1 AA oraz identyfikacji barier utrudniających samodzielne korzystanie z serwisu, z punktu widzenia osób niewidomych i słabowidzących korzystających z czytnika ekranu lub powiększenia oraz osób z dysleksją albo ograniczeniami poznawczymi, w kontekście domowego korzystania z serwisu na komputerze podczas wyszukiwania produktu, przeglądania oferty i przechodzenia przez koszyk do etapu poprzedzającego płatność.
+
+Badanie ma charakter jakościowo-ilościowy. Część jakościowa obejmuje opis barier i ich wpływu na użytkownika, a część ilościowa obejmuje liczbę naruszeń, liczbę spełnionych kryteriów oraz porównanie problemów między badanymi grupami.
 
 Zakres badania obejmuje następujące podstrony platformy Allegro:
 - strona główna,
@@ -67,43 +69,22 @@ Zakres badania obejmuje następujące podstrony platformy Allegro:
 - strona szczegółów oferty,
 - koszyk i proces składania zamówienia.
 
-*Pytania badawcze (powiązane z kryteriami WCAG dla wybranych grup):*
+*Pytania i metryki (Questions and Metrics):*
 
-*Dla osób niewidomych/słabowidzących:*
-- Czy wszystkie obrazy posiadają teksty alternatywne opisujące ich zawartość? (WCAG 1.1.1)
-- Czy kontrast kolorów tekstu i tła spełnia minimalne wymagania (4.5:1 dla tekstu zwykłego)? (WCAG 1.4.3)
-- Czy rozmiar tekstu jest dostępny do powiększenia do 200% bez utraty funkcjonalności? (WCAG 1.4.4)
-- Czy struktura semantyczna HTML (headingi, listy, etykiety) jest prawidłowa, aby czytnik ekranu mógł prawidłowo interpretować stronę? (WCAG 1.3.1)
+- *Q1: Czy treści nietekstowe i struktura strony są możliwe do poprawnej interpretacji przez osoby korzystające z czytnika ekranu?* \
+  *Metryki:* liczba obrazów bez tekstu alternatywnego lub z tekstem nieopisowym; liczba kontrolek bez dostępnej nazwy; liczba błędów hierarchii nagłówków; liczba elementów formularzy bez etykiet; liczba problemów wykrytych podczas przejścia czytnikiem ekranu.
 
-*Dla osób z dysleksją/zaburzeniami poznawczymi:*
-- Czy komunikaty błędów w formularzach są jasne, konkretne i wskazują sposób naprawy? (WCAG 3.3.1, 3.3.4)
-- Czy nawigacja serwisu jest konsystentna - elementy pojawiają się w tym samym miejscu na każdej stronie? (WCAG 3.2.3)
-- Czy język na stronie jest prosty, bez niezbędnych żargnonów i skomplikowanych konstrukcji zdaniowych? (WCAG 3.1.5)
-- Czy instrukcje dla złożonych procesów (np. checkout) są jasne, krok po kroku i zawierają potwierdzenia? (WCAG 3.3.2)
+- *Q2: Czy treści wizualne pozostają czytelne dla osób słabowidzących?* \
+  *Metryki:* liczba elementów tekstowych z kontrastem poniżej 4.5:1; liczba elementów nietekstowych z kontrastem poniżej wymaganego poziomu; liczba widoków, które zachowują funkcjonalność przy powiększeniu tekstu do 200%; liczba elementów ucinanych lub nachodzących na siebie po powiększeniu.
 
-*Pytania dotyczące obu grup:*
-- Które z wybranych punktów kontrolnych WCAG 2.1 są niespęłnione?
+- *Q3: Czy formularze, komunikaty błędów i instrukcje w procesie zakupu są zrozumiałe dla badanych grup?* \
+  *Metryki:* liczba pól formularzy bez jednoznacznych instrukcji; liczba komunikatów błędów bez informacji, jak poprawić problem; liczba kroków procesu bez potwierdzenia aktualnego stanu; liczba miejsc, w których użytkownik może podjąć nieodwracalną decyzję bez jasnego ostrzeżenia.
 
-*Metryki:*
+- *Q4: Czy nawigacja i język serwisu są spójne i zrozumiałe dla osób z dysleksją lub ograniczeniami poznawczymi?* \
+  *Metryki:* liczba niespójności w położeniu głównych elementów nawigacji między badanymi widokami; średnia długość zdań w instrukcjach i komunikatach; liczba niejasnych lub specjalistycznych określeń na 100 słów tekstu; liczba elementów rozpraszających uwagę w krytycznych krokach procesu.
 
-Badanie będzie się skupiać na całościowym objęciu i porównaniu wyników dla obu grup docelowych:
-
-*Dla osób niewidomych/słabowidzących:*
-- Liczba obrazów bez tekstów alternatywnych.
-- Liczba elementów strony z niedostatecznym kontrastem kolorów (poniżej 4.5:1).
-- Procent strony dostępny przy powiększeniu tekstu do 200%.
-- Liczba błędów struktury semantycznej HTML wykrytych czytnikiem ekranu.
-
-*Dla osób z dysleksją/zaburzeniami poznawczymi:*
-- Liczba komunikatów błędów, które nie zawierają jasnych wskazówek do naprawy.
-- Liczba niespójności w nawigacji (zmiana lokalizacji elementów między stronami).
-- Średnia długość zdań.
-- Liczba skomplikowanych słów na 100 słów tekstu.
-- Liczba instrukcji dla procesów wieloetapowych, które brakuje lub są niejasne.
-
-*Metryka całościowa:*
-- Całkowita liczba kryterii WCAG 2.1 AA wybranych dla badania, które są spełnione vs niespełnione.
-- Wskaźnik dostępności ogólnej dla obu grup (%).
+- *Q5: Które z wybranych kryteriów WCAG 2.1 AA są spełnione, częściowo spełnione albo niespełnione w badanym zakresie?* \
+  *Metryki:* liczba kryteriów spełnionych, częściowo spełnionych i niespełnionych; procent spełnienia listy kontrolnej; liczba problemów według poziomu istotności: krytyczny, istotny, drobny; liczba barier przypisanych do każdej z dwóch grup docelowych.
 
 == Study Plan
 
