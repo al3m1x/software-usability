@@ -42,10 +42,10 @@
 
 #text(style: "italic")[Software:]
 
-- *Nazwa:* Allegro (serwis internetowy / aplikacja mobilna)
+- *Nazwa:* Allegro - serwis internetowy e-commerce typu marketplace, analizowany w widoku desktopowym w przeglądarce.
 - *Cel:* Umożliwienie użytkownikom swobodnego przeglądania ofert, precyzyjnego filtrowania wyników i porównywania cen na rozbudowanej platformie e-commerce typu marketplace, a także zapewnienie sprawnej i bezpiecznej realizacji wieloetapowego procesu zakupowego wraz z wyborem optymalnych metod płatności i dostawy.
 - *Klienci, użytkownicy* (klient ≠ użytkownik): Użytkownikami są kupujący oraz sprzedawcy wystawiający przedmioty. Klientami (customers, generującymi przychód dla twórców) są przede wszystkim sprzedawcy (płacący prowizje od sprzedaży i opłaty za promowanie ofert) oraz kupujący opłacający usługi dodatkowe, np. Allegro Smart.
-- *Kontekst użycia*: Dla kupujących: korzystanie w warunkach domowych na komputerze (przeglądarka) lub poza domem na urządzeniach mobilnych (aplikacja) w celu poszukiwania produktów, przeglądania okazji czy szybkich zakupów. Dla sprzedawców: praca biurowa/magazynowa skupiona na obsłudze panelu sprzedawcy przed komputerem stacjonarnym, obejmująca wystawianie ofert, zarządzanie cenami i obsługę zamówień.
+- *Kontekst użycia*: Badanie dotyczy kupujących korzystających z serwisu internetowego Allegro w widoku desktopowym, w najnowszej dostępnej wersji przeglądarki Google Chrome, na komputerze lub laptopie, w warunkach domowych. Użytkownik będzie samodzielnie wyszukiwał produkt, porównywał oferty i przechodził przez koszyk do etapu poprzedzającego płatność. Dla sprzedawców typowy kontekst użycia to praca biurowa/magazynowa przy obsłudze panelu sprzedawcy, ale ta część systemu nie jest objęta badaniem.
 - *Funkcjonalności*: Zaawansowana wyszukiwarka z filtrowaniem i kategoryzacją, rekomendacje produktów, wirtualny koszyk, integracja z zewnętrznymi systemami płatności i dostawców, śledzenie przesyłek, system opinii dla ofert/sprzedawców oraz panel zarządzania zamówieniami.
 - *Wymagania niefunkcjonalne*: Wysoka dostępność i skalowalność (obsługa dużego obciążenia), błyskawiczne czasy odpowiedzi przy wyszukiwaniu/filtrowaniu, bezpieczeństwo danych osobowych i transakcji oraz intuicyjna, responsywna nawigacja i dostępność dla różnych typów urządzeń.
 
@@ -59,16 +59,26 @@ Identification of the target groups and their descriptions _(please note plural 
 
 == Purpose and Scope of the Study
 
-*Cel (Goal):* Analiza platformy Allegro pod kątem użyteczności z punktu widzenia okazjonalnego kupującego. Celem jest ocena płynności interakcji i efektywności podczas wyszukiwania konkretnego produktu z użyciem zaawansowanych filtrów oraz przejścia przez koszyk do finalizacji zamówienia.
+*Cel (Goal - GQM):* Analiza serwisu internetowego Allegro w widoku desktopowym, uruchamianego w najnowszej dostępnej wersji przeglądarki Google Chrome, pod kątem użyteczności, w celu oceny skuteczności, efektywności, zrozumiałości nawigacji oraz satysfakcji użytkownika, z punktu widzenia nowych i okazjonalnych kupujących, w kontekście domowego korzystania z serwisu na komputerze podczas wyszukiwania produktu, porównywania ofert, korzystania z filtrów, zapoznawania się ze szczegółami oferty oraz przechodzenia przez koszyk do etapu poprzedzającego finalną płatność.
 
-*Pytania (Questions):*
-- Jak szybko nowy lub okazjonalny użytkownik potrafi zastosować filtry (np. stan produktu, przedział cenowy, darmowa dostawa), aby znaleźć pożądany przedmiot?
-- Jakie błędy nawigacyjne popełniają użytkownicy na etapie wyboru metody dostawy i płatności?
+Badanie ma charakter mieszany: jakościowy, ponieważ analizuje zachowania, komentarze i problemy użytkowników podczas wykonywania zadań, oraz ilościowy, ponieważ zbiera mierzalne dane o czasie, skuteczności, liczbie błędów i poziomie satysfakcji.
 
-*Metryki (Metrics):*
-- Czas wykonania zadania od wpisania hasła w wyszukiwarkę do kliknięcia „Kupuję i płacę" (w sekundach).
-- Wskaźnik sukcesu zadania (procent użytkowników, którzy poprawnie przeszli cały proces).
-- Liczba błędów lub zawahań (np. niezamierzone cofnięcie się do poprzednich kroków w koszyku).
+*Pytania i metryki (Questions and Metrics):*
+
+- *Q1: Czy użytkownicy rozumieją stronę główną i potrafią rozpocząć wyszukiwanie produktu bez dodatkowych instrukcji?* \
+  *Metryki:* czas do rozpoczęcia pierwszego wyszukiwania; liczba błędnych kliknięć przed wpisaniem frazy; odsetek użytkowników, którzy samodzielnie znajdują wyszukiwarkę; ocena łatwości pierwszego kroku w skali SEQ 1-7.
+
+- *Q2: Czy wyszukiwarka, sortowanie i filtry pomagają użytkownikom znaleźć odpowiednią ofertę?* \
+  *Metryki:* wskaźnik sukcesu zadania znalezienia oferty spełniającej kryteria; czas od wpisania frazy do wyboru oferty; liczba niepoprawnie użytych lub cofniętych filtrów; liczba przypadków, w których użytkownik nie zauważa aktywnego filtra albo wyniku sortowania.
+
+- *Q3: Czy użytkownicy potrafią poprawnie zinterpretować informacje na stronie oferty?* \
+  *Metryki:* liczba poprawnych odpowiedzi na pytania o cenę całkowitą, termin dostawy, stan produktu, sprzedawcę i zwroty; liczba momentów zawahania przy szukaniu tych informacji; czas potrzebny na znalezienie informacji o dostawie i zwrotach.
+
+- *Q4: Czy proces dodania produktu do koszyka i wyboru opcji dostawy oraz płatności jest zrozumiały?* \
+  *Metryki:* wskaźnik ukończenia zadania do ekranu poprzedzającego płatność; liczba błędów nawigacyjnych w koszyku; liczba przypadków użycia pomocy moderatora; czas przejścia przez koszyk.
+
+- *Q5: Jak użytkownicy oceniają ogólną użyteczność i komfort korzystania z Allegro po wykonaniu zadań?* \
+  *Metryki:* wynik ankiety SUS; średnia ocena satysfakcji po zadaniach; liczba zgłoszonych problemów jakościowych; deklarowana pewność użytkownika, że wykonał zadanie poprawnie.
 
 
 == Study Plan
