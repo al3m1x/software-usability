@@ -127,11 +127,14 @@ Sesje zostaną przeprowadzone na komputerze lub laptopie w najnowszej dostępnej
 
 *Scenariusz zadań:*
 
-- *Zadanie 1:* Znajdź w Allegro słuchawki bezprzewodowe do 200 zł, nowe, z dostawą do paczkomatu. Wybierz ofertę, którą uznałbyś/uznałabyś za najlepszą.
-- *Zadanie 2:* Zmień wyniki tak, aby porównać oferty według ceny z dostawą i wyjaśnij, dlaczego wybrana oferta jest korzystna albo niekorzystna.
-- *Zadanie 3:* Na stronie wybranej oferty znajdź informację o terminie dostawy, sprzedawcy, warunkach zwrotu i opiniach.
-- *Zadanie 4:* Dodaj produkt do koszyka i wybierz dostawę do paczkomatu oraz dowolną bezpieczną metodę płatności. Zatrzymaj się przed ostatecznym opłaceniem zamówienia.
-- *Zadanie 5:* Powiedz, które elementy procesu były niejasne, a które zwiększały Twoją pewność, że wybierasz dobrą ofertę.
+Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wireless Mouse M185*, kolor szary, numer producenta *910-002235*. Uczestnik nie wybiera produktu według własnych preferencji, tylko ma znaleźć ofertę spełniającą podane kryteria.
+
+- *Zadanie 1:* Na stronie głównej Allegro wyszukaj produkt wpisując frazę "Logitech M185". Przejdź do kategorii myszy komputerowe, jeśli Allegro pokaże wyniki z wielu kategorii.
+- *Zadanie 2:* Zawęź wyniki za pomocą filtrów: producent Logitech, stan nowy, typ myszy bezprzewodowa, komunikacja bezprzewodowa / USB, kolor szary, cena od 40 zł do 90 zł.
+- *Zadanie 3:* Dodaj kolejne ograniczenia: dostawa z Allegro Smart, dostawa do paczkomatu, sprzedawca z oceną co najmniej 98% pozytywnych opinii lub oznaczeniem Super Sprzedawca. Następnie posortuj wyniki według ceny z dostawą od najniższej.
+- *Zadanie 4:* Otwórz pierwszą ofertę z listy wyników, która spełnia wszystkie kryteria. Na stronie oferty sprawdź i wskaż: pełną nazwę modelu, cenę produktu, koszt dostawy, przewidywany termin dostawy do paczkomatu, ocenę sprzedawcy oraz informację o możliwości zwrotu.
+- *Zadanie 5:* Dodaj produkt do koszyka w liczbie 1 sztuki. W koszyku wybierz dostawę do paczkomatu InPost oraz metodę płatności BLIK. Zatrzymaj się na ekranie poprzedzającym ostateczne potwierdzenie i opłacenie zamówienia.
+- *Zadanie 6:* Cofnij się do wyników wyszukiwania i usuń filtr ceny. Następnie sprawdź, czy po usunięciu filtra nadal można łatwo rozpoznać aktywne filtry oraz wrócić do wcześniej wybranej oferty.
 
 *Rejestrowane dane:*
 
