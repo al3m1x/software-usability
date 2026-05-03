@@ -1,4 +1,4 @@
-#set document(title: "Software Usability Project - Consultation Draft")
+#set document(title: "Software Usability Project - Final Report")
 #set page(
   paper: "a4",
   margin: (x: 2.5cm, y: 2.5cm),
@@ -19,11 +19,7 @@
 }
 
 #align(center)[
-  #text(size: 16pt, weight: "bold")[Software Usability Project - Consultation Draft]
-  #v(0.4em)
-  #text(size: 12pt, style: "italic")[
-    Report draft covering sections 1 through 3.2, inclusive.
-  ]
+  #text(size: 16pt, weight: "bold")[Software Usability Project - Final Report]
   #v(0.8em)
   Adrian Szwaczyk s193233 \
   Juliusz Radziszewski s193504 \
@@ -77,22 +73,25 @@ Zakres badania obejmuje:
 *Definicje i standaryzacja pojęć (w celu zapewnienia odtwarzalności):*
 Aby uniknąć rozbieżności w interpretacji zachowań przez różnych członków zespołu, przyjęto następujące definicje:
 - *Sukces:* Zadanie wykonane samodzielnie, bez błędów i podpowiedzi.
-- *Sukces częściowy:* Zadanie wykonane, ale po długim błądzeniu, licznych powrotach ("wstecz") lub po wskazówce moderatora.
-- *Zawahnie:* Wyraźne wstrzymanie ruchu kursorem, poszukiwanie wzrokiem lub bezcelowe scrollowanie trwające powyżej 3 sekund.
+- *Sukces częściowy:* Zadanie wykonane, ale po długim błądzeniu, licznym cofaniu się lub po wskazówce moderatora.
+- *Zawahnie:* Wyraźne wstrzymanie ruchu kursorem, poszukiwanie wzrokiem lub bezcelowe scrollowanie trwające powyżej 3 sekund. Nie wliczamy w to np. długiego szukania danego filtru spośród długiej listy, gdyż użytkownik wie co i gdzie znaleźć. Chodzi o momenty konsternacji.
 - *Błędne kliknięcie:* Kliknięcie w element niebędący interaktywnym, rozwinięcie niewłaściwego menu lub kliknięcie w link wymuszające natychmiastowy powrót (przycisk "wstecz").
 - *Zgłoszenie użytkownika (problem jakościowy):* Werbalnie wyrażona frustracja, uwaga (np. "nie rozumiem co to znaczy", "gdzie jest ten przycisk") wypowiedziana w ramach głośnego myślenia.
 
 *Pytania i metryki (Questions and Metrics):*
 - *Q1: Czy użytkownicy rozumieją stronę główną i potrafią rozpocząć wyszukiwanie produktu?* \
-  *Metryki:* czas do rozpoczęcia pierwszego wyszukiwania; liczba błędnych kliknięć; odsetek użytkowników samodzielnie znajdujących wyszukiwarkę.
+  *Metryki:* czas do rozpoczęcia pierwszego wyszukiwania; odsetek użytkowników samodzielnie znajdujących wyszukiwarkę.
 - *Q2: Czy wyszukiwarka i filtry pomagają znaleźć odpowiednią ofertę?* \
-  *Metryki:* wskaźnik sukcesu; czas od wpisania frazy do wyboru oferty; liczba niepoprawnie użytych lub cofniętych filtrów.
+  *Metryki:* wskaźnik sukcesu znalezienia odpowiedniej oferty; czas od zastosowania wszystkich filtrów do wyboru oczekiwanej oferty (wliczając czas na zastosowanie sortowania); liczba niepoprawnie użytych lub cofniętych filtrów.
 - *Q3: Czy użytkownicy poprawnie interpretują stronę oferty?* \
-  *Metryki:* liczba poprawnych odpowiedzi (cena, dostawa, zwroty); czas znalezienia informacji; liczba momentów zawahania.
+  *Metryki:* liczba poprawnych odpowiedzi (nazwa modelu, cena, koszt dostawy, cena dostawy, zwroty).
 - *Q4: Czy proces koszyka jest zrozumiały?* \
-  *Metryki:* wskaźnik ukończenia zadania; czas przejścia koszyka; liczba błędów nawigacyjnych.
+  *Metryki:* wskaźnik ukończenia zadania (przejście przez koszyk, ustalenie poprawnych opcji dostawy i płatności); czas przejścia koszyka.
 - *Q5: Jak użytkownicy oceniają ogólną użyteczność?* \
   *Metryki:* średnia ocena z 3 pytań krótkiej ankiety podsumowującej; średnia ocena w skali SEQ.
+
+*Ogólne metryki (rejestrowane na przestrzeni całego badania):*
+Całkowity czas wykonania wszystkich zadań, łączna liczba momentów zawahania, łączna liczba błędnych kliknięć oraz liczba błędów nawigacyjnych.
 
 == Study Plan
 
@@ -117,11 +116,11 @@ Badanie zostanie przeprowadzone na grupie *6-8 osób należących wyłącznie do
 3. *Faza 3 (Analiza nagrań):* Wspólne odtworzenie nagrań przez zespół, przypisanie metryk i uzupełnienie tabeli wyników.
 4. *Faza 4 (Raportowanie):* Porównanie zebranych wyników i opracowanie rekomendacji w finalnym raporcie.
 
-*Przebieg pojedynczej sesji badawczej (ok. 35-40 min):*
+*Przebieg pojedynczej sesji badawczej (ok. 20-40 min):*
 - 5 minut - wprowadzenie, zgoda na nagrywanie, wyjaśnienie, że badany jest system, a nie użytkownik.
 - 3 minuty - ankieta wstępna kwalifikacyjna.
-- 25 minut - wykonanie zadań badawczych z głośnym myśleniem (ankieta SEQ po każdym kroku).
-- 5 minut - ankieta SUS i krótkie podsumowanie.
+- 5-25 minut - wykonanie zadań badawczych z głośnym myśleniem (ankieta SEQ po każdym kroku, długość zależna od szybkości wykonywania zadań przez użytkownika).
+- 5 minut - krótka ankieta podsumowująca i podsumowanie.
 
 *Scenariusz zadań:*
 Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wireless Mouse M185*, kolor szary, numer producenta *910-002235*. 
@@ -139,20 +138,113 @@ Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wi
 
 == Study Execution
 
-What is the sample characteristics that was actually reached, from which target
-groups, sample characteristics (demographics), how many results were obtained,
-what went wrong, etc.
+Badanie zostało zrealizowane na grupie docelowej określonej w dokumencie jako okazjonalni kupujący. W procesie rekrutacji nie ograniczał nas twardy przedział wiekowy, lecz zachowania użytkowników – częstotliwość korzystania z platformy Allegro (lub innych serwisów e-commerce) oraz ogólny poziom biegłości w obsłudze komputera. Zależało nam na przetestowaniu interfejsu na osobach, które nie działają "na pamięć" i nie mają wypracowanych silnych nawyków w poruszaniu się po serwisie.
+
+Do tej pory udało się zrealizować i poddać analizie sesje z dwiema osobami (pozostałe wyniki zostaną uzupełnione po zebraniu danych przez resztę zespołu):
+
+- *Uczestnik 1 (P1):* Mężczyzna, 59 lat. Słabo posługuje się komputerem, jednak w przeszłości dosyć często dokonywał zakupów na Allegro.
+- *Uczestnik 2 (P2):* Kobieta, 56 lat. Sprawnie posługuje się komputerem i regularnie robi zakupy na różnych stronach internetowych, jednak z platformy Allegro nie korzystała od kilku lat.
+- *Uczestnicy P3-P8:* [Dane demograficzne zostaną dodane w finalnej wersji raportu].
 
 == Study Results
 
-Detailed results and description.
+Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje jakościowe z pierwszych dwóch sesji badawczych. Tabele zostały przygotowane tak, aby umożliwić łatwą rozbudowę o wyniki kolejnych uczestników.
 
-// ── 4. Conclusions ────────────────────────────────────────────────────────
+*Tabela 1. Ogólne metryki rejestrowane na przestrzeni całego badania*
+#figure(
+  table(
+    columns: (auto, auto, auto, auto, auto),
+    align: center + horizon,
+    [*ID*], [*Czas całkowity*], [*Łączna l. zawahnięć*], [*Łączna l. błędnych klik.*], [*L. błędów nawigacyjnych*],
+    [P1], [14:31], [5], [2], [1],
+    [P2], [09:08], [2], [1], [0],
+    [P3], [-], [-], [-], [-],
+    [P4], [-], [-], [-], [-],
+    [P5], [-], [-], [-], [-],
+    [P6], [-], [-], [-], [-],
+    [P7], [-], [-], [-], [-],
+    [P8], [-], [-], [-], [-],
+  ),
+  caption: [Ogólne metryki użyteczności dla całej sesji],
+)
+
+*Tabela 2. Wyniki szczegółowe dla poszczególnych pytań badawczych (Q1-Q4)*
+#figure(
+  table(
+    columns: (auto, auto, auto, auto, auto, auto),
+    align: center + horizon,
+    [*ID*], [*Q1 Czas* \ (do wyszukiwarki)], [*Q2 Czas* \ (filtry -> oferta)], [*Q2 Błędy* \ (niepoprawne filtry)], [*Q3 Popr. odp.* \ (informacje)], [*Q4 Czas* \ (koszyk)],
+    [P1], [0:19], [0:32], [1], [4/4], [0:32],
+    [P2], [0:11], [0:14], [1], [4/4], [0:13],
+    [P3], [-], [-], [-], [-], [-],
+    [P4], [-], [-], [-], [-], [-],
+    [P5], [-], [-], [-], [-], [-],
+    [P6], [-], [-], [-], [-], [-],
+    [P7], [-], [-], [-], [-], [-],
+    [P8], [-], [-], [-], [-], [-],
+  ),
+  caption: [Szczegółowe metryki czasowe i liczbowe dla etapów Q1-Q4],
+)
+
+*Tabela 3. Wskaźnik sukcesu dla kluczowych pytań badawczych*
+#figure(
+  table(
+    columns: (auto, auto, auto, auto),
+    align: center + horizon,
+    [*ID*], [*Q1 / Zad. 1* \ (Znalezienie wyszukiwarki)], [*Q2 / Zad. 2-3* \ (Znalezienie oferty z filtrami)], [*Q4 / Zad. 5* \ (Przejście przez koszyk)],
+    [P1], [Sukces], [Sukces], [Sukces],
+    [P2], [Sukces], [Sukces], [Sukces],
+    [P3], [-], [-], [-],
+    [P4], [-], [-], [-],
+    [P5], [-], [-], [-],
+    [P6], [-], [-], [-],
+    [P7], [-], [-], [-],
+    [P8], [-], [-], [-],
+  ),
+  caption: [Ocena stopnia ukończenia głównych etapów (Sukces / Sukces częściowy / Niepowodzenie)],
+)
+
+*Tabela 4. Wyniki ankiet: SEQ po każdym zadaniu oraz Krótka Ankieta Podsumowująca*
+#figure(
+  table(
+    columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+    align: center + horizon,
+    [*ID*], [*T1 (1-7)*], [*T2 (1-7)*], [*T3 (1-7)*], [*T4 (1-7)*], [*T5 (1-7)*], [*T6 (1-7)*], [*Ank. 1 (1-5)*], [*Ank. 2 (1-5)*], [*Ank. 3 (1-5)*],
+    [P1], [7], [5], [6], [6], [5], [6], [5], [4], [5],
+    [P2], [6], [6], [6], [7], [6], [7], [4], [4], [5],
+    [P3], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P4], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P5], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P6], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P7], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P8], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+  ),
+  caption: [Wyniki ankiet w skali Likerta i SEQ],
+)
+
+*Tabela 5. Kluczowe problemy jakościowe zauważone u P1 i P2*
+#figure(
+  table(
+    columns: (auto, auto, auto, 1fr),
+    align: left + horizon,
+    [*ID*], [*Etap*], [*Typ problemu*], [*Opis zgłoszenia / Obserwacja*],
+    [P1], [Lista / Sortowanie], [Widoczność], [Czcionka napisu "sortowanie" jest bardzo mała i w szarym kolorze, który zlewa się z tłem.],
+    [P1, P2], [Filtry], [Mylący interfejs], [Szukając opcji Allegro Smart użytkownicy omyłkowo chcieli kliknąć w mocno wyeksponowany napis "Okazje! Smart".],
+    [P1], [Strona oferty], [Architektura inf.], [Użytkownik miał duże trudności ze znalezieniem informacji o sprzedawcy i jego ocenie.],
+    [P2], [Filtry], [Intuicyjność], [Filtry ceny okazały się nieintuicyjne - docelowy przedział cenowy jest ukryty pod predefiniowanymi opcjami typu "mniej niż 75 zł".],
+    [P3+], [-], [-], [-],
+  ),
+  caption: [Zgłoszone i zaobserwowane problemy jakościowe z podziałem na etapy],
+)
+
 = Conclusions and Implications of the Study
 
-What are the implications of the study for further development of the app.
+[Sekcja zostanie uzupełniona po analizie wszystkich 6-8 sesji badawczych. Znajdą się w niej rekomendacje projektowe wynikające z zebranych problemów jakościowych i najniżej ocenianych przez użytkowników etapów w ankietach SEQ.]
 
-// ── 5. Lessons learned ────────────────────────────────────────────────────
 = Lessons Learned
 
-What went well, what did you learn, what would you do differently.
+Przeprowadzenie pierwszych sesji badawczych w roli moderatora dostarczyło nam kilku cennych wniosków na temat samej metodyki testów użyteczności oraz wyzwań związanych z pracą z użytkownikiem:
+
+- *Trudność w powstrzymywaniu się od interwencji:* Największym wyzwaniem dla badacza było zachowanie pełnego obiektywizmu i niepomaganie użytkownikowi. Obserwowanie, jak uczestnik frustruje się lub wielokrotnie omija wzrokiem poszukiwany przycisk (który dla badacza jest oczywisty), wywoływało silną, naturalną chęć podpowiedzenia.
+- *Bariera "głośnego myślenia" (Think-aloud):* Utrzymanie ciągłości protokołu głośnego myślenia wymagało dużej aktywności ze strony moderatora. Uczestnicy mieli tendencję do skupiania się na rozwiązywaniu zadania w ciszy. Często trzeba było im przypominać o konieczności komentowania swoich działań lub zadawać pytania pomocnicze (np. "Czego w tej chwili szukasz?").
+- [Kolejne obserwacje własne zostaną dopisane po zebraniu doświadczeń z sesji moderowanych przez pozostałych członków zespołu].
