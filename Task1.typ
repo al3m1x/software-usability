@@ -79,8 +79,8 @@ Aby uniknąć rozbieżności w interpretacji zachowań przez różnych członkó
 - *Zgłoszenie użytkownika (problem jakościowy):* Werbalnie wyrażona frustracja, uwaga (np. "nie rozumiem co to znaczy", "gdzie jest ten przycisk") wypowiedziana w ramach głośnego myślenia.
 
 *Pytania i metryki (Questions and Metrics):*
-- *Q1: Czy użytkownicy rozumieją stronę główną i potrafią rozpocząć wyszukiwanie produktu?* \
-  *Metryki:* czas do rozpoczęcia pierwszego wyszukiwania; odsetek użytkowników samodzielnie znajdujących wyszukiwarkę.
+- *Q1: Czy użytkownicy rozumieją stronę główną i potrafią dokonać wyszukiwania produktu?* \
+  *Metryki:* czas do skończenia pierwszego wyszukiwania; wskaźnik sukcesu samodzielnego znalezienia wyszukiwarki.
 - *Q2: Czy wyszukiwarka i filtry pomagają znaleźć odpowiednią ofertę?* \
   *Metryki:* wskaźnik sukcesu znalezienia odpowiedniej oferty; czas od zastosowania wszystkich filtrów do wyboru oczekiwanej oferty (wliczając czas na zastosowanie sortowania); liczba niepoprawnie użytych lub cofniętych filtrów.
 - *Q3: Czy użytkownicy poprawnie interpretują stronę oferty?* \
@@ -100,7 +100,7 @@ Całkowity czas wykonania wszystkich zadań, łączna liczba momentów zawahania
 - *Moderowany test użyteczności z protokołem głośnego myślenia.* Pozwala obserwować zachowania i jednocześnie zbierać komentarze. 
 - *Nagrywanie sesji.* Wszystkie sesje będą rejestrowane (obraz ekranu i dźwięk). Umożliwi to późniejszą *wspólną analizę przez cały zespół badawczy*. Dzięki temu wyeliminowane zostaną rozbieżności w ocenie i kategoryzacji – zespół wspólnie zdecyduje, czy dana akcja była zawahaniem, czy błędnym kliknięciem.
 - *Ankiety (Treść narzędzi badawczych):*
-  - *Ankieta wstępna (kwalifikacyjna):* "Jak często robisz zakupy w internecie?" (szukamy kupujących od kilku do kilkunastu razy w roku).
+  - *Ankieta wstępna (kwalifikacyjna):* "Jak często robisz zakupy w internecie?" (szukamy kupujących od kilku do kilkunastu razy w roku w dowolnym serwisie internetowym).
   - *SEQ (Single Ease Question):* Zadawane po każdym zadaniu: "W skali od 1 do 7, gdzie 1 to bardzo trudne, a 7 to bardzo łatwe, jak oceniasz trudność tego zadania?".
   - *Krótka ankieta podsumowująca:* Przeprowadzana na sam koniec sesji. Składa się z 3 kluczowych stwierdzeń, które użytkownik ocenia w skali Likerta (1 - Zdecydowanie się nie zgadzam, do 5 - Zdecydowanie się zgadzam):
     1. "Ogólne korzystanie z serwisu i poruszanie się po nim było dla mnie łatwe i intuicyjne."
@@ -112,7 +112,7 @@ Badanie zostanie przeprowadzone na grupie *6-8 osób należących wyłącznie do
 
 *Harmonogram całego projektu badawczego:*
 1. *Faza 1 (Przygotowanie):* Skompletowanie scenariusza, konfiguracja narzędzi do nagrywania, rekrutacja 6-8 uczestników z grupy docelowej.
-2. *Faza 2 (Sesje badawcze):* Przeprowadzenie pojedynczych spotkań (około 35-40 min każde).
+2. *Faza 2 (Sesje badawcze):* Przeprowadzenie pojedynczych spotkań (około 20-40 min każde). Spotkania w formule 1 na 1 (członek zespołu i osoba badana).
 3. *Faza 3 (Analiza nagrań):* Wspólne odtworzenie nagrań przez zespół, przypisanie metryk i uzupełnienie tabeli wyników.
 4. *Faza 4 (Raportowanie):* Porównanie zebranych wyników i opracowanie rekomendacji w finalnym raporcie.
 
@@ -155,7 +155,7 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
   table(
     columns: (auto, auto, auto, auto, auto),
     align: center + horizon,
-    [*ID*], [*Czas całkowity*], [*Łączna l. zawahnięć*], [*Łączna l. błędnych klik.*], [*L. błędów nawigacyjnych*],
+    [*ID*], [*Czas całkowity*], [*Łączna l. zawahań*], [*Łączna l. błędnych klik.*], [*L. błędów nawigacyjnych*],
     [P1], [14:31], [5], [2], [1],
     [P2], [09:08], [2], [1], [0],
     [P3], [-], [-], [-], [-],
