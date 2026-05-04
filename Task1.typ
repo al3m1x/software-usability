@@ -76,6 +76,7 @@ Aby uniknąć rozbieżności w interpretacji zachowań przez różnych członkó
 - *Sukces częściowy:* Zadanie wykonane, ale po długim błądzeniu, licznym cofaniu się lub po wskazówce moderatora.
 - *Zawahnie:* Wyraźne wstrzymanie ruchu kursorem, poszukiwanie wzrokiem lub bezcelowe scrollowanie trwające powyżej 3 sekund. Nie wliczamy w to np. długiego szukania danego filtru spośród długiej listy, gdyż użytkownik wie co i gdzie znaleźć. Chodzi o momenty konsternacji.
 - *Błędne kliknięcie:* Kliknięcie w element niebędący interaktywnym, rozwinięcie niewłaściwego menu lub kliknięcie w link wymuszające natychmiastowy powrót (przycisk "wstecz").
+- *Błąd nawigacyjny:* Przejście na złą podstronę, która nie przybliża użytkownika do celu zadania i wymaga fizycznego cofnięcia się w przeglądarce lub serwisie (np. omyłkowe kliknięcie w banner reklamowy, przejście do niewłaściwej kategorii lub strony profilowej sprzedawcy).
 - *Zgłoszenie użytkownika (problem jakościowy):* Werbalnie wyrażona frustracja, uwaga (np. "nie rozumiem co to znaczy", "gdzie jest ten przycisk") wypowiedziana w ramach głośnego myślenia.
 
 *Pytania i metryki (Questions and Metrics):*
@@ -87,11 +88,10 @@ Aby uniknąć rozbieżności w interpretacji zachowań przez różnych członkó
   *Metryki:* liczba poprawnych odpowiedzi (nazwa modelu, cena, koszt dostawy, cena dostawy, zwroty).
 - *Q4: Czy proces koszyka jest zrozumiały?* \
   *Metryki:* wskaźnik ukończenia zadania (przejście przez koszyk, ustalenie poprawnych opcji dostawy i płatności); czas przejścia koszyka.
-- *Q5: Jak użytkownicy oceniają ogólną użyteczność?* \
+- *Q5: Jak użytkownicy oceniają ogólną użyteczność poszczególnych widoków?* \
   *Metryki:* średnia ocena z 3 pytań krótkiej ankiety podsumowującej; średnia ocena w skali SEQ.
-
-*Ogólne metryki (rejestrowane na przestrzeni całego badania):*
-Całkowity czas wykonania wszystkich zadań, łączna liczba momentów zawahania, łączna liczba błędnych kliknięć oraz liczba błędów nawigacyjnych.
+- *Q6: Czy cały proces zakupu od znalezienia produktu do ekranu płatności był zrozumiały i przebiegł sprawnie? (Metryki ogólne)* \
+  *Metryki:* całkowity czas wykonania wszystkich zadań, łączna liczba momentów zawahania, łączna liczba błędnych kliknięć oraz liczba błędów nawigacyjnych na przestrzeni całego badania.
 
 == Study Plan
 
@@ -152,7 +152,43 @@ Do tej pory udało się zrealizować i poddać analizie sesje z czterema osobami
 
 Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje jakościowe z pierwszych czterech sesji badawczych. Tabele zostały przygotowane tak, aby umożliwić łatwą rozbudowę o wyniki kolejnych uczestników.
 
-*Tabela 1. Ogólne metryki rejestrowane na przestrzeni całego badania*
+*Tabela 1. Wyniki szczegółowe dla poszczególnych pytań badawczych (Q1-Q5)*
+#figure(
+  table(
+    columns: (auto, auto, auto, auto, auto, auto, auto),
+    align: center + horizon,
+    [*ID*], [*Q1 Czas* \ (do wyszukiwania)], [*Q2 Czas* \ (filtry -> oferta)], [*Q2 Błędy* \ (niepoprawne filtry)], [*Q3 Popr. odp.* \ (informacje)], [*Q4 Czas* \ (koszyk)], [*Q5 Śr. ocena* \ (Ankieta 1-5)],
+    [P1], [0:19], [0:32], [1], [4/4], [0:32], [4.67],
+    [P2], [0:11], [0:14], [1], [4/4], [0:13], [4.33],
+    [P3], [0:15], [0:24], [0], [4/4], [0:20], [4.00],
+    [P4], [0:26], [0:42], [2], [3/4], [0:35], [3.33],
+    [P5], [-], [-], [-], [-], [-], [-],
+    [P6], [-], [-], [-], [-], [-], [-],
+    [P7], [-], [-], [-], [-], [-], [-],
+    [P8], [-], [-], [-], [-], [-], [-],
+  ),
+  caption: [Szczegółowe metryki czasowe, liczbowe oraz ocena użyteczności dla etapów Q1-Q5],
+)
+
+*Tabela 2. Wskaźnik sukcesu dla kluczowych pytań badawczych*
+#figure(
+  table(
+    columns: (auto, auto, auto, auto),
+    align: center + horizon,
+    [*ID*], [*Q1 / Zad. 1* \ (Pierwsze wyszukiwanie)], [*Q2 / Zad. 2-3* \ (Znalezienie oferty z filtrami)], [*Q4 / Zad. 5* \ (Przejście przez koszyk)],
+    [P1], [Sukces], [Sukces], [Sukces],
+    [P2], [Sukces], [Sukces częściowy], [Sukces],
+    [P3], [Sukces], [Sukces], [Sukces],
+    [P4], [Sukces], [Sukces częściowy], [Sukces częściowy],
+    [P5], [-], [-], [-],
+    [P6], [-], [-], [-],
+    [P7], [-], [-], [-],
+    [P8], [-], [-], [-],
+  ),
+  caption: [Ocena stopnia ukończenia głównych etapów (Sukces / Sukces częściowy / Niepowodzenie)],
+)
+
+*Tabela 3. Ogólne metryki sesji (Q6: Ocena sprawności całego procesu)*
 #figure(
   table(
     columns: (auto, auto, auto, auto, auto),
@@ -167,46 +203,28 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P7], [-], [-], [-], [-],
     [P8], [-], [-], [-], [-],
   ),
-  caption: [Ogólne metryki użyteczności dla całej sesji],
+  caption: [Ogólne metryki użyteczności rejestrowane na przestrzeni całego badania (Q6)],
 )
 
-*Tabela 2. Wyniki szczegółowe dla poszczególnych pytań badawczych (Q1-Q4)*
+*Tabela 4. Czas wykonania poszczególnych zadań (Zadania 1-6)*
 #figure(
   table(
-    columns: (auto, auto, auto, auto, auto, auto),
+    columns: (auto, auto, auto, auto, auto, auto, auto),
     align: center + horizon,
-    [*ID*], [*Q1 Czas* \ (do wyszukiwarki)], [*Q2 Czas* \ (filtry -> oferta)], [*Q2 Błędy* \ (niepoprawne filtry)], [*Q3 Popr. odp.* \ (informacje)], [*Q4 Czas* \ (koszyk)],
-    [P1], [0:19], [0:32], [1], [4/4], [0:32],
-    [P2], [0:11], [0:14], [1], [4/4], [0:13],
-    [P3], [0:15], [0:24], [0], [4/4], [0:20],
-    [P4], [0:26], [0:42], [2], [3/4], [0:35],
-    [P5], [-], [-], [-], [-], [-],
-    [P6], [-], [-], [-], [-], [-],
-    [P7], [-], [-], [-], [-], [-],
-    [P8], [-], [-], [-], [-], [-],
+    [*ID*], [*Zadanie 1*], [*Zadanie 2*], [*Zadanie 3*], [*Zadanie 4*], [*Zadanie 5*], [*Zadanie 6*],
+    [P1], [0:50], [3:01], [3:11], [4:29], [2:13], [0:47],
+    [P2], [0:31], [1:47], [2:52], [1:50], [1:20], [0:48],
+    [P3], [-], [-], [-], [-], [-], [-],
+    [P4], [-], [-], [-], [-], [-], [-],
+    [P5], [-], [-], [-], [-], [-], [-],
+    [P6], [-], [-], [-], [-], [-], [-],
+    [P7], [-], [-], [-], [-], [-], [-],
+    [P8], [-], [-], [-], [-], [-], [-],
   ),
-  caption: [Szczegółowe metryki czasowe i liczbowe dla etapów Q1-Q4],
+  caption: [Czasy realizacji poszczególnych zadań ze scenariusza (na podstawie nagrań)],
 )
 
-*Tabela 3. Wskaźnik sukcesu dla kluczowych pytań badawczych*
-#figure(
-  table(
-    columns: (auto, auto, auto, auto),
-    align: center + horizon,
-    [*ID*], [*Q1 / Zad. 1* \ (Znalezienie wyszukiwarki)], [*Q2 / Zad. 2-3* \ (Znalezienie oferty z filtrami)], [*Q4 / Zad. 5* \ (Przejście przez koszyk)],
-    [P1], [Sukces], [Sukces], [Sukces],
-    [P2], [Sukces], [Sukces], [Sukces],
-    [P3], [Sukces], [Sukces], [Sukces],
-    [P4], [Sukces częściowy], [Sukces częściowy], [Sukces],
-    [P5], [-], [-], [-],
-    [P6], [-], [-], [-],
-    [P7], [-], [-], [-],
-    [P8], [-], [-], [-],
-  ),
-  caption: [Ocena stopnia ukończenia głównych etapów (Sukces / Sukces częściowy / Niepowodzenie)],
-)
-
-*Tabela 4. Wyniki ankiet: SEQ po każdym zadaniu oraz Krótka Ankieta Podsumowująca*
+*Tabela 5. Wyniki ankiet: SEQ po każdym zadaniu oraz Krótka Ankieta Podsumowująca*
 #figure(
   table(
     columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
@@ -224,7 +242,7 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
   caption: [Wyniki ankiet w skali Likerta i SEQ],
 )
 
-*Tabela 5. Kluczowe problemy jakościowe zauważone u P1-P4*
+*Tabela 6. Kluczowe problemy jakościowe zauważone u P1-P4*
 #figure(
   table(
     columns: (auto, auto, auto, 1fr),
