@@ -300,9 +300,26 @@ Podsumowując, Allegro jako system umożliwia skuteczne wykonanie badanego proce
 
 = Lessons Learned
 
-Przeprowadzenie pierwszych sesji badawczych w roli moderatora dostarczyło nam kilku cennych wniosków na temat samej metodyki testów użyteczności oraz wyzwań związanych z pracą z użytkownikiem:
+Przeprowadzenie pełnego badania z ośmioma uczestnikami pokazało nam, że test użyteczności wymaga nie tylko dobrze dobranego scenariusza, ale także bardzo konsekwentnego sposobu moderowania, mierzenia i interpretowania zachowań użytkowników. Najważniejszą lekcją było to, że problemy interfejsu często nie ujawniają się jako jedno duże niepowodzenie, lecz jako seria krótkich zawahań, niepewnych kliknięć i komentarzy wypowiadanych mimochodem. Dopiero zestawienie nagrań, metryk czasowych, wyników SEQ i obserwacji jakościowych pozwoliło zobaczyć, które problemy faktycznie powtarzają się u wielu osób.
 
-- *Trudność w powstrzymywaniu się od interwencji:* Największym wyzwaniem dla badacza było zachowanie pełnego obiektywizmu i niepomaganie użytkownikowi. Obserwowanie, jak uczestnik frustruje się lub wielokrotnie omija wzrokiem poszukiwany przycisk (który dla badacza jest oczywisty), wywoływało silną, naturalną chęć podpowiedzenia.
-- *Bariera "głośnego myślenia" (Think-aloud):* Utrzymanie ciągłości protokołu głośnego myślenia wymagało dużej aktywności ze strony moderatora. Uczestnicy mieli tendencję do skupiania się na rozwiązywaniu zadania w ciszy. Często trzeba było im przypominać o konieczności komentowania swoich działań lub zadawać pytania pomocnicze (np. "Czego w tej chwili szukasz?").
-- *Niedokładne doprecyzowanie zadań:* W trakcie testów okazało się, że treść zadań nie była w paru miejscach wystarczająco precyzyjna. Powodowało to opóźnienia, częściowe niezrozumienie zadania przez użytkowników oraz spowodowaną tym niepewność w podejmowanych akcjach.
-- [Kolejne obserwacje własne zostaną dopisane po zebraniu doświadczeń z sesji moderowanych przez pozostałych członków zespołu].
+*Co zadziałało dobrze:*
+
+- *Wspólny scenariusz oparty na jednym produkcie:* Użycie tego samego produktu, tych samych filtrów i tych samych wymagań dostawy/płatności ograniczyło przypadkowość wyników. Różnice między uczestnikami wynikały głównie ze sposobu korzystania z interfejsu, a nie z innych celów zakupowych.
+- *Połączenie danych ilościowych i jakościowych:* Same czasy wykonania zadań nie wystarczały do oceny problemów. Dopiero komentarze użytkowników wyjaśniały, dlaczego określony etap trwał dłużej, np. czy przyczyną był ukryty filtr ceny, mało widoczna ocena sprzedawcy, czy niepewność po dodaniu produktu do koszyka.
+
+*Czego nauczyliśmy się podczas badania:*
+
+- *Moderator musi świadomie ograniczać interwencje:* Najtrudniejsze było powstrzymanie się od pomagania uczestnikowi, szczególnie gdy problem wydawał się prosty z perspektywy badacza. Zrozumieliśmy, że zbyt szybka podpowiedź usuwa dokładnie ten moment, który powinien zostać zaobserwowany.
+- *Protokół głośnego myślenia wymaga aktywnego podtrzymywania:* Wielu uczestników naturalnie przechodziło do pracy w ciszy. Neutralne pytania w rodzaju "Czego teraz szukasz?" lub "Co myślisz o tym ekranie?" były potrzebne, ale musiały być zadawane tak, aby nie sugerować rozwiązania.
+- *Precyzja instrukcji wpływa na jakość danych:* Jeżeli zadanie pozostawiało zbyt dużą przestrzeń interpretacji, część czasu była poświęcana na zrozumienie polecenia, a nie na pracę z interfejsem. W kolejnych badaniach należy pilnować, aby każde zadanie miało jasny punkt startowy, kryterium zakończenia i jednoznaczną listę wymaganych parametrów.
+- *Różnice kompetencji technicznych silnie wpływają na przebieg sesji:* Nawet w jednej grupie "okazjonalnych kupujących" pojawiły się duże różnice między osobami sprawnie używającymi komputera a osobami mniej pewnymi technicznie. W analizie trzeba było oddzielać problemy wynikające z samego interfejsu od wolniejszego tempa pracy uczestnika.
+- *Małe problemy wizualne mogą mieć duży wpływ praktyczny:* Niewielki kontrast, mała czcionka, niejednoznaczna etykieta lub słabo widoczny przycisk nie zawsze blokowały wykonanie zadania, ale zwiększały czas, liczbę zawahań i poczucie niepewności. Było to szczególnie widoczne przy sortowaniu, ocenie sprzedawcy, kosztach dostawy i zmianie metody płatności.
+
+*Co zrobilibyśmy inaczej w kolejnej iteracji:*
+
+- *Przeprowadzilibyśmy pilotaż scenariusza przed właściwymi sesjami:* Jedna próbna sesja pozwoliłaby wcześniej wykryć nieprecyzyjne sformułowania zadań i dopracować sposób mierzenia czasu.
+- *Ujednolicilibyśmy arkusz obserwacji jeszcze przed badaniem:* Kategorie takie jak zawahanie, błędne kliknięcie, błąd nawigacyjny i sukces częściowy zostały zdefiniowane, ale podczas kolejnej iteracji warto przygotować gotowy formularz do zapisu obserwacji w trakcie sesji.
+- *Dodaliśmy więcej pytań pogłębiających po najtrudniejszych etapach:* Szczególnie po filtrach, stronie oferty i koszyku warto krótko zapytać użytkownika, co było niejasne i jakiej informacji szukał. Pomogłoby to dokładniej odróżnić problem etykiety od problemu układu strony.
+- *Zadbaliśmy o bardziej kontrolowane warunki techniczne:* Stały rozmiar ekranu, poziom zoomu przeglądarki i podobna konfiguracja konta ograniczyłyby wpływ czynników zewnętrznych na wyniki, zwłaszcza przy ocenie czytelności tekstu i widoczności elementów.
+
+Najważniejszy wniosek metodyczny jest taki, że użyteczność należy analizować jako połączenie skuteczności, efektywności i poczucia pewności użytkownika. W naszym badaniu większość zadań kończyła się sukcesem, ale sukces nie zawsze oznaczał płynne i intuicyjne doświadczenie. Dlatego w kolejnych badaniach nadal warto łączyć pomiar czasu i sukcesu z obserwacją jakościową, ponieważ dopiero oba typy danych pokazują pełny obraz problemów.
