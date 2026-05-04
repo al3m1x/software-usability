@@ -38,7 +38,7 @@
 - *Nazwa:* Allegro - serwis internetowy e-commerce typu marketplace, analizowany w widoku desktopowym w przeglądarce.
 - *Cel:* Allegro umożliwia kupującym wyszukiwanie, porównywanie i zakup produktów od wielu sprzedawców w jednym serwisie. Z punktu widzenia kupującego główną wartością systemu jest szybkie znalezienie odpowiedniej oferty, zrozumienie warunków zakupu, wybór dostawy i płatności oraz przejście przez koszyk bez utraty kontroli nad decyzją zakupową.
 - *Klienci, użytkownicy* (customer != user): Użytkownikami są przede wszystkim kupujący oraz sprzedawcy. W tym badaniu skupiamy się wyłącznie na kupujących (ze szczególnym uwzględnieniem kupujących okazjonalnych), ponieważ to oni wykonują analizowany proces wyszukiwania i zakupu. Klientami biznesowymi Allegro są głównie sprzedawcy płacący prowizje, opłaty za promowanie ofert i korzystanie z narzędzi sprzedażowych. Dodatkową grupą klientów są kupujący opłacający usługi premium, np. Allegro Smart.
-- *Kontekst użycia:* Badanie dotyczy korzystania z serwisu internetowego Allegro w widoku desktopowym, w najnowszej dostępnej wersji przeglądarki Google Chrome, na komputerze lub laptopie, w warunkach domowych i przy typowym połączeniu internetowym. Zakładamy sytuację, w której użytkownik samodzielnie szuka produktu, porównuje kilka ofert i przechodzi do koszyka. Badanie nie obejmuje rzeczywistego opłacenia zamówienia.
+- *Kontekst użycia:* Badanie dotyczy korzystania z serwisu internetowego Allegro w widoku desktopowym, w najnowszej dostępnej wersji przeglądarki Google Chrome, na komputerze lub laptopie, w warunkach domowych i przy typowym połączeniu internetowym. Zakładamy sytuację, w której użytkownik samodzielnie szuka produktu, porównuje kilka ofert i przechodzi do koszyka. Badanie nie obejmuje rzeczywistego opłacenia zamówienia. Na potrzeby testu, użytkownik dostaje zalogowane konto w serwisie.
 - *Funkcjonalności:* Wyszukiwarka produktów, kategorie, filtry, sortowanie, rekomendacje, lista wyników, strona oferty, informacje o sprzedawcy, opinie, koszyk, wybór dostawy, wybór metody płatności, logowanie lub przejście przez proces jako użytkownik z istniejącym kontem.
 - *Wymagania niefunkcjonalne:* Krótki czas odpowiedzi wyszukiwarki i filtrów, stabilność działania koszyka, bezpieczeństwo danych i transakcji, czytelność interfejsu, spójność nawigacji, responsywność układu oraz wysoka dostępność serwisu przy dużym obciążeniu.
 
@@ -126,7 +126,7 @@ Badanie zostanie przeprowadzone na grupie *6-8 osób należących wyłącznie do
 Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wireless Mouse M185*, kolor szary, numer producenta *910-002235*. 
 
 - *Zadanie 1:* Na stronie głównej Allegro wyszukaj produkt wpisując frazę "mysz komputerowa". Przejdź do kategorii "Myszki".
-- *Zadanie 2:* Zawęź wyniki za pomocą filtrów ustalając parametry: producent Logitech, stan nowy, typ myszy bezprzewodowa, komunikacja bezprzewodowa, kolor szary, cena od 40 zł do 90 zł.
+- *Zadanie 2:* Zawęź wyniki za pomocą filtrów ustalając parametry: producent Logitech, stan nowy, typ myszy bezprzewodowa, kolor szary, cena od 40 zł do 90 zł.
 - *Zadanie 3:* Dodaj kolejne ograniczenia: dostawa z Allegro Smart, dostawa do paczkomatu InPost, sprzedawca z oznaczeniem Super Sprzedawca. Następnie posortuj wyniki według ceny z dostawą od najniższej.
 - *Zadanie 4:* Otwórz pierwszą ofertę z listy wyników, która spełnia wszystkie powyższe kryteria. Na stronie oferty sprawdź i wskaż badaczowi: pełną nazwę modelu, cenę produktu, koszt dostawy, przewidywany termin dostawy do paczkomatu, ocenę sprzedawcy oraz informację o możliwości zwrotu.
 - *Zadanie 5:* Dodaj produkt do koszyka w liczbie 1 sztuki. Przejdź do koszyka. W koszyku wybierz dostawę do paczkomatu InPost oraz metodę płatności BLIK. Zatrzymaj się na ekranie poprzedzającym ostateczne potwierdzenie zamówienia.
@@ -146,7 +146,9 @@ Do tej pory udało się zrealizować i poddać analizie sesje z czterema osobami
 - *Uczestnik 2 (P2):* Kobieta, 56 lat. Sprawnie posługuje się komputerem i regularnie robi zakupy na różnych stronach internetowych, jednak z platformy Allegro nie korzystała od kilku lat.
 - *Uczestnik 3 (P3):* Kobieta, 54 lat. Kupuje okazjonalnie, woli tradycyjne sklepy stacjonarne, ale używa komputera w codziennej pracy, więc sprawnie porusza się po interfejsach.
 - *Uczestnik 4 (P4):* Mężczyzna, 55 lat. Korzysta z internetu głównie do czytania wiadomości lokalnych. Bardzo rzadko kupuje online i podczas badania potrzebowała więcej czasu na odnalezienie interaktywnych elementów.
-- *Uczestnicy P5-P8:* [Dane demograficzne zostaną dodane w finalnej wersji raportu po zrealizowaniu sesji].
+- *Uczestnik 5 (P5):* Kobieta, 22 lata. Na co dzień używa komputera, pracuje jako informatyk.
+- *Uczestnik 6 (P6):* Kobieta, 50 lat. W przeszłości była informatykiem i często używa komputera, jednak w swoim działaniu wykonuje zadania bardzo powoli i dokładnie.
+- *Uczestnicy P7-P8:* [Dane demograficzne zostaną dodane w finalnej wersji raportu po zrealizowaniu sesji].
 
 == Study Results
 
