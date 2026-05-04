@@ -140,7 +140,7 @@ Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wi
 
 Badanie zostało zrealizowane na grupie docelowej określonej w dokumencie jako okazjonalni kupujący. W procesie rekrutacji nie ograniczał nas twardy przedział wiekowy, lecz zachowania użytkowników – częstotliwość korzystania z platformy Allegro (lub innych serwisów e-commerce) oraz ogólny poziom biegłości w obsłudze komputera. Zależało nam na przetestowaniu interfejsu na osobach, które nie działają "na pamięć" i nie mają wypracowanych silnych nawyków w poruszaniu się po serwisie.
 
-Do tej pory udało się zrealizować i poddać analizie sesje z czterema osobami (pozostałe wyniki zostaną uzupełnione po zebraniu danych przez resztę zespołu):
+Do tej pory udało się zrealizować i poddać analizie sesje z ośmioma osobami:
 
 - *Uczestnik 1 (P1):* Mężczyzna, 59 lat. Słabo posługuje się komputerem, jednak w przeszłości dosyć często dokonywał zakupów na Allegro.
 - *Uczestnik 2 (P2):* Kobieta, 56 lat. Sprawnie posługuje się komputerem i regularnie robi zakupy na różnych stronach internetowych, jednak z platformy Allegro nie korzystała od kilku lat.
@@ -148,11 +148,12 @@ Do tej pory udało się zrealizować i poddać analizie sesje z czterema osobami
 - *Uczestnik 4 (P4):* Mężczyzna, 55 lat. Korzysta z internetu głównie do czytania wiadomości lokalnych. Bardzo rzadko kupuje online i podczas badania potrzebowała więcej czasu na odnalezienie interaktywnych elementów.
 - *Uczestnik 5 (P5):* Kobieta, 22 lata. Na co dzień używa komputera, pracuje jako informatyk.
 - *Uczestnik 6 (P6):* Kobieta, 50 lat. W przeszłości była informatykiem i często używa komputera, jednak w swoim działaniu wykonuje zadania bardzo powoli i dokładnie.
-- *Uczestnicy P7-P8:* [Dane demograficzne zostaną dodane w finalnej wersji raportu po zrealizowaniu sesji].
+- *Uczestnik 7 (P7):* Kobieta, około 20 lat. Doświadczona użytkowniczka Allegro, wcześniej korzystała z serwisu i dokonywała zakupów.
+- *Uczestnik 8 (P8):* Kobieta, około 50 lat. Bardzo słabo doświadczona z Allegro i o niskich umiejętnościach technicznych.
 
 == Study Results
 
-Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje jakościowe z pierwszych czterech sesji badawczych. Tabele zostały przygotowane tak, aby umożliwić łatwą rozbudowę o wyniki kolejnych uczestników.
+Poniżej zestawiono zebrane dane ilościowe oraz wybrane obserwacje jakościowe z przeprowadzonych sesji badawczych.
 
 *Tabela 1. Wyniki szczegółowe dla poszczególnych pytań badawczych (Q1-Q5)*
 #figure(
@@ -166,8 +167,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P4], [0:26], [0:42], [2], [3/4], [1:15], [3.33],
     [P5], [0:15], [0:20], [0], [4/4], [0:40], [3.67],
     [P6], [0:41], [0:39], [1], [4/4], [0:48], [4.33],
-    [P7], [-], [-], [-], [-], [-], [-],
-    [P8], [-], [-], [-], [-], [-], [-],
+    [P7], [0:11], [0:18], [0], [4/4], [0:44], [4.33],
+    [P8], [0:20], [0:28], [1], [4/4], [1:12], [4.33],
   ),
   caption: [Szczegółowe metryki czasowe, liczbowe oraz ocena użyteczności dla etapów Q1-Q5],
 )
@@ -184,8 +185,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P4], [Sukces], [Sukces częściowy], [Sukces częściowy],
     [P5], [Sukces], [Sukces], [Sukces],
     [P6], [Sukces], [Sukces częściowy], [Sukces],
-    [P7], [-], [-], [-],
-    [P8], [-], [-], [-],
+    [P7], [Sukces], [Sukces], [Sukces],
+    [P8], [Sukces], [Sukces], [Sukces],
   ),
   caption: [Ocena stopnia ukończenia głównych etapów (Sukces / Sukces częściowy / Niepowodzenie)],
 )
@@ -202,8 +203,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P4], [15:22], [6], [2], [2],
     [P5], [12:13], [4], [2], [1],
     [P6], [22:21], [8], [6], [3],
-    [P7], [-], [-], [-], [-],
-    [P8], [-], [-], [-], [-],
+    [P7], [13:00], [2], [1], [0],
+    [P8], [18:01], [3], [0], [0],
   ),
   caption: [Ogólne metryki użyteczności rejestrowane na przestrzeni całego badania (Q6)],
 )
@@ -220,8 +221,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P4], [1:10], [3:45], [3:30], [4:10], [1:52], [0:55],
     [P5], [0:20], [1:41], [1:30], [2:50], [1:09], [1:17],
     [P6], [0:40], [3:13], [2:20], [5:58], [1:34], [3:03],
-    [P7], [-], [-], [-], [-], [-], [-],
-    [P8], [-], [-], [-], [-], [-], [-],
+    [P7], [0:35], [2:20], [2:35], [3:35], [1:42], [2:13],
+    [P8], [0:55], [3:50], [3:35], [4:55], [2:35], [2:11],
   ),
   caption: [Czasy realizacji poszczególnych zadań ze scenariusza (na podstawie nagrań)],
 )
@@ -238,16 +239,19 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P4], [5], [4], [4], [5], [4], [5], [3], [3], [4],
     [P5], [7], [5], [7], [5], [6], [6], [4], [5], [2],
     [P6], [7], [6], [7], [6], [7], [6], [4], [5], [4],
-    [P7], [-], [-], [-], [-], [-], [-], [-], [-], [-],
-    [P8], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P7], [7], [5], [6], [7], [7], [6], [4], [5], [4],
+    [P8], [7], [4], [6], [6], [7], [6], [4], [4], [5],
   ),
   caption: [Wyniki ankiet w skali Likerta i SEQ],
 )
 
+#pagebreak()
 *Tabela 6. Kluczowe problemy jakościowe*
-#figure(
-  table(
-    columns: (auto, auto, auto, 1fr),
+#text(size: 9pt)[
+  #set par(justify: false)
+  #table(
+    columns: (0.8cm, 2.5cm, 3.1cm, 9.5cm),
+    inset: 4pt,
     align: left + horizon,
     [*ID*], [*Etap*], [*Typ problemu*], [*Opis zgłoszenia / Obserwacja*],
     [P1], [Lista / Sortowanie], [Widoczność], [Czcionka napisu "sortowanie" jest bardzo mała i w szarym kolorze, który zlewa się z tłem.],
@@ -258,14 +262,41 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P4], [Strona główna], [Nawigacja], [Użytkownik na początku pomylił duży banner reklamowy z wynikami wyszukiwania, co spowodowało błąd nawigacyjny i powrót wstecz.],
     [P5, P6], [Strona oferty], [Czytelność], [Ocena sprzedawcy jest niejasno pokazana na stronie oferty, co utrudnia szybką weryfikację zaufania.],
     [P5, P6], [Strona oferty], [Czytelność], [Koszt dostawy jest niejasno podany – wyświetla się jedynie jako "od X zł".],
-    [P6+], [-], [-], [-],
-  ),
-  caption: [Zgłoszone i zaobserwowane problemy jakościowe z podziałem na etapy],
-)
+    [P7], [Wyszukiwanie], [Błąd etykiety / Mylący interfejs], [Zamiast kliknąć w pasek wyszukiwania, użytkowniczka kliknęła ikonę "zamów w jednej przesyłce". Szybko zamknęła okno i poprawnie kliknęła pasek wyszukiwania.],
+    [P7], [Filtry], [Układ informacji], [Użytkowniczka stwierdziła "za dużo tych opcji jest", wyraźnie okazując frustrację.],
+    [P8], [Filtry], [Układ informacji], [Użytkownik nie wiedział, czy ma zaznaczyć filtr "USB", czy "USB (Radio 2.4 GHz)".],
+    [P8], [Strona oferty], [Układ informacji], [Mały rozmiar czcionki sprawił, że użytkownik musiał przerwać zadanie i pójść po okulary.],
+    [P8], [Dodanie produktu do koszyka], [Nawigacja / Intuicyjność], [Użytkownik był zdezorientowany, gdy po kliknięciu "Dodaj do koszyka" pojawił się popup z innymi ofertami od sprzedawcy. Głośno zastanawiał się, czy przedmiot został już dodany do koszyka.],
+  )
+]
+#text(size: 9pt, style: "italic")[Zgłoszone i zaobserwowane problemy jakościowe z podziałem na etapy]
 
 = Conclusions and Implications of the Study
 
-[Sekcja zostanie uzupełniona po analizie wszystkich 6-8 sesji badawczych. Znajdą się w niej rekomendacje projektowe wynikające z zebranych problemów jakościowych i najniżej ocenianych przez użytkowników etapów w ankietach SEQ.]
+Poniższe wnioski odnoszą się bezpośrednio do celu badania, czyli oceny skuteczności, efektywności, zrozumiałości nawigacji oraz satysfakcji okazjonalnych kupujących podczas wyszukiwania produktu, korzystania z filtrów, analizy oferty i przechodzenia przez koszyk.
+
+Przeprowadzone badanie pokazało, że ogólny proces zakupowy w serwisie Allegro jest możliwy do wykonania przez okazjonalnych kupujących, ale jego sprawność silnie zależy od doświadczenia użytkownika oraz od etapu procesu. Wszyscy uczestnicy byli w stanie rozpocząć wyszukiwanie produktu, a większość poprawnie ukończyła także filtrowanie, analizę oferty i przejście przez koszyk. Nie oznacza to jednak pełnej intuicyjności interfejsu: część zadań została wykonana dopiero po zawahaniach, błędnych kliknięciach lub dłuższym błądzeniu po stronie.
+
+Najlepiej ocenionym i najmniej problematycznym etapem było rozpoczęcie wyszukiwania. Wskaźnik sukcesu dla Q1 wyniósł 100%, a czasy wykonania pierwszego zadania były krótkie w porównaniu z pozostałymi etapami. Oznacza to, że główna wyszukiwarka jest wystarczająco widoczna i zrozumiała nawet dla osób, które nie korzystają z Allegro regularnie. Pojedyncze błędy, takie jak kliknięcie w element promocyjny zamiast w obszar wyszukiwania, wskazują jednak, że ekspozycja reklam i dodatkowych modułów na stronie głównej może czasem konkurować z główną ścieżką zadania.
+
+Największym źródłem trudności okazały się filtry i sortowanie wyników. W zadaniach 2 i 3 pojawiały się sukcesy częściowe, błędnie użyte filtry oraz werbalizowana frustracja związana z dużą liczbą opcji. Szczególnie problematyczne były: nieintuicyjne ustawianie przedziału cenowego, mylące oznaczenia związane z Allegro Smart oraz niejednoznaczne warianty filtrów technicznych, np. rozróżnienie pomiędzy "USB" i "USB (Radio 2.4 GHz)". W praktyce oznacza to, że mechanizm filtrów spełnia swoją funkcję, ale wymaga od użytkownika zbyt dużego wysiłku poznawczego.
+
+Strona oferty również wymaga poprawy pod kątem czytelności i hierarchii informacji. Uczestnicy potrafili najczęściej wskazać wymagane dane, ale obserwacje jakościowe pokazują, że znalezienie oceny sprzedawcy, kosztu dostawy i warunków dostawy nie było wystarczająco szybkie. Problemem jest nie tylko obecność informacji, ale sposób jej zaprezentowania: koszt dostawy opisany jako "od X zł" nie daje użytkownikowi natychmiastowej pewności, a ocena sprzedawcy nie jest wystarczająco wyeksponowana w kontekście decyzji zakupowej. Dla okazjonalnych kupujących są to informacje krytyczne, ponieważ służą ocenie bezpieczeństwa i opłacalności zakupu.
+
+Proces koszyka został ukończony przez większość uczestników, jednak także tutaj wystąpiły problemy z widocznością i poczuciem kontroli. Część użytkowników miała trudność ze zmianą domyślnej metody płatności na BLIK, a popup po dodaniu produktu do koszyka powodował niepewność, czy produkt rzeczywiście został dodany. Ten etap nie blokował zakupu, ale powodował zawahania i mógł obniżać zaufanie do procesu. Najniższe oceny w ankiecie podsumowującej dotyczyły właśnie sprawności dodawania produktu do koszyka i wyboru opcji zakupu.
+
+Z punktu widzenia Q6 najważniejszym wnioskiem jest to, że problemy użyteczności nie mają charakteru pojedynczego krytycznego błędu, lecz kumulują się w czasie. Użytkownicy bardziej doświadczeni przechodzili przez proces szybciej i z mniejszą liczbą zawahań, natomiast osoby mniej pewne technicznie potrzebowały znacznie więcej czasu, częściej wykonywały błędne kliknięcia i gorzej oceniały czytelność interfejsu. Najdłuższe sesje oraz największa liczba błędów pojawiły się u uczestników, którzy działali ostrożnie lub mieli mniejsze doświadczenie z Allegro.
+
+Na podstawie wyników badania rekomendujemy następujące usprawnienia:
+
+- *Uproszczenie i lepsze pogrupowanie filtrów:* najczęściej używane filtry powinny być bardziej widoczne, a opcje techniczne powinny mieć krótkie objaśnienia lub bardziej zrozumiałe etykiety. Szczególnie warto poprawić filtr ceny, aby użytkownik od razu widział możliwość wpisania własnego przedziału.
+- *Ograniczenie konkurencji wizualnej na stronie głównej i liście wyników:* elementy promocyjne nie powinny wyglądać jak główna ścieżka zadania ani odciągać uwagi od wyszukiwarki, filtrów i sortowania.
+- *Wyraźniejsze pokazanie kluczowych informacji na stronie oferty:* cena produktu, całkowity koszt dostawy, przewidywany termin dostawy, ocena sprzedawcy i warunki zwrotu powinny być łatwe do znalezienia bez długiego skanowania strony.
+- *Poprawa komunikatu po dodaniu produktu do koszyka:* system powinien jednoznacznie potwierdzać, że produkt został dodany, oraz wyraźnie oddzielać tę informację od dodatkowych rekomendacji lub innych ofert sprzedawcy.
+- *Zwiększenie widoczności zmiany metody płatności i dostawy w koszyku:* domyślne ustawienia powinny być czytelne, ale użytkownik musi łatwo zauważyć, gdzie może je zmienić.
+- *Poprawa dostępności wizualnej:* rozmiar i kontrast mniej widocznych etykiet, takich jak sortowanie, informacje o dostawie czy dane sprzedawcy, powinny zostać zwiększone, ponieważ mały tekst był realną barierą dla części uczestników.
+
+Podsumowując, Allegro jako system umożliwia skuteczne wykonanie badanego procesu zakupowego, ale jego użyteczność dla okazjonalnych kupujących można poprawić przez zmniejszenie obciążenia poznawczego, lepszą hierarchię informacji i bardziej jednoznaczne komunikaty w momentach decyzyjnych. Największy potencjał poprawy dotyczy filtrów, strony oferty oraz koszyka, ponieważ właśnie tam użytkownicy najczęściej tracili czas, pewność działania i poczucie kontroli.
 
 = Lessons Learned
 
