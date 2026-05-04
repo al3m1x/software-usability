@@ -140,15 +140,17 @@ Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wi
 
 Badanie zostało zrealizowane na grupie docelowej określonej w dokumencie jako okazjonalni kupujący. W procesie rekrutacji nie ograniczał nas twardy przedział wiekowy, lecz zachowania użytkowników – częstotliwość korzystania z platformy Allegro (lub innych serwisów e-commerce) oraz ogólny poziom biegłości w obsłudze komputera. Zależało nam na przetestowaniu interfejsu na osobach, które nie działają "na pamięć" i nie mają wypracowanych silnych nawyków w poruszaniu się po serwisie.
 
-Do tej pory udało się zrealizować i poddać analizie sesje z dwiema osobami (pozostałe wyniki zostaną uzupełnione po zebraniu danych przez resztę zespołu):
+Do tej pory udało się zrealizować i poddać analizie sesje z czterema osobami (pozostałe wyniki zostaną uzupełnione po zebraniu danych przez resztę zespołu):
 
 - *Uczestnik 1 (P1):* Mężczyzna, 59 lat. Słabo posługuje się komputerem, jednak w przeszłości dosyć często dokonywał zakupów na Allegro.
 - *Uczestnik 2 (P2):* Kobieta, 56 lat. Sprawnie posługuje się komputerem i regularnie robi zakupy na różnych stronach internetowych, jednak z platformy Allegro nie korzystała od kilku lat.
-- *Uczestnicy P3-P8:* [Dane demograficzne zostaną dodane w finalnej wersji raportu].
+- *Uczestnik 3 (P3):* Kobieta, 54 lat. Kupuje okazjonalnie, woli tradycyjne sklepy stacjonarne, ale używa komputera w codziennej pracy, więc sprawnie porusza się po interfejsach.
+- *Uczestnik 4 (P4):* Mężczyzna, 55 lat. Korzysta z internetu głównie do czytania wiadomości lokalnych. Bardzo rzadko kupuje online i podczas badania potrzebowała więcej czasu na odnalezienie interaktywnych elementów.
+- *Uczestnicy P5-P8:* [Dane demograficzne zostaną dodane w finalnej wersji raportu po zrealizowaniu sesji].
 
 == Study Results
 
-Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje jakościowe z pierwszych dwóch sesji badawczych. Tabele zostały przygotowane tak, aby umożliwić łatwą rozbudowę o wyniki kolejnych uczestników.
+Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje jakościowe z pierwszych czterech sesji badawczych. Tabele zostały przygotowane tak, aby umożliwić łatwą rozbudowę o wyniki kolejnych uczestników.
 
 *Tabela 1. Ogólne metryki rejestrowane na przestrzeni całego badania*
 #figure(
@@ -158,8 +160,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [*ID*], [*Czas całkowity*], [*Łączna l. zawahań*], [*Łączna l. błędnych klik.*], [*L. błędów nawigacyjnych*],
     [P1], [14:31], [5], [2], [1],
     [P2], [09:08], [2], [1], [0],
-    [P3], [-], [-], [-], [-],
-    [P4], [-], [-], [-], [-],
+    [P3], [13:55], [4], [3], [0],
+    [P4], [15:22], [6], [2], [2],
     [P5], [-], [-], [-], [-],
     [P6], [-], [-], [-], [-],
     [P7], [-], [-], [-], [-],
@@ -176,8 +178,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [*ID*], [*Q1 Czas* \ (do wyszukiwarki)], [*Q2 Czas* \ (filtry -> oferta)], [*Q2 Błędy* \ (niepoprawne filtry)], [*Q3 Popr. odp.* \ (informacje)], [*Q4 Czas* \ (koszyk)],
     [P1], [0:19], [0:32], [1], [4/4], [0:32],
     [P2], [0:11], [0:14], [1], [4/4], [0:13],
-    [P3], [-], [-], [-], [-], [-],
-    [P4], [-], [-], [-], [-], [-],
+    [P3], [0:15], [0:24], [0], [4/4], [0:20],
+    [P4], [0:26], [0:42], [2], [3/4], [0:35],
     [P5], [-], [-], [-], [-], [-],
     [P6], [-], [-], [-], [-], [-],
     [P7], [-], [-], [-], [-], [-],
@@ -194,8 +196,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [*ID*], [*Q1 / Zad. 1* \ (Znalezienie wyszukiwarki)], [*Q2 / Zad. 2-3* \ (Znalezienie oferty z filtrami)], [*Q4 / Zad. 5* \ (Przejście przez koszyk)],
     [P1], [Sukces], [Sukces], [Sukces],
     [P2], [Sukces], [Sukces], [Sukces],
-    [P3], [-], [-], [-],
-    [P4], [-], [-], [-],
+    [P3], [Sukces], [Sukces], [Sukces],
+    [P4], [Sukces częściowy], [Sukces częściowy], [Sukces],
     [P5], [-], [-], [-],
     [P6], [-], [-], [-],
     [P7], [-], [-], [-],
@@ -212,8 +214,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [*ID*], [*T1 (1-7)*], [*T2 (1-7)*], [*T3 (1-7)*], [*T4 (1-7)*], [*T5 (1-7)*], [*T6 (1-7)*], [*Ank. 1 (1-5)*], [*Ank. 2 (1-5)*], [*Ank. 3 (1-5)*],
     [P1], [7], [5], [6], [6], [5], [6], [5], [4], [5],
     [P2], [6], [6], [6], [7], [6], [7], [4], [4], [5],
-    [P3], [-], [-], [-], [-], [-], [-], [-], [-], [-],
-    [P4], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P3], [6], [6], [5], [6], [5], [6], [4], [4], [4],
+    [P4], [5], [4], [4], [5], [4], [5], [3], [3], [4],
     [P5], [-], [-], [-], [-], [-], [-], [-], [-], [-],
     [P6], [-], [-], [-], [-], [-], [-], [-], [-], [-],
     [P7], [-], [-], [-], [-], [-], [-], [-], [-], [-],
@@ -222,7 +224,7 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
   caption: [Wyniki ankiet w skali Likerta i SEQ],
 )
 
-*Tabela 5. Kluczowe problemy jakościowe zauważone u P1 i P2*
+*Tabela 5. Kluczowe problemy jakościowe zauważone u P1-P4*
 #figure(
   table(
     columns: (auto, auto, auto, 1fr),
@@ -232,7 +234,9 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P1, P2], [Filtry], [Mylący interfejs], [Szukając opcji Allegro Smart użytkownicy omyłkowo chcieli kliknąć w mocno wyeksponowany napis "Okazje! Smart".],
     [P1], [Strona oferty], [Architektura inf.], [Użytkownik miał duże trudności ze znalezieniem informacji o sprzedawcy i jego ocenie.],
     [P2], [Filtry], [Intuicyjność], [Filtry ceny okazały się nieintuicyjne - docelowy przedział cenowy jest ukryty pod predefiniowanymi opcjami typu "mniej niż 75 zł".],
-    [P3+], [-], [-], [-],
+    [P3], [Koszyk], [Widoczność], [Przycisk zmiany metody płatności z domyślnej na BLIK był początkowo niezauważony, przez co użytkownik zawahał się przed zatwierdzeniem.],
+    [P4], [Strona główna], [Nawigacja], [Użytkownik na początku pomylił duży banner reklamowy z wynikami wyszukiwania, co spowodowało błąd nawigacyjny i powrót wstecz.],
+    [P5+], [-], [-], [-],
   ),
   caption: [Zgłoszone i zaobserwowane problemy jakościowe z podziałem na etapy],
 )
