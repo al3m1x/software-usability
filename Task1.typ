@@ -164,8 +164,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P2], [0:11], [0:14], [1], [4/4], [0:45], [4.33],
     [P3], [0:15], [0:24], [0], [4/4], [1:29], [4.00],
     [P4], [0:26], [0:42], [2], [3/4], [1:15], [3.33],
-    [P5], [-], [-], [-], [-], [-], [-],
-    [P6], [-], [-], [-], [-], [-], [-],
+    [P5], [0:15], [0:20], [0], [4/4], [0:40], [3.67],
+    [P6], [0:41], [0:39], [1], [4/4], [0:48], [4.33],
     [P7], [-], [-], [-], [-], [-], [-],
     [P8], [-], [-], [-], [-], [-], [-],
   ),
@@ -182,8 +182,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P2], [Sukces], [Sukces częściowy], [Sukces],
     [P3], [Sukces], [Sukces], [Sukces],
     [P4], [Sukces], [Sukces częściowy], [Sukces częściowy],
-    [P5], [-], [-], [-],
-    [P6], [-], [-], [-],
+    [P5], [Sukces], [Sukces], [Sukces],
+    [P6], [Sukces], [Sukces częściowy], [Sukces],
     [P7], [-], [-], [-],
     [P8], [-], [-], [-],
   ),
@@ -200,8 +200,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P2], [09:08], [2], [1], [0],
     [P3], [13:55], [4], [3], [0],
     [P4], [15:22], [6], [2], [2],
-    [P5], [-], [-], [-], [-],
-    [P6], [-], [-], [-], [-],
+    [P5], [12:13], [4], [2], [1],
+    [P6], [22:21], [8], [6], [3],
     [P7], [-], [-], [-], [-],
     [P8], [-], [-], [-], [-],
   ),
@@ -218,8 +218,8 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P2], [0:31], [1:47], [2:52], [1:50], [1:20], [0:48],
     [P3], [0:45], [2:30], [3:05], [3:50], [2:40], [1:05],
     [P4], [1:10], [3:45], [3:30], [4:10], [1:52], [0:55],
-    [P5], [-], [-], [-], [-], [-], [-],
-    [P6], [-], [-], [-], [-], [-], [-],
+    [P5], [0:20], [1:41], [1:30], [2:50], [1:09], [1:17],
+    [P6], [0:40], [3:13], [2:20], [5:58], [1:34], [3:03],
     [P7], [-], [-], [-], [-], [-], [-],
     [P8], [-], [-], [-], [-], [-], [-],
   ),
@@ -236,15 +236,15 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P2], [6], [6], [6], [7], [6], [7], [4], [4], [5],
     [P3], [6], [6], [5], [6], [5], [6], [4], [4], [4],
     [P4], [5], [4], [4], [5], [4], [5], [3], [3], [4],
-    [P5], [-], [-], [-], [-], [-], [-], [-], [-], [-],
-    [P6], [-], [-], [-], [-], [-], [-], [-], [-], [-],
+    [P5], [7], [5], [7], [5], [6], [6], [4], [5], [2],
+    [P6], [7], [6], [7], [6], [7], [6], [4], [5], [4],
     [P7], [-], [-], [-], [-], [-], [-], [-], [-], [-],
     [P8], [-], [-], [-], [-], [-], [-], [-], [-], [-],
   ),
   caption: [Wyniki ankiet w skali Likerta i SEQ],
 )
 
-*Tabela 6. Kluczowe problemy jakościowe zauważone u P1-P4*
+*Tabela 6. Kluczowe problemy jakościowe*
 #figure(
   table(
     columns: (auto, auto, auto, 1fr),
@@ -256,7 +256,9 @@ Poniżej zestawiono dotychczas zebrane dane ilościowe oraz wybrane obserwacje j
     [P2], [Filtry], [Intuicyjność], [Filtry ceny okazały się nieintuicyjne - docelowy przedział cenowy jest ukryty pod predefiniowanymi opcjami typu "mniej niż 75 zł".],
     [P3], [Koszyk], [Widoczność], [Przycisk zmiany metody płatności z domyślnej na BLIK był początkowo niezauważony, przez co użytkownik zawahał się przed zatwierdzeniem.],
     [P4], [Strona główna], [Nawigacja], [Użytkownik na początku pomylił duży banner reklamowy z wynikami wyszukiwania, co spowodowało błąd nawigacyjny i powrót wstecz.],
-    [P5+], [-], [-], [-],
+    [P5, P6], [Strona oferty], [Czytelność], [Ocena sprzedawcy jest niejasno pokazana na stronie oferty, co utrudnia szybką weryfikację zaufania.],
+    [P5, P6], [Strona oferty], [Czytelność], [Koszt dostawy jest niejasno podany – wyświetla się jedynie jako "od X zł".],
+    [P6+], [-], [-], [-],
   ),
   caption: [Zgłoszone i zaobserwowane problemy jakościowe z podziałem na etapy],
 )
@@ -271,4 +273,5 @@ Przeprowadzenie pierwszych sesji badawczych w roli moderatora dostarczyło nam k
 
 - *Trudność w powstrzymywaniu się od interwencji:* Największym wyzwaniem dla badacza było zachowanie pełnego obiektywizmu i niepomaganie użytkownikowi. Obserwowanie, jak uczestnik frustruje się lub wielokrotnie omija wzrokiem poszukiwany przycisk (który dla badacza jest oczywisty), wywoływało silną, naturalną chęć podpowiedzenia.
 - *Bariera "głośnego myślenia" (Think-aloud):* Utrzymanie ciągłości protokołu głośnego myślenia wymagało dużej aktywności ze strony moderatora. Uczestnicy mieli tendencję do skupiania się na rozwiązywaniu zadania w ciszy. Często trzeba było im przypominać o konieczności komentowania swoich działań lub zadawać pytania pomocnicze (np. "Czego w tej chwili szukasz?").
+- *Niedokładne doprecyzowanie zadań:* W trakcie testów okazało się, że treść zadań nie była w paru miejscach wystarczająco precyzyjna. Powodowało to opóźnienia, częściowe niezrozumienie zadania przez użytkowników oraz spowodowaną tym niepewność w podejmowanych akcjach.
 - [Kolejne obserwacje własne zostaną dopisane po zebraniu doświadczeń z sesji moderowanych przez pozostałych członków zespołu].
