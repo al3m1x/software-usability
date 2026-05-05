@@ -100,7 +100,7 @@ Aby uniknąć rozbieżności w interpretacji zachowań przez różnych członkó
 - *Moderowany test użyteczności z protokołem głośnego myślenia.* Pozwala obserwować zachowania i jednocześnie zbierać komentarze. 
 - *Nagrywanie sesji.* Wszystkie sesje będą rejestrowane (obraz ekranu i dźwięk). Umożliwi to późniejszą *wspólną analizę przez cały zespół badawczy*. Dzięki temu wyeliminowane zostaną rozbieżności w ocenie i kategoryzacji – zespół wspólnie zdecyduje, czy dana akcja była zawahaniem, czy błędnym kliknięciem.
 - *Ankiety (Treść narzędzi badawczych):*
-  - *Ankieta wstępna (kwalifikacyjna):* "Jak często robisz zakupy w internecie?" (szukamy kupujących od kilku do kilkunastu razy w roku w dowolnym serwisie internetowym).
+  - *Ankieta wstępna (kwalifikacyjna):* Szukamy osób, które dokonują zakupów od kilku do kilkunastu razy w roku w dowolnym serwisie internetowym. W ramach tej krótkiej, trwającej około 3 minut ankiety, pytaliśmy również użytkowników o ich wiek oraz o to, czy często korzystają z technologii. Dodatkowo weryfikowaliśmy, jak często używają innych serwisów do zakupów internetowych oraz czy kiedykolwiek używali platformy Allegro.
   - *SEQ (Single Ease Question):* Zadawane po każdym zadaniu: "W skali od 1 do 7, gdzie 1 to bardzo trudne, a 7 to bardzo łatwe, jak oceniasz trudność tego zadania?".
   - *Krótka ankieta podsumowująca:* Przeprowadzana na sam koniec sesji. Składa się z 3 kluczowych stwierdzeń, które użytkownik ocenia w skali Likerta (1 - Zdecydowanie się nie zgadzam, do 5 - Zdecydowanie się zgadzam):
     1. "Ogólne korzystanie z serwisu i poruszanie się po nim było dla mnie łatwe i intuicyjne."
@@ -108,10 +108,10 @@ Aby uniknąć rozbieżności w interpretacji zachowań przez różnych członkó
     3. "Proces dodawania produktu do koszyka i wyboru opcji zakupu przebiegł sprawnie i bez poczucia frustracji."
 
 *Planowana próba:*
-Badanie zostanie przeprowadzone na grupie *6-8 osób należących wyłącznie do grupy docelowej "okazjonalnych kupujących"*. Zawężenie próby do jednej homogenicznej grupy pozwoli na spójne i miarodajne zestawienie oraz porównanie wyników między badanymi.
+Badanie zostanie przeprowadzone na grupie *8 osób należących wyłącznie do grupy docelowej "okazjonalnych kupujących"*. Zawężenie próby do jednej homogenicznej grupy pozwoli na spójne i miarodajne zestawienie oraz porównanie wyników między badanymi.
 
 *Harmonogram całego projektu badawczego:*
-1. *Faza 1 (Przygotowanie):* Skompletowanie scenariusza, konfiguracja narzędzi do nagrywania, rekrutacja 6-8 uczestników z grupy docelowej.
+1. *Faza 1 (Przygotowanie):* Skompletowanie scenariusza, konfiguracja narzędzi do nagrywania, rekrutacja 8 uczestników z grupy docelowej.
 2. *Faza 2 (Sesje badawcze):* Przeprowadzenie pojedynczych spotkań (około 20-40 min każde). Spotkania w formule 1 na 1 (członek zespołu i osoba badana).
 3. *Faza 3 (Analiza nagrań):* Wspólne odtworzenie nagrań przez zespół, przypisanie metryk i uzupełnienie tabeli wyników.
 4. *Faza 4 (Raportowanie):* Porównanie zebranych wyników i opracowanie rekomendacji w finalnym raporcie.
@@ -133,7 +133,7 @@ Wszystkie zadania dotyczą tego samego produktu: mysz bezprzewodowa *Logitech Wi
 - *Zadanie 6:* Cofnij się do wyników wyszukiwania i usuń filtr dotyczący ceny. Następnie sprawdź, czy po jego usunięciu jesteś w stanie sprawnie wrócić do wcześniej przeglądanej oferty.
 
 *Sposób analizy i porównywania wyników:*
-- *Dane ilościowe:* Zostaną zestawione w zbiorczej tabeli, co pozwoli łatwo porównać czasy wykonania oraz SEQ pomiędzy wszystkimi 6-8 użytkownikami, identyfikując najsłabsze punkty serwisu.
+- *Dane ilościowe:* Zostaną zestawione w zbiorczej tabeli, co pozwoli łatwo porównać czasy wykonania oraz SEQ pomiędzy wszystkimi 8 użytkownikami, identyfikując najsłabsze punkty serwisu.
 - *Dane jakościowe (kategoryzacja):* Obserwacje i zgłoszenia od użytkowników zostaną przeniesione do arkusza kalkulacyjnego (np. Excel) z ustalonymi kolumnami: *Etap (np. Koszyk)*, *Kategoria problemu (np. Etykieta przycisku / Układ strony)*, *Opis zachowania*, *Priorytet (Krytyczny, Istotny, Drobny)*. Taka strukturyzacja i pogrupowanie problemów jakościowych pozwoli wyciągnąć syntetyczne i bardzo wartościowe wnioski, zamiast chaotycznego opisu uwag.
 
 == Study Execution
@@ -230,19 +230,20 @@ Poniżej zestawiono zebrane dane ilościowe oraz wybrane obserwacje jakościowe 
 *Tabela 5. Wyniki ankiet: SEQ po każdym zadaniu oraz Krótka Ankieta Podsumowująca*
 #figure(
   table(
-    columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
+    columns: (auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto),
     align: center + horizon,
-    [*ID*], [*T1 (1-7)*], [*T2 (1-7)*], [*T3 (1-7)*], [*T4 (1-7)*], [*T5 (1-7)*], [*T6 (1-7)*], [*Ank. 1 (1-5)*], [*Ank. 2 (1-5)*], [*Ank. 3 (1-5)*],
-    [P1], [7], [5], [6], [6], [5], [6], [5], [4], [5],
-    [P2], [6], [6], [6], [7], [6], [7], [4], [4], [5],
-    [P3], [6], [6], [5], [6], [5], [6], [4], [4], [4],
-    [P4], [5], [4], [4], [5], [4], [5], [3], [3], [4],
-    [P5], [7], [5], [7], [5], [6], [6], [4], [5], [2],
-    [P6], [7], [6], [7], [6], [7], [6], [4], [5], [4],
-    [P7], [7], [5], [6], [7], [7], [6], [4], [5], [4],
-    [P8], [7], [4], [6], [6], [7], [6], [4], [4], [5],
+    [*ID*], [*T1 (1-7)*], [*T2 (1-7)*], [*T3 (1-7)*], [*T4 (1-7)*], [*T5 (1-7)*], [*T6 (1-7)*], [*Śr. SEQ*], [*Ank. 1 (1-5)*], [*Ank. 2 (1-5)*], [*Ank. 3 (1-5)*], [*Śr. Ank.*],
+    [P1], [7], [5], [6], [6], [5], [6], [*5.83*], [5], [4], [5], [*4.67*],
+    [P2], [6], [6], [6], [7], [6], [7], [*6.33*], [4], [4], [5], [*4.33*],
+    [P3], [6], [6], [5], [6], [5], [6], [*5.67*], [4], [4], [4], [*4.00*],
+    [P4], [5], [4], [4], [5], [4], [5], [*4.50*], [3], [3], [4], [*3.33*],
+    [P5], [7], [5], [7], [5], [6], [6], [*6.00*], [4], [5], [2], [*3.67*],
+    [P6], [7], [6], [7], [6], [7], [6], [*6.50*], [4], [5], [4], [*4.33*],
+    [P7], [7], [5], [6], [7], [7], [6], [*6.33*], [4], [5], [4], [*4.33*],
+    [P8], [7], [4], [6], [6], [7], [6], [*6.00*], [4], [4], [5], [*4.33*],
+    [*Średnia*], [*6.50*], [*5.13*], [*5.88*], [*6.00*], [*5.88*], [*6.00*], [*5.90*], [*4.00*], [*4.25*], [*4.13*], [*4.12*],
   ),
-  caption: [Wyniki ankiet w skali Likerta i SEQ],
+  caption: [Wyniki ankiet w skali Likerta i SEQ z podsumowaniem średnich dla uczestników i pytań],
 )
 
 #pagebreak()
@@ -297,6 +298,8 @@ Na podstawie wyników badania rekomendujemy następujące usprawnienia:
 - *Poprawa dostępności wizualnej:* rozmiar i kontrast mniej widocznych etykiet, takich jak sortowanie, informacje o dostawie czy dane sprzedawcy, powinny zostać zwiększone, ponieważ mały tekst był realną barierą dla części uczestników.
 
 Podsumowując, Allegro jako system umożliwia skuteczne wykonanie badanego procesu zakupowego, ale jego użyteczność dla okazjonalnych kupujących można poprawić przez zmniejszenie obciążenia poznawczego, lepszą hierarchię informacji i bardziej jednoznaczne komunikaty w momentach decyzyjnych. Największy potencjał poprawy dotyczy filtrów, strony oferty oraz koszyka, ponieważ właśnie tam użytkownicy najczęściej tracili czas, pewność działania i poczucie kontroli.
+
+Z metodologicznego punktu widzenia, istotnym ograniczeniem obecnego badania była stosunkowo mała próba badawcza (8 osób). W przyszłości pożądane byłoby przeprowadzenie testów na znacznie większej grupie użytkowników. Pozwoliłoby to na rzetelną analizę zebranych danych w kontekście cech demograficznych, takich jak wiek, płeć czy poziom ogólnych kompetencji cyfrowych poszczególnych osób. Wyciąganie twardych wniosków korelujących np. przedział wiekowy ze wskaźnikiem popełnianych błędów na tak wąskiej próbie nie ma uzasadnienia statystycznego, dlatego rozszerzenie grupy respondentów powinno stanowić naturalny, kolejny etap ewolucji tego badania.
 
 = Lessons Learned
 
