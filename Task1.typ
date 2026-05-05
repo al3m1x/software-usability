@@ -119,7 +119,7 @@ Badanie zostanie przeprowadzone na grupie *8 osób należących wyłącznie do g
 *Przebieg pojedynczej sesji badawczej (ok. 20-40 min):*
 - 5 minut - wprowadzenie, zgoda na nagrywanie, wyjaśnienie, że badany jest system, a nie użytkownik.
 - 3 minuty - ankieta wstępna kwalifikacyjna.
-- 5-25 minut - wykonanie zadań badawczych z głośnym myśleniem (ankieta SEQ po każdym kroku, długość zależna od szybkości wykonywania zadań przez użytkownika).
+- 5-25 minut - wykonanie zadań badawczych z głośnym myśleniem (ankieta SEQ po każdym kroku - czas zadawania pytania i odpowiedzi na nie *nie wlicza się* do łącznego czasu wykonywania całego procesu/zadania, długość zależna od szybkości wykonywania zadań przez użytkownika).
 - 5 minut - krótka ankieta podsumowująca i podsumowanie.
 
 *Scenariusz zadań:*
@@ -322,7 +322,7 @@ Przeprowadzenie pełnego badania z ośmioma uczestnikami pokazało nam, że test
 
 - *Przeprowadzilibyśmy pilotaż scenariusza przed właściwymi sesjami:* Jedna próbna sesja pozwoliłaby wcześniej wykryć nieprecyzyjne sformułowania zadań i dopracować sposób mierzenia czasu.
 - *Ujednolicilibyśmy arkusz obserwacji jeszcze przed badaniem:* Kategorie takie jak zawahanie, błędne kliknięcie, błąd nawigacyjny i sukces częściowy zostały zdefiniowane, ale podczas kolejnej iteracji warto przygotować gotowy formularz do zapisu obserwacji w trakcie sesji.
-- *Dodaliśmy więcej pytań pogłębiających po najtrudniejszych etapach:* Szczególnie po filtrach, stronie oferty i koszyku warto krótko zapytać użytkownika, co było niejasne i jakiej informacji szukał. Pomogłoby to dokładniej odróżnić problem etykiety od problemu układu strony.
-- *Zadbaliśmy o bardziej kontrolowane warunki techniczne:* Stały rozmiar ekranu, poziom zoomu przeglądarki i podobna konfiguracja konta ograniczyłyby wpływ czynników zewnętrznych na wyniki, zwłaszcza przy ocenie czytelności tekstu i widoczności elementów.
+- *Dodalibyśmy więcej pytań pogłębiających po najtrudniejszych etapach:* Szczególnie po filtrach, stronie oferty i koszyku warto krótko zapytać użytkownika, co było niejasne i jakiej informacji szukał. Pomogłoby to dokładniej odróżnić problem etykiety od problemu układu strony.
+- *Zadbalibyśmy o bardziej kontrolowane warunki techniczne:* Stały rozmiar ekranu, poziom zoomu przeglądarki i podobna konfiguracja konta ograniczyłyby wpływ czynników zewnętrznych na wyniki, zwłaszcza przy ocenie czytelności tekstu i widoczności elementów.
 
 Najważniejszy wniosek metodyczny jest taki, że użyteczność należy analizować jako połączenie skuteczności, efektywności i poczucia pewności użytkownika. W naszym badaniu większość zadań kończyła się sukcesem, ale sukces nie zawsze oznaczał płynne i intuicyjne doświadczenie. Dlatego w kolejnych badaniach nadal warto łączyć pomiar czasu i sukcesu z obserwacją jakościową, ponieważ dopiero oba typy danych pokazują pełny obraz problemów.
