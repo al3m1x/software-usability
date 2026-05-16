@@ -91,9 +91,26 @@ W ramach analizy dostępności (accessibility), wyodrębniono trzy główne grup
 
 == Study Plan
 
-*Metodologia:* Zdecydowaliśmy się na wykorzystanie Ewaluacji Eksperckiej wspartej Listą Kontrolną (Checklist-based Expert Evaluation). Obejmuje ona ręczny audyt interfejsu połączony ze skanowaniem automatycznym pod kątem wymagań WCAG 2.1.
+*Metodologia:* Zastosujemy ewaluację ekspercką dostępności opartą na liście kontrolnej WCAG 2.1 na poziomie AA, wspartą testami manualnymi i narzędziami automatycznymi. Badanie nie będzie polegało wyłącznie na automatycznym skanowaniu strony, ponieważ narzędzia takie jak WAVE i Axe DevTools nie wykrywają wszystkich problemów dostępności, np. jakości tekstów alternatywnych, logiczności kolejności fokusu czy zrozumiałości komunikatów.
 
-*Uzasadnienie wyboru:* Praca z ustandaryzowaną listą daje pewność, że badanie będzie powtarzalne, mierzalne i obiektywne. W kontekście założeń projektowych jest to optymalne podejście, pozwalające efektywnie i etycznie wykryć najpoważniejsze problemy dostępnościowe bez konieczności angażowania respondentów ze szczególnymi potrzebami.
+Lista kontrolna zostanie zbudowana na podstawie wybranych kryteriów WCAG 2.1 AA istotnych dla analizowanej ścieżki zakupowej:
+- *1.1.1 Non-text Content* - obecność i sensowność tekstów alternatywnych dla grafik informacyjnych.
+- *1.3.1 Info and Relationships* - poprawna struktura nagłówków, etykiet i relacji między elementami formularzy.
+- *1.4.3 Contrast (Minimum)* - kontrast tekstu i istotnych elementów interfejsu minimum 4.5:1.
+- *1.4.4 Resize Text* - możliwość korzystania ze strony przy powiększeniu tekstu lub interfejsu do 200%.
+- *2.1.1 Keyboard* - możliwość obsługi kluczowych funkcji wyłącznie za pomocą klawiatury.
+- *2.1.2 No Keyboard Trap* - brak sytuacji, w których użytkownik nie może opuścić elementu interfejsu klawiaturą.
+- *2.4.3 Focus Order* - logiczna kolejność przechodzenia fokusu przez elementy strony.
+- *2.4.7 Focus Visible* - widoczny wskaźnik fokusu na aktywnych elementach.
+- *3.3.1 Error Identification* - jasne wskazywanie błędów w formularzach.
+- *3.3.2 Labels or Instructions* - obecność czytelnych etykiet i instrukcji przy polach formularzy.
+- *4.1.2 Name, Role, Value* - poprawna interpretacja przycisków, pól i kontrolek przez technologie asystujące.
+
+Do każdego kryterium przypiszemy ocenę: *Spełnia*, *Częściowo spełnia*, *Nie spełnia* albo *Nie dotyczy*. Dla każdego wykrytego problemu zapiszemy widok, opis bariery, grupę użytkowników, której problem dotyczy, przewidywany wpływ na wykonanie zadania oraz rekomendację naprawczą.
+
+*Uzasadnienie wyboru:* Ewaluacja ekspercka z checklistą WCAG jest odpowiednia dla tego projektu, ponieważ pozwala systematycznie sprawdzić dostępność tej samej ścieżki zakupowej, która była analizowana w Task 1 pod kątem użyteczności. Dzięki temu możemy porównać, czy elementy problematyczne dla użytkowników okazjonalnych są również barierami dla osób z deficytami wzrokowymi, motorycznymi lub poznawczymi.
+
+Połączenie metod manualnych i automatycznych zwiększa rzetelność badania. WAVE i Axe DevTools pozwolą szybko wykryć część błędów technicznych, np. problemy z kontrastem, brakujące etykiety lub naruszenia struktury HTML. Test klawiaturą pozwoli ocenić dostępność dla osób z ograniczeniami motorycznymi. NVDA zostanie wykorzystane do sprawdzenia, czy struktura strony, formularze, przyciski i komunikaty są zrozumiałe dla użytkownika korzystającego z czytnika ekranu. Manualna ocena będzie konieczna tam, gdzie samo narzędzie nie potrafi ocenić jakości doświadczenia użytkownika.
 
 *Założenia projektowe (Study design):*
 1. *Narzędzie główne:* Posłużymy się oficjalną matrycą do badania dostępności cyfrowej. Aby zachować realistyczne ramy czasowe projektu, ocenie poddamy jedynie zagadnienia z poziomu podstawowego (basic) i średniego (intermediate), rezygnując z dogłębnej analizy zaawansowanych skryptów.
@@ -103,6 +120,43 @@ W ramach analizy dostępności (accessibility), wyodrębniono trzy główne grup
    - Przeglądarka internetowa testowana wyłącznie bez użycia urządzenia wskazującego.
 3. *Sposób realizacji (Triangulacja):* Każda z czterech osób w zespole niezależnie przeprowadzi inspekcję czterech podstron, zaznaczając na swoim arkuszu zgodność z każdym punktem listy (Spełnia / Nie spełnia / Nie dotyczy).
 4. *Podsumowanie wyników:* Na koniec zespół zestawi swoje indywidualne arkusze. W przypadku rozbieżnych ocen, dany element interfejsu zostanie sprawdzony ponownie i wspólnie przedyskutowany, aby wypracować ostateczną i najbardziej rzetelną ocenę błędu.
+
+*Scenariusz audytu dostępności:* Audyt zostanie przeprowadzony na tej samej podstawowej ścieżce zakupowej, która była analizowana w Task 1. Dzięki temu wyniki badania dostępności będzie można bezpośrednio odnieść do wcześniejszych obserwacji użyteczności.
+
+1. *Strona główna i wyszukiwanie:*
+   - otwarcie strony głównej Allegro,
+   - przejście do pola wyszukiwania wyłącznie klawiaturą,
+   - wpisanie frazy "mysz komputerowa",
+   - uruchomienie wyszukiwania,
+   - sprawdzenie widoczności fokusu, etykiety pola wyszukiwania, działania przycisku wyszukiwania oraz poprawności odczytu elementów przez NVDA.
+2. *Lista wyników i filtry:*
+   - przejście po elementach listy wyników za pomocą klawiatury,
+   - ustawienie filtrów: producent Logitech, stan nowy, typ myszy bezprzewodowa, kolor szary, cena od 40 zł do 90 zł,
+   - ustawienie dodatkowych filtrów: Allegro Smart, dostawa do paczkomatu InPost, Super Sprzedawca,
+   - sortowanie wyników według ceny z dostawą od najniższej,
+   - sprawdzenie kolejności fokusu, dostępności kontrolek filtrów, kontrastu tekstów, zrozumiałości etykiet i działania z czytnikiem ekranu.
+3. *Strona oferty:*
+   - otwarcie pierwszej oferty spełniającej kryteria,
+   - odnalezienie nazwy produktu, ceny, kosztu dostawy, terminu dostawy, oceny sprzedawcy i informacji o zwrotach,
+   - sprawdzenie struktury nagłówków, opisów grafik, czytelności informacji, kontrastu oraz tego, czy kluczowe informacje są dostępne dla NVDA.
+4. *Koszyk i formularze dostawy/płatności:*
+   - dodanie produktu do koszyka,
+   - przejście do koszyka,
+   - wybór dostawy do paczkomatu InPost,
+   - wybór metody płatności BLIK,
+   - zatrzymanie się przed finalnym potwierdzeniem zamówienia,
+   - sprawdzenie etykiet pól formularzy, komunikatów, obsługi klawiaturą, kolejności fokusu oraz możliwości opuszczenia popupów i modalnych okien.
+5. *Test powiększenia i czytelności:*
+   - powtórzenie kluczowych ekranów przy powiększeniu widoku do 200%,
+   - sprawdzenie, czy teksty, przyciski, filtry, koszyk i formularze nie nachodzą na siebie,
+   - ocena, czy użytkownik może nadal wykonać główną ścieżkę zakupową bez utraty informacji lub funkcjonalności.
+
+*Skala oceny problemów:* Każdy wykryty problem zostanie przypisany do jednej z trzech kategorii krytyczności:
+- *Krytyczny:* problem uniemożliwia wykonanie kluczowego kroku, np. brak możliwości dodania produktu do koszyka za pomocą klawiatury.
+- *Istotny:* problem znacząco utrudnia wykonanie zadania, ale istnieje obejście, np. niejasna kolejność fokusu albo słabo opisany przycisk.
+- *Drobny:* problem obniża komfort korzystania, ale nie blokuje zadania, np. pojedynczy tekst o zbyt niskim kontraście poza główną ścieżką.
+
+Wyniki zostaną zestawione w tabeli zawierającej: kryterium WCAG, badany widok, wynik oceny, opis problemu, dotkniętą grupę użytkowników, krytyczność oraz rekomendację poprawy.
 
 *Harmonogram prac badawczych (Study Schedule):*
 - *Etap 1 (Przygotowawczy):* Wybór i adaptacja adekwatnej listy weryfikacyjnej WCAG 2.1. Konfiguracja sprzętu oraz instalacja niezbędnych wtyczek i technologii asystujących.
