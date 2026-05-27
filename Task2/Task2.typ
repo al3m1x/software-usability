@@ -163,53 +163,101 @@ Wyniki zostaną zestawione w tabeli zawierającej: kryterium WCAG, badany widok,
 
 == Study Execution
 
-W badaniu wzięła udział nasza czteroosobowa grupa badawcza (Adrian, Juliusz, Maciej, Sebastian). Każdy z członków zespołu niezależnie przeanalizował wyznaczoną ścieżkę zakupową na platformie Allegro, posiłkując się listą kontrolną WCAG 2.1. Skupiliśmy się na pytaniach z poziomu podstawowego i średniego, co wygenerowało obszerną listę punktów do weryfikacji per osoba. Oceny wprowadzano do współdzielonej tabeli, przypisując każdemu kryterium wartość: "Pozytywna", "Negatywna" lub "Nie dotyczy".
+W badaniu wzięła udział nasza czteroosobowa grupa badawcza (Adrian, Juliusz, Maciej, Sebastian). Każdy z członków zespołu niezależnie przeanalizował wyznaczoną ścieżkę zakupową na platformie Allegro, posiłkując się przygotowaną listą 16 kluczowych pytań kontrolnych z poziomów podstawowego i średnio-zaawansowanego standardu WCAG 2.1. Oceny wprowadzano indywidualnie do tabeli, przypisując każdemu kryterium wartość: "pozytywna" (zgodna), "negatywna" (niezgodna) lub "nie dotyczy".
 
-Po zakończeniu fazy audytów indywidualnych, przeprowadziliśmy zestawienie wyników. Odpowiedź uznawano za bezsporną (zgodną), gdy wszyscy badacze wskazali dokładnie tę samą ocenę. W przypadku różnic ("pytania konfliktowe"), wspólnie dyskutowaliśmy nad danym krokiem, odtwarzając nawigację na żywo, aby zlokalizować źródło rozbieżności. Taka metoda umożliwiła zniwelowanie błędów poznawczych jednostki.
+Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uzyskanych danych. Odpowiedź uznawano za bezsporną, gdy wszyscy badacze wskazali identyczną ocenę. W przypadku wystąpienia różnic (tzw. pytania konfliktowe), zespół przeprowadzał ponowną weryfikację na żywo. Wspólne przejście spornych kroków pozwoliło wyeliminować błędy wynikające z chwilowego przeoczenia lub różnego sposobu interpretacji zachowania technologii asystujących.
 
 *Napotkane problemy podczas weryfikacji:*
-- *Dynamiczne moduły reklamowe i polecenia:* Różnice w wyświetlanych reklamach, banerach cookies oraz oknach zachęcających do zakupu pakietu Smart sprawiły, że badacze nie zawsze oceniali identyczny stan aplikacji. U niektórych modalne okna gwałtownie przejmowały fokus klawiatury, podczas gdy u innych nie pojawiły się wcale.
-- *Znajomość czytnika ekranu (NVDA):* Różny stopień doświadczenia w obsłudze skrótów klawiszowych NVDA wpłynął na ocenę formularzy. Część badaczy uznawała niektóre pola filtrów za niesemantyczne, podczas gdy inni płynnie nawigowali między nimi za pomocą zaawansowanych komend czytnika.
-- *Rozbudowany i gęsty DOM:* Ogromna liczba elementów HTML na stronach wynikowych powodowała pewne trudności w dokładnym namierzaniu błędów podczas korzystania z narzędzi inspekcyjnych przeglądarki, co przedłużało czas trwania testu.
+- *Dynamiczne moduły reklamowe:* Różnice w wyświetlanych banerach marketingowych oraz oknach zachęcających do zakupu usług premium sprawiły, że audytorzy nie zawsze trafiali na identyczny układ strony. Część popupów blokowała fokus u jednego badacza, podczas gdy u innego w ogóle się nie wywołała.
+- *Stopień biegłości w obsłudze NVDA:* Różne doświadczenie badaczy w płynnym posługiwaniu się skrótami klawiszowymi czytnika ekranu wpłynęło bezpośrednio na odmienne oceny semantyki skomplikowanych kontrolek filtrów bocznych.
+- *Gęstość struktury DOM:* Bardzo duża liczba zagnieżdżonych elementów HTML na liście wyszukiwania utrudniała manualne lokalizowanie konkretnych błędów w narzędziach deweloperskich.
 
 == Study Results
 
-Zbiorcza analiza wykazała, że interfejs Allegro na urządzeniach desktopowych jest utrzymany w relatywnie wysokim standardzie dostępności. Spośród analizowanych kryteriów, znaczna większość została oceniona jednomyślnie pozytywnie przez wszystkich członków zespołu badawczego. 
+Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (8 z 16) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. Zespół zidentyfikował jednak 6 zagadnień konfliktowych (gdzie oceny końcowe różniły się między badaczami) oraz 2 kryteria, które zostały ocenione w większości lub w pełni negatywnie.
 
-*Pytania kluczowe:*
-- *Czy wszystkie elementy aktywne w serwisie są dostępne za pomocą klawiatury? (WCAG 2.1.1)* \
-  *Wynik:* Pozytywny – nie zidentyfikowano problemów, nawigacja przebiegała płynnie przy użyciu klawisza Tab po głównych kafelkach ofert.
-- *Czy jest na stronie pułapka klawiaturowa? (WCAG 2.1.2)* \
-  *Wynik:* Konfliktowy – dwóch badaczy utknęło wewnątrz interaktywnej galerii zdjęć w szczegółach produktu (nie działało wyjście przez "Esc" ani "Shift+Tab" w określonym scenariuszu powiększenia), natomiast pozostali nie natrafili na ten błąd.
-- *Czy są elementy, które szybko błyskają na czerwono lub gwałtownie zmieniają jasność? (WCAG 2.3.1)* \
-  *Wynik:* Pozytywny – brak elementów wywołujących ataki padaczki fotogennej.
-- *Czy jest automatycznie uruchamiany dźwięk, którego nie da się zatrzymać? (WCAG 1.4.2)* \
-  *Wynik:* Pozytywny – brak takich dźwięków.
+*Skróty stosowane w poniższej tabeli zbiorczej:*
+- *P (pozytywna)* – oznacza pełną zgodność z wytycznymi WCAG 2.1,
+- *N (negatywna)* – oznacza wykrycie niezgodności i barier dostępności,
+- *ND (nie dotyczy)* – oznacza brak sprawdzanego elementu na testowanych widokach.
 
+#v(0.8em)
+
+#table(
+  columns: (20%, 40%, 12%, 7%, 7%, 7%, 7%),
+  align: (left, left, center, center, center, center, center),
+  fill: (col, row) => if row == 0 { luma(230) } else { none },
+  
+  [*Kryterium WCAG*], [*Pytanie kontrolne*], [*Poziom*], [*A*], [*J*], [*M*], [*S*],
+  
+  [1.1.1 Treść nietekst.], [Czy złożony element graficzny ma poszerzony opis?], [podstawowy], [N], [N], [ND], [P],
+  [], [Czy element \<img> ma prawidłowy atrybut \<alt>?], [średni], [P], [P], [P], [P],
+  [], [Czy dekoracyjny element \<img> ma pusty \<alt>?], [średni], [ND], [N], [N], [N],
+  [1.3.1 Info i relacje], [Czy nagłówki są zdefiniowane w logicznej kolejności?], [średni], [N], [P], [N], [N],
+  [], [Czy elementy HTML do akcji są poprawnie użyte?], [średni], [P], [P], [P], [P],
+  [1.4.2 Kontrola dźwięku], [Czy jest automatycznie uruchamiany dźwięk? *[K]*], [podstawowy], [P], [P], [P], [P],
+  [1.4.3 Kontrast (min.)], [Czy kontrast tekstu do tła wynosi min. 4,5:1?], [średni], [P], [P], [P], [P],
+  [1.4.4 Zmiana rozm.], [Czy po powiększeniu do 200% widać komplet danych?], [podstawowy], [P], [N], [P], [P],
+  [2.1.1 Klawiatura], [Czy elementy aktywne są dostępne klawiaturą? *[K]*], [podstawowy], [P], [P], [P], [P],
+  [2.2.1 Dostosowanie czasu], [Czy na stronie występuje pułapka klawiaturowa? *[K]*], [podstawowy], [P], [N], [N], [P],
+  [2.4.3 Kolejność fokusu], [Czy nawigacja klawiaturą jest w pełni logiczna?], [podstawowy], [P], [P], [P], [P],
+  [2.4.4 Cel łącza], [Czy jest ostrzeżenie przed otwarciem nowego okna?], [podstawowy], [N], [N], [N], [N],
+  [2.4.7 Widoczny fokus], [Czy widać, który element jest aktualnie aktywny?], [podstawowy], [P], [P], [P], [P],
+  [3.2.3 Spójna nawigacja], [Czy wygląd i działanie menu jest stałe?], [podstawowy], [N], [P], [N], [N],
+  [3.3.1 Identyfikacja błędu], [Czy błąd w formularzu jest jasno opisany?], [podstawowy], [N], [P], [P], [P],
+  [3.3.2 Etykiety / instrukcje], [Czy obok pól formularza znajdują się jasne etykiety?], [podstawowy], [P], [P], [P], [P]
+)
+#text(size: 9pt)[[K] – Pytanie kluczowe z punktu widzenia powodzenia całej operacji.]
 
 #v(1em)
 #align(center)[
   #image("chart_answers.png", width: 80%)
 ]
 
-*Pytania konfliktowe i istotne rozbieżności:*
-Wykryliśmy kilkanaście zagadnień konfliktowych (rozbieżnych w ocenach). Wynikały one z interpretacji szczegółowości list kontrolnych.
-- *WCAG 1.1.1 (Treść nietekstowa):* Oceny: 1x Pozytywna, 2x Negatywna, 1x Nie dotyczy. Niektórzy uznali `alt` atrybuty logotypów dostawców za wystarczające, inni punktowali złą jakość opisów zdjęć wrzucanych bezpośrednio przez sprzedawców w sekcji opisu aukcji.
-- *WCAG 1.3.1 (Informacje i relacje):* Oceny: 2x Pozytywna, 2x Negatywna. Dotyczyło to skomplikowanego zagnieżdżenia nagłówków. Czasami na liście ofert h3 następowało bezpośrednio po h1, co jest technicznie błędem logicznym odczytu.
-- *WCAG 2.4.4 (Cel łącza):* Zauważono brak konsekwentnych powiadomień dla czytników ekranu przy otwieraniu ofert w nowej karcie przeglądarki.
-
 #v(1em)
 #align(center)[
   #image("chart_consistency.png", width: 80%)
 ]
 
-Szczegółowa tabela, zawierająca listę konkretnych, znalezionych usterek, adresów URL (lub wskazania podstrony), wraz z wagą błędu znajduje się w odrębnym załączniku (Wyniki badania – analiza).
+#v(1.5em)
 
-*Odpowiedzi na pytania badawcze (Q1-Q4):*
-- *Q1 (Nawigacja klawiaturą):* W większości użyteczna, jednak natrafiono na punktowe problemy (pułapki klawiaturowe w galeriach zdjęć).
-- *Q2 (Czytniki ekranu):* Architektura informacji jest na ogół logicznie nakreślona, ale dynamiczne zmiany zawartości (np. filtry) wymagają lepszej obsługi regionów `aria-live`. Dodatkowo, opisy aukcji stworzone przez sprzedawców często posiadają złą strukturę nagłówków i brak opisów alternatywnych.
-- *Q3 (Dostępność wizualna):* Kontrasty są poprawne (spełniają min. 4.5:1), a interfejs przy powiększeniu do 200% zachowuje zadowalającą czytelność bez zagrażającego nachodzenia na siebie krytycznych elementów.
-- *Q4 (Ogólny poziom dostępności):* Platforma wykazuje wysoki poziom ogólnej zgodności. Główne procesy zakupowe są w pełni dostępne, a wykryte luki mają charakter incydentalny i dotyczą głównie treści oddanych we władanie zewnętrznych sprzedawców oraz skomplikowanych komponentów asynchronicznych.
+*Zestawienie Pytania Kluczowe - Podsumowanie:*
+- *Czy wszystkie elementy aktywne w serwisie są dostępne za pomocą klawiatury?* \
+  -> _pozytywna, zgodna_ – oznaczono na podstawie braku jakichkolwiek problemów przy nawigacji procesem zakupowym.
+- *Czy jest na stronie pułapka klawiaturowa?* \
+  -> _niezgodne, 50/50_ – napotkano sporadyczne utknięcia w pop-upach i zdjęciach zależne od stanu sesji badacza.
+- *Czy są elementy, które szybko błyskają na czerwono lub gwałtownie zmieniają jasność?* \
+  -> _pozytywna, zgodna_ – brak tego typu zaburzających elementów na platformie.
+- *Czy jest automatycznie uruchamiany dźwięk, którego nie da się zatrzymać?* \
+  -> _pozytywna, zgodna_ – testy były wolne od obciążeń dźwiękowych narzuconych z góry.
+
+#v(1.5em)
+
+W celu jednoznacznego zlokalizowania problemów, poniżej zestawiono konkretne, zidentyfikowane usterki wraz z przypisaną im wagą (krytycznością) oraz rekomendacją naprawczą:
+
+#v(0.5em)
+*Legenda wagi błędu:*
+- *nieistotne* - element jest mało ważny, ma niewielki wpływ na dostępność strony,
+- *istotne* - element jest bardzo ważny, ma znaczący wpływ na dostępność i realizację procesu zakupowego.
+
+#v(0.8em)
+
+#table(
+  columns: (6%, 24%, 52%, 18%),
+  align: (center, left, left, center),
+  fill: (col, row) => if row == 0 { luma(230) } else { none },
+  
+  [*LP*], [*Miejsce / Podstrona*], [*Opis błędu oraz rekomendacja naprawcza*], [*Waga błędu*],
+  
+  [1.], [Strona główna (karuzele)], [Brak tekstów alternatywnych w grafikach promocyjnych. \ *Rekomendacja:* Dodać atrybuty `alt` opisujące treść promocji.], [istotne],
+  [2.], [Wyniki wyszukiwania], [Dynamiczne przeładowanie filtrów (AJAX) nie jest anonsowane głosowo. \ *Rekomendacja:* Wdrożyć regiony `aria-live="polite"`.], [istotne],
+  [3.], [Szczegóły oferty], [Zaburzona struktura nagłówków w sekcji opisu u sprzedawców. \ *Rekomendacja:* Wprowadzić systemowy szablon wymuszający hierarchię.], [nieistotne],
+  [4.], [Galeria zdjęć oferty], [Uwięzienie fokusu w trybie pełnoekranowym (brak obsługi klawisza Esc). \ *Rekomendacja:* Dodać listener obsługujący wyjście klawiszem Esc.], [istotne],
+  [5.], [Koszyk i dostawa], [Komunikaty błędów walidacji wyskakują z boku bez przeniesienia fokusu. \ *Rekomendacja:* Automatycznie kierować fokus na pole z błędem.], [istotne],
+  [6.], [Stopka strony], [Otwieranie linków zewnętrznych w nowej karcie bez powiadomienia ARIA. \ *Rekomendacja:* Dodać ukryty tekst `aria-label="nowe okno"`.], [istotne],
+  [7.], [Wyniki wyszukiwania], [Przy powiększeniu widoku (200%) ikonki dostawy nakładają się na tekst. \ *Rekomendacja:* Poprawić elastyczność kontenerów w CSS.], [nieistotne],
+  [8.], [Strona płatności], [Przycisk sfinalizowania zamówienia generuje powtórzenia w czytniku. \ *Rekomendacja:* Oczyścić etykietę przycisku z nadmiarowych znaczników.], [nieistotne]
+)
 
 // ── 4. Conclusions ────────────────────────────────────────────────────────
 = Conclusions and Implications of the Study
