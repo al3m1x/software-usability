@@ -1,4 +1,4 @@
-#set document(title: "Software Usability Project – Task 2")
+#set document(title: "Software Usability Project - Task 2")
 #set page(
   paper: "a4",
   margin: (x: 2.5cm, y: 2.5cm),
@@ -21,7 +21,7 @@
 
 // ── Title ──────────────────────────────────────────────────────────────────
 #align(center)[
-  #text(size: 16pt, weight: "bold")[Software Usability Project – Task 2]
+  #text(size: 16pt, weight: "bold")[Software Usability Project - Task 2]
   #v(0.4em)
   #text(size: 12pt, style: "italic")[
     Task 2: Evaluate accessibility (for various deficits) of a chosen piece of software.
@@ -42,7 +42,7 @@
 
 #text(style: "italic")[Software:]
 
-- *Nazwa platformy:* Allegro – popularny serwis e-commerce typu marketplace. Analizie poddano wyłącznie wersję desktopową uruchamianą w przeglądarce internetowej.
+- *Nazwa platformy:* Allegro - popularny serwis e-commerce typu marketplace. Analizie poddano wyłącznie wersję desktopową uruchamianą w przeglądarce internetowej.
 - *Główny cel:* Stworzenie przestrzeni, w której użytkownicy mogą sprawnie wyszukiwać, zestawiać i kupować towary od wielu różnych dostawców. W kontekście naszego badania, nadrzędnym celem jest weryfikacja, czy proces ten jest wolny od barier dla osób z ograniczeniami motorycznymi, poznawczymi oraz wzrokowymi.
 - *Grupy odbiorców* (klient ≠ użytkownik): Klientami biznesowymi platformy są sprzedawcy ponoszący koszty prowizji oraz konsumenci wykupujący pakiety premium (np. Smart). Użytkownikami są wszyscy odwiedzający portal w celu dokonania zakupów. Nasze badanie koncentruje się na użytkownikach ze specyficznymi potrzebami: osobach z dysleksją, osobach słabowidzących, niewidomych oraz z niepełnosprawnością ruchową.
 - *Środowisko i kontekst użycia:* Testy dotyczą obsługi platformy na komputerze osobistym (w przeglądarce Google Chrome). Scenariusz zakłada wykorzystanie technologii wspierających, takich jak programy czytające ekran (np. NVDA), lupy systemowe czy nawigacja oparta wyłącznie na klawiaturze. Z serwisu korzysta się zazwyczaj w warunkach domowych podczas planowania zakupów.
@@ -177,9 +177,9 @@ Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uz
 Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (8 z 16) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. Zespół zidentyfikował jednak 6 zagadnień konfliktowych (gdzie oceny końcowe różniły się między badaczami) oraz 2 kryteria, które zostały ocenione w większości lub w pełni negatywnie.
 
 *Skróty stosowane w poniższej tabeli zbiorczej:*
-- *P (pozytywna)* – oznacza pełną zgodność z wytycznymi WCAG 2.1,
-- *N (negatywna)* – oznacza wykrycie niezgodności i barier dostępności,
-- *ND (nie dotyczy)* – oznacza brak sprawdzanego elementu na testowanych widokach.
+- *P (pozytywna)* - oznacza pełną zgodność z wytycznymi WCAG 2.1,
+- *N (negatywna)* - oznacza wykrycie niezgodności i barier dostępności,
+- *ND (nie dotyczy)* - oznacza brak sprawdzanego elementu na testowanych widokach.
 
 #v(0.8em)
 
@@ -207,7 +207,7 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
   [3.3.1 Identyfikacja błędu], [Czy błąd w formularzu jest jasno opisany?], [podstawowy], [N], [P], [P], [P],
   [3.3.2 Etykiety / instrukcje], [Czy obok pól formularza znajdują się jasne etykiety?], [podstawowy], [P], [P], [P], [P]
 )
-#text(size: 9pt)[[K] – Pytanie kluczowe z punktu widzenia powodzenia całej operacji.]
+#text(size: 9pt)[[K] - Pytanie kluczowe z punktu widzenia powodzenia całej operacji.]
 
 #v(1em)
 #align(center)[
@@ -223,13 +223,13 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
 
 *Zestawienie Pytania Kluczowe - Podsumowanie:*
 - *Czy wszystkie elementy aktywne w serwisie są dostępne za pomocą klawiatury?* \
-  -> _pozytywna, zgodna_ – oznaczono na podstawie braku jakichkolwiek problemów przy nawigacji procesem zakupowym.
+  -> _pozytywna, zgodna_ - oznaczono na podstawie braku jakichkolwiek problemów przy nawigacji procesem zakupowym.
 - *Czy jest na stronie pułapka klawiaturowa?* \
-  -> _niezgodne, 50/50_ – napotkano sporadyczne utknięcia w pop-upach i zdjęciach zależne od stanu sesji badacza.
+  -> _niezgodne, 50/50_ - napotkano sporadyczne utknięcia w pop-upach i zdjęciach zależne od stanu sesji badacza.
 - *Czy są elementy, które szybko błyskają na czerwono lub gwałtownie zmieniają jasność?* \
-  -> _pozytywna, zgodna_ – brak tego typu zaburzających elementów na platformie.
+  -> _pozytywna, zgodna_ - brak tego typu zaburzających elementów na platformie.
 - *Czy jest automatycznie uruchamiany dźwięk, którego nie da się zatrzymać?* \
-  -> _pozytywna, zgodna_ – testy były wolne od obciążeń dźwiękowych narzuconych z góry.
+  -> _pozytywna, zgodna_ - testy były wolne od obciążeń dźwiękowych narzuconych z góry.
 
 #v(1.5em)
 
