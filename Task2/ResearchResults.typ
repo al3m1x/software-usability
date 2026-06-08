@@ -88,6 +88,18 @@
 )
 
 #v(2em)
+*Zliczone metryki dla pytań badawczych (Q1-Q4) i sposób ich zbierania*
+
+*Sposób zbierania metryk:*
+Metryki ilościowe pozyskano na podstawie ewaluacji eksperckiej (z użyciem matrycy zgodności WCAG 2.1) oraz testów manualnych w przeglądarce wspieranych oprogramowaniem asystującym (NVDA, powiększenie x200, rezygnacja z myszy). Czterech ewaluatorów niezależnie zaznaczało błędy w arkuszach, które po dyskusji grupolwej skonsolidowano w jedną unikalną listę błędów (widoczną powyżej). Zliczone "liczby zidentyfikowanych problemów" bezpośrednio odwołują się do wylistowanych w tabeli unikalnych wariantów i miejsc ich wystąpienia na analizowanej ścieżce zakupowej. Statystyki procentowe (odsetek zgód/punktów spornych) wyciągnięto z całkowitej puli odpowiedzi w zagregowanej matrycy wyników.
+
+*Wyniki metryk dla pytań badawczych:*
+- *Q1 (Klawiatura):* Liczba zidentyfikowanych pułapek klawiaturowych: *1* (usterka nr 4 w trybie pełnoekranowym). Odsetek kluczowych funkcji bez wsparcia klawisza Tab: *0%* (wszystkie akcje w formularzach spełniają wymóg, 4/4 oceny P). Występowanie ramki fokusu: *100%* na badanej ścieżce na aktywnych kontrolkach.
+- *Q2 (Czytniki ekranu i AI):* Liczba błędnych/brakujących opisów grafik: *2* zjawiska (usterka nr 1 na stronie głównej oraz usterka nr 9 ukrywająca tekst w zdjęciach). Liczba problemów powiązań formularzy z etykietami: wizualnie *0*, jednak wykryto *1* pokrewny problem struktury autouzupełniania (usterka nr 10). Błędy w logice układu nagłówków (H1, H2): *1* problem systemowy (usterka nr 3 w niestandardowych opisach ofert).
+- *Q3 (Dysleksja i niedowidzenie):* Liczba tekstów o zbyt niskim kontraście (\<4.5:1): *0* (pełna spójność). Liczba błędów skalowania 200%: *1* przypadek (usterka nr 7 nakładająca na siebie teksty i ikony). Liczba niejasnych komunikatów po walidacji: *1* przypadek złego sterowania fokusem podczas błędu (usterka nr 5, która utrudnia czytelne dostarczenie informacji zwrotnej).
+- *Q4 (Poziom globalny):* Łączna suma pozytywnych ocen cząstkowych z wytycznymi WCAG: *84* (tj. *70,0%*). Łączna suma ocen negatywnych: *30* (tj. *25,0%*). Podział wad wg wpływu: łącznie *10* unikalnych usterek, z czego *6 istotnych* (tworzących bariery) i *4 nieistotne* (obniżające ergonomię). Liczba spornych pytań podczas analizy (rozbieżne oceny badaczy): *12* (co stanowi *40,0%* ocenianych kryteriów i wskazuje na trudność w automatyzacji audytu).
+
+#v(2em)
 *Zestawienie Pytania Kluczowe - Podsumowanie:*
 - *Czy wszystkie elementy aktywne w serwisie są dostępne za pomocą klawiatury?* \
   -> _pozytywna, zgodna_ – oznaczono na podstawie braku jakichkolwiek problemów przy nawigacji procesem zakupowym.

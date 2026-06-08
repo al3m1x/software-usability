@@ -254,16 +254,18 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
 
 Poniżej przypisano wyniki wcześniej zebranych metryk do pytań badawczych zdefiniowanych w części "Questions and Metrics". Dzięki temu liczby z tabeli nie są wyłącznie ogólnym podsumowaniem audytu, ale bezpośrednio odpowiadają na każde pytanie Q.
 
+*Sposób zbierania metryk:*
+Metryki ilościowe (np. liczba zidentyfikowanych pułapek, błędów w nagłówkach) pozyskano na podstawie ewaluacji eksperckiej (z wykorzystaniem listy kontrolnej WCAG 2.1), wspartej testami manualnymi za pomocą technologii asystujących (czytnik NVDA, nawigacja wyłącznie klawiaturą, powiększenie interfejsu do 200%). Czterech audytorów niezależnie zgłaszało błędy. Po audycie wyniki zostały skonsolidowane. Zliczone wartości usterek oznaczają liczbę unikalnych zjawisk (opisanych w tabeli wyżej), które negatywnie rzutowały na dane kryterium podczas przejścia testowej ścieżki zakupowej. Odsetki zgodności (np. 70%) wyliczono na podstawie sumy pozytywnych ocen cząstkowych ze wszystkich arkuszy w stosunku do wszystkich oddanych ocen aplikowalnych.
+
 === Q1: Czy interfejs jest w pełni użyteczny dla osób nawigujących wyłącznie klawiaturą?
 
 *Odpowiedź:* Nie w pełni. Główna ścieżka zakupowa była możliwa do przejścia klawiaturą, ale audyt wykazał sporadyczne bariery w elementach modalnych i galerii zdjęć.
 
 *Wyniki metryk:*
-- Dostępność elementów aktywnych klawiaturą: *4/4 oceny P* dla kryterium 2.1.1.
-- Logiczna kolejność fokusu: *4/4 oceny P* dla kryterium 2.4.3.
-- Widoczność fokusu: *4/4 oceny P* dla kryterium 2.4.7.
-- Pułapki klawiaturowe: *2/4 oceny N* dla kryterium 2.1.2; wykryto konkretny problem z uwięzieniem fokusu w galerii zdjęć lub popupach.
-- Mechanizm pomijania powtarzalnych bloków: *3/4 oceny P* dla kryterium 2.4.1.
+- Liczba zidentyfikowanych pułapek klawiaturowych: *1* (usterka nr 4: uwięzienie fokusu w trybie pełnoekranowym galerii zdjęć u sprzedawców).
+- Odsetek kluczowych funkcji niemożliwych do aktywacji klawiszem Tab: *0%* (wszystkie główne funkcje są dostępne, kryterium 2.1.1 osiągnęło 4/4 oceny P).
+- Występowanie i widoczność ramki fokusu na aktywnych przyciskach: *100%* pokrycia na badanej ścieżce (kryterium 2.4.7 osiągnęło 4/4 oceny P).
+- Logiczna kolejność fokusu (4/4 oceny P) oraz mechanizm pomijania bloków (3/4 oceny P) również zostały w pełni pozytywnie zweryfikowane.
 
 *Wniosek:* Allegro spełnia podstawowy warunek obsługi bez myszy w głównym procesie zakupowym, ale nie można uznać interfejsu za w pełni dostępny dla użytkowników klawiatury. Najważniejsza poprawka dotyczy stabilnego opuszczania popupów i galerii klawiszem Esc oraz zachowania fokusu po zamknięciu modalnego elementu.
 
@@ -272,14 +274,10 @@ Poniżej przypisano wyniki wcześniej zebranych metryk do pytań badawczych zdef
 *Odpowiedź:* Częściowo. Podstawowa struktura wielu elementów jest odczytywana poprawnie, ale problemy pojawiają się przy grafikach promocyjnych, opisach sprzedawców, dynamicznych filtrach i elementach otwierających nową kartę.
 
 *Wyniki metryk:*
-- Standardowe atrybuty `alt` przy elementach `img`: *4/4 oceny P* w badanym zakresie.
-- Złożone grafiki informacyjne: *2 oceny N, 1 P, 1 ND*; część grafik promocyjnych nie miała wystarczającego opisu.
-- Dekoracyjne grafiki: *3 oceny N, 1 ND*; audytorzy wskazali ryzyko odczytywania elementów, które nie powinny wnosić treści.
-- Logiczna struktura nagłówków: *3/4 oceny N* dla kryterium 1.3.1; problem dotyczył głównie opisów tworzonych przez sprzedawców.
-- Kolejność odczytu przez czytnik ekranu: *4/4 oceny P* dla kryterium 1.3.2.
-- Etykiety i instrukcje formularzy: *4/4 oceny P* dla kryterium 3.3.2, ale atrybuty `autocomplete` uzyskały *3/4 oceny P*.
-- Nazwa, rola i wartość dynamicznych komponentów: *3/4 oceny N* dla kryterium 4.1.2; problem wiązał się między innymi z dynamicznymi filtrami bez czytelnego komunikatu dla czytnika.
-- Ostrzeganie o linkach otwieranych w nowej karcie: *4/4 oceny N* dla kryterium 2.4.4.
+- Liczba grafik informacyjnych pozbawionych opisów alternatywnych / nieprawidłowo osadzonych: *2* (usterka nr 1: miniatury kampanii promocyjnych bez odpowiedniego opisu; usterka nr 9: tabele rozmiarów wstawiane jako grafiki z tekstem u sprzedawców).
+- Braki powiązań między etykietami a polami formularzy: *0* w warstwie wizualnej (etykiety działają poprawnie, 4/4 oceny P), lecz wykryto *1* pokrewny problem braku atrybutów autocomplete (usterka nr 10).
+- Błędy w logicznym układzie nagłówków (H1, H2, itd.): *1* powtarzalny problem systemowy (usterka nr 3: zaburzona struktura nagłówków w sekcji opisu nadpisywana przez sprzedawców).
+- W warstwie strukturalnej odnotowano dodatkowo usterki wpływające na jakość pracy z NVDA (np. brak powiadomień po filtracji AJAX - usterka nr 2, brak ostrzeżeń dla nowych kart - usterka nr 6).
 
 *Wniosek:* Czytnik ekranu pozwala przejść przez zasadnicze elementy ścieżki, ale architektura informacji nie jest konsekwentnie poprawna. Największy wpływ mają braki w opisach grafik, tekst umieszczony w obrazach, nieuporządkowane nagłówki sprzedawców oraz brak komunikowania zmian dynamicznych, np. po zastosowaniu filtrów.
 
@@ -288,14 +286,10 @@ Poniżej przypisano wyniki wcześniej zebranych metryk do pytań badawczych zdef
 *Odpowiedź:* Raczej tak w warstwie podstawowej czytelności, ale z istotnymi wyjątkami dotyczącymi tekstu w grafikach, powiększenia oraz komunikatów błędów.
 
 *Wyniki metryk:*
-- Minimalny kontrast tekstu 4,5:1: *4/4 oceny P* dla kryterium 1.4.3.
-- Kontrast elementów nietekstowych: *3/4 oceny P* dla kryterium 1.4.11.
-- Przekazywanie informacji nie tylko kolorem: *4/4 oceny P* dla kryterium 1.4.1.
-- Powiększenie widoku do 200%: *3/4 oceny P* dla kryterium 1.4.4; odnotowano nakładanie się drobnych ikon dostawy na tekst na stronie wyników.
-- Reflow bez przewijania poziomego: *4/4 oceny P* dla kryterium 1.4.10.
-- Odstępy w tekście: *4/4 oceny P* dla kryterium 1.4.12.
-- Tekst w postaci obrazów: *4/4 oceny N* dla kryterium 1.4.5; problem dotyczył między innymi opisów i tabel umieszczanych jako grafiki przez sprzedawców.
-- Identyfikacja błędów formularzy: *3/4 oceny P* dla kryterium 3.3.1; wykryto przypadek komunikatów walidacyjnych bez przeniesienia fokusu.
+- Liczba tekstów nieosiągających minimalnego kontrastu (4.5:1): *0* (wymóg bezwzględnie spełniony dla całej ścieżki).
+- Błędy renderowania przy powiększeniu interfejsu do 200%: *1* (usterka nr 7: nakładanie się na siebie ikon i tekstu dostawy na liście wyników).
+- Liczba niejasnych komunikatów w procesie zgłaszania błędów walidacji: *1* (usterka nr 5: prawidłowe opisy są obecne, ale pojawiają się asynchronicznie z boku, bez wyraźnego przeniesienia fokusu dla osób potrzebujących natychmiastowej informacji o błędzie).
+- Dodatkową blokadą jest tekst w postaci obrazów (usterka nr 9), co zmusza osoby słabowidzące do korzystania ze zmniejszonych czcionek, bez wsparcia elastycznego powiększenia.
 
 *Wniosek:* Warstwa wizualna Allegro jest zasadniczo czytelna pod względem kontrastu i skalowania, ale użytkownicy słabowidzący lub z trudnościami poznawczymi mogą napotkać bariery w miejscach mniej kontrolowanych systemowo: opisach sprzedawców, grafikach z tekstem oraz formularzach, w których błąd pojawia się poza aktualnym fokusem.
 
@@ -304,18 +298,12 @@ Poniżej przypisano wyniki wcześniej zebranych metryk do pytań badawczych zdef
 *Odpowiedź:* Zbiorczy poziom dostępności można ocenić jako dobry, ale niepełny. Platforma ma mocne podstawy dostępności w badanej ścieżce, jednak liczba negatywnych ocen i rozbieżności pokazuje, że nie jest to poziom pełnej zgodności WCAG 2.1 AA.
 
 *Wyniki metryk zbiorczych:*
-- Liczba pytań kontrolnych: *30*.
-- Liczba audytorów: *4*.
-- Łączna liczba ocen cząstkowych: *120*.
-- Oceny pozytywne: *84/120*, czyli *70,0% wszystkich ocen*.
-- Oceny negatywne: *30/120*, czyli *25,0% wszystkich ocen*.
-- Oceny "nie dotyczy": *6/120*, czyli *5,0% wszystkich ocen*.
-- Odsetek zgodności po wyłączeniu odpowiedzi ND: *84/114*, czyli około *73,7% ocen aplikowalnych*.
-- Pytania ocenione jednomyślnie pozytywnie: *15/30*.
-- Pytania ocenione spójnie przez wszystkich audytorów: *18/30*, czyli *60,0%*.
-- Pytania z rozbieżnościami między audytorami: *12/30*, czyli *40,0%*.
-- Kryteria z co najmniej trzema ocenami negatywnymi albo pełną niezgodnością: *6/30*.
-- Wykryte konkretne usterki: *10*, w tym *6 istotnych* i *4 nieistotne*. W tabeli usterek nie oznaczono osobnej bariery jako krytycznej dla całej ścieżki.
+- Zsumowana liczba kryteriów z oceną pozytywną (zgodnych z WCAG): *84* oceny cząstkowe (co daje *70,0%* wszystkich oddanych ocen, a po odrzuceniu ND ok. *73,7%* aplikowalnych).
+- Zsumowana liczba kryteriów oblanych (oceny negatywne): *30* ocen cząstkowych (*25,0%*).
+- Zsumowana liczba kryteriów o statusie "nie dotyczy": *6* ocen cząstkowych (*5,0%*).
+- Podział wykrytych usterek ze względu na ich krytyczność: zidentyfikowano łącznie *10* unikalnych usterek. Z tego *6 zakwalifikowano jako istotne* (silnie wpływające na proces), a *4 jako nieistotne* (obniżające komfort, bez bezwzględnej blokady).
+- Liczba punktów spornych między ewaluatorami (rozbieżności w tabeli ocen przed konsolidacją): *12 z 30* weryfikowanych kryteriów (*40,0%*).
+- Jednomyślna, pełna zgodność zespołu osiągnięta przy pozytywnej ocenie dotyczyła *15* kryteriów na 30.
 
 *Wniosek:* Wynik 70,0% ocen pozytywnych pokazuje, że badany proces zakupowy jest w większości dostępny, ale nie wolny od barier. Najbardziej ryzykowne obszary to elementy dynamiczne, grafiki z tekstem, linki otwierające nowe okna, galerie/popupy oraz walidacja formularzy. Są to problemy punktowe, lecz dotyczą kluczowych grup użytkowników: osób korzystających z klawiatury, czytnika ekranu i powiększenia.
 
