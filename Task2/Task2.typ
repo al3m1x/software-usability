@@ -163,7 +163,7 @@ Wyniki zostaną zestawione w tabeli zawierającej: kryterium WCAG, badany widok,
 
 == Study Execution
 
-W badaniu wzięła udział nasza czteroosobowa grupa badawcza (Adrian, Juliusz, Maciej, Sebastian). Każdy z członków zespołu niezależnie przeanalizował wyznaczoną ścieżkę zakupową na platformie Allegro, posiłkując się przygotowaną listą 16 kluczowych pytań kontrolnych z poziomów podstawowego i średnio-zaawansowanego standardu WCAG 2.1. Oceny wprowadzano indywidualnie do tabeli, przypisując każdemu kryterium wartość: "pozytywna" (zgodna), "negatywna" (niezgodna) lub "nie dotyczy".
+W badaniu wzięła udział nasza czteroosobowa grupa badawcza (Adrian, Juliusz, Maciej, Sebastian). Każdy z członków zespołu niezależnie przeanalizował wyznaczoną ścieżkę zakupową na platformie Allegro, posiłkując się przygotowaną listą 30 kluczowych pytań kontrolnych z poziomów podstawowego i średnio-zaawansowanego standardu WCAG 2.1. Oceny wprowadzano indywidualnie do tabeli, przypisując każdemu kryterium wartość: "pozytywna" (zgodna), "negatywna" (niezgodna) lub "nie dotyczy".
 
 Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uzyskanych danych. Odpowiedź uznawano za bezsporną, gdy wszyscy badacze wskazali identyczną ocenę. W przypadku wystąpienia różnic (tzw. pytania konfliktowe), zespół przeprowadzał ponowną weryfikację na żywo. Wspólne przejście spornych kroków pozwoliło wyeliminować błędy wynikające z chwilowego przeoczenia lub różnego sposobu interpretacji zachowania technologii asystujących.
 
@@ -174,7 +174,7 @@ Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uz
 
 == Study Results
 
-Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (8 z 16) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. Zespół zidentyfikował jednak 6 zagadnień konfliktowych (gdzie oceny końcowe różniły się między badaczami) oraz 2 kryteria, które zostały ocenione w większości lub w pełni negatywnie.
+Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (15 z 30) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. Zespół zidentyfikował jednak 11 zagadnień konfliktowych (gdzie oceny końcowe różniły się między badaczami) oraz 3 kryteria, które zostały ocenione w większości lub w pełni negatywnie, a 1 kryterium zostało uznane jednomyślnie za nieaplikowalne w badanych obszarach ("nie dotyczy").
 
 *Skróty stosowane w poniższej tabeli zbiorczej:*
 - *P (pozytywna)* - oznacza pełną zgodność z wytycznymi WCAG 2.1,
@@ -193,19 +193,33 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
   [1.1.1 Treść nietekst.], [Czy złożony element graficzny ma poszerzony opis?], [podstawowy], [N], [N], [ND], [P],
   [], [Czy element \<img> ma prawidłowy atrybut \<alt>?], [średni], [P], [P], [P], [P],
   [], [Czy dekoracyjny element \<img> ma pusty \<alt>?], [średni], [ND], [N], [N], [N],
+  [1.2.2 Napisy rozsz.], [Czy dla treści wideo dostępne są napisy rozszerzone?], [podstawowy], [P], [P], [N], [P],
   [1.3.1 Info i relacje], [Czy nagłówki są zdefiniowane w logicznej kolejności?], [średni], [N], [P], [N], [N],
   [], [Czy elementy HTML do akcji są poprawnie użyte?], [średni], [P], [P], [P], [P],
+  [1.3.2 Zrozum. kolejn.], [Czy kolejność odczytu przez czytnik ekranu jest logiczna?], [podstawowy], [P], [P], [P], [P],
+  [1.3.5 Przeznaczenie], [Czy pola formularzy wspierają atrybuty autocomplete?], [średni], [P], [P], [P], [N],
+  [1.4.1 Użycie koloru], [Czy kolor nie jest jedynym sposobem przekazywania info?], [podstawowy], [P], [P], [P], [P],
   [1.4.2 Kontrola dźwięku], [Czy jest automatycznie uruchamiany dźwięk? *[K]*], [podstawowy], [P], [P], [P], [P],
   [1.4.3 Kontrast (min.)], [Czy kontrast tekstu do tła wynosi min. 4,5:1?], [średni], [P], [P], [P], [P],
   [1.4.4 Zmiana rozm.], [Czy po powiększeniu do 200% widać komplet danych?], [podstawowy], [P], [N], [P], [P],
+  [1.4.5 Obrazy z tekstem], [Czy do przekazywania tekstu używa się rzeczywistego tekstu?], [średni], [N], [N], [N], [N],
+  [1.4.10 Reflow], [Czy treść dopasowuje się do ekranu bez przewijania poziomo?], [średni], [P], [P], [P], [P],
+  [1.4.11 Kontrast nietekst.], [Czy kontrast elementów nietekstowych wynosi min. 3:1?], [średni], [P], [N], [P], [P],
+  [1.4.12 Odstępy w tekście], [Czy zmiana odstępów między literami nie ucina tekstu?], [średni], [P], [P], [P], [P],
   [2.1.1 Klawiatura], [Czy elementy aktywne są dostępne klawiaturą? *[K]*], [podstawowy], [P], [P], [P], [P],
-  [2.2.1 Dostosowanie czasu], [Czy na stronie występuje pułapka klawiaturowa? *[K]*], [podstawowy], [P], [N], [N], [P],
+  [2.1.2 Brak pułapki kl.], [Czy na stronie występuje pułapka klawiaturowa? *[K]*], [podstawowy], [P], [N], [N], [P],
+  [2.2.1 Limit czasu], [Czy użytkownik ma możliwość wydłużenia limitu czasu sesji?], [podstawowy], [ND], [ND], [ND], [ND],
+  [2.4.1 Pominięcie bloków], [Czy istnieje mechanizm pominięcia powtarzających się bloków?], [podstawowy], [P], [P], [P], [N],
+  [2.4.2 Tytuł strony], [Czy każda strona ma unikalny i opisowy tytuł?], [podstawowy], [P], [P], [P], [P],
   [2.4.3 Kolejność fokusu], [Czy nawigacja klawiaturą jest w pełni logiczna?], [podstawowy], [P], [P], [P], [P],
   [2.4.4 Cel łącza], [Czy jest ostrzeżenie przed otwarciem nowego okna?], [podstawowy], [N], [N], [N], [N],
+  [2.4.5 Wiele dróg], [Czy użytkownik ma dostęp do wielu sposobów znalezienia strony?], [średni], [P], [P], [P], [P],
+  [2.4.6 Nagłówki i etyk.], [Czy nagłówki i etykiety jasno opisują temat lub cel?], [średni], [P], [P], [P], [P],
   [2.4.7 Widoczny fokus], [Czy widać, który element jest aktualnie aktywny?], [podstawowy], [P], [P], [P], [P],
   [3.2.3 Spójna nawigacja], [Czy wygląd i działanie menu jest stałe?], [podstawowy], [N], [P], [N], [N],
-  [3.3.1 Identyfikacja błędu], [Czy błąd w formularzu jest jasno opisany?], [podstawowy], [N], [P], [P], [P],
-  [3.3.2 Etykiety / instrukcje], [Czy obok pól formularza znajdują się jasne etykiety?], [podstawowy], [P], [P], [P], [P]
+  [3.3.1 Identyfikacja bł.], [Czy błąd w formularzu jest jasno opisany?], [podstawowy], [N], [P], [P], [P],
+  [3.3.2 Etykiety/instruk.], [Czy obok pól formularza znajdują się jasne etykiety?], [podstawowy], [P], [P], [P], [P],
+  [4.1.2 Nazwa/rola/wart.], [Czy nazwa i rola dynamicznych komponentów jest poprawna?], [podstawowy], [N], [P], [N], [N]
 )
 #text(size: 9pt)[[K] - Pytanie kluczowe z punktu widzenia powodzenia całej operacji.]
 
