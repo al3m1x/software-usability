@@ -71,7 +71,7 @@ W ramach analizy dostępności (accessibility), wyodrębniono trzy główne grup
 
 == Purpose and Scope of the Study
 
-*Cel badania (Purpose):* Naszym zadaniem jest ewaluacja cyfrowej dostępności platformy Allegro pod kątem zdefiniowanych grup użytkowników. Zweryfikujemy, czy główne elementy interfejsu spełniają wytyczne standardu WCAG 2.1 (AA). Pozwoli to zlokalizować potencjalne blokady technologiczne utrudniające samodzielne zakupy osobom z niepełnosprawnościami. Badanie opiera się na podejściu jakościowo-ilościowym: zidentyfikujemy konkretne bariery (jakość) oraz podsumujemy ogólny poziom zgodności w ujęciu liczbowym i statystycznym.
+*Cel badania (Purpose):* Naszym zadaniem jest ewaluacja cyfrowej dostępności platformy Allegro pod kątem zdefiniowanych grup użytkowników. Zweryfikujemy, czy główne elementy interfejsu spełniają wytyczne standardu WCAG 2.1 (AA). Pozwoli to zlokalizować potencjalne blokady technologiczne utrudniające samodzielne zakupy osobom z niepełnosprawnościami. Badanie opiera się na podejściu jakościowo-ilościowym: zidentyfikujemy konkretne bariery (jakość) oraz podsumujemy ogólny poziom zgodności w ujęciu liczbowym.
 
 *Zakres analizy (Scope):* Przetestujemy podstawową ścieżkę użytkownika, skupiając się na czterech głównych widokach:
 1. Ekran główny z modułem wyszukiwarki,
@@ -106,7 +106,7 @@ Lista kontrolna zostanie zbudowana na podstawie wybranych kryteriów WCAG 2.1 AA
 - *3.3.2 Labels or Instructions* - obecność czytelnych etykiet i instrukcji przy polach formularzy.
 - *4.1.2 Name, Role, Value* - poprawna interpretacja przycisków, pól i kontrolek przez technologie asystujące.
 
-Do każdego kryterium przypiszemy ocenę: *Spełnia*, *Częściowo spełnia*, *Nie spełnia* albo *Nie dotyczy*. Dla każdego wykrytego problemu zapiszemy widok, opis bariery, grupę użytkowników, której problem dotyczy, przewidywany wpływ na wykonanie zadania oraz rekomendację naprawczą.
+Do każdego pytania kontrolnego przypiszemy ocenę: *Spełnia*, *Nie spełnia* albo *Nie dotyczy*. Przypadki częściowe zostaną opisane w komentarzach do problemów oraz w rozbieżnościach między ewaluatorami. Dla każdego wykrytego problemu zapiszemy widok, opis bariery, przewidywany wpływ na wykonanie zadania oraz rekomendację naprawczą.
 
 *Uzasadnienie wyboru:* Ewaluacja ekspercka z checklistą WCAG jest odpowiednia dla tego projektu, ponieważ pozwala systematycznie sprawdzić dostępność tej samej ścieżki zakupowej, która była analizowana w Task 1 pod kątem użyteczności. Dzięki temu możemy porównać, czy elementy problematyczne dla użytkowników okazjonalnych są również barierami dla osób z deficytami wzrokowymi, motorycznymi lub poznawczymi. Połączenie metod manualnych i automatycznych zwiększa rzetelność badania. WAVE i Axe DevTools pozwolą szybko wykryć część błędów technicznych, np. problemy z kontrastem, brakujące etykiety lub naruszenia struktury HTML. Test klawiaturą pozwoli ocenić dostępność dla osób z ograniczeniami motorycznymi. NVDA zostanie wykorzystane do sprawdzenia, czy struktura strony, formularze, przyciski i komunikaty są zrozumiałe dla użytkownika korzystającego z czytnika ekranu. Manualna ocena będzie konieczna tam, gdzie samo narzędzie nie potrafi ocenić jakości doświadczenia użytkownika.
 
@@ -240,8 +240,6 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
   -> _pozytywna, zgodna_ - oznaczono na podstawie braku jakichkolwiek problemów przy nawigacji procesem zakupowym.
 - *Czy jest na stronie pułapka klawiaturowa?* \
   -> _niezgodne, 50/50_ - napotkano sporadyczne utknięcia w pop-upach i zdjęciach zależne od stanu sesji badacza.
-- *Czy są elementy, które szybko błyskają na czerwono lub gwałtownie zmieniają jasność?* \
-  -> _pozytywna, zgodna_ - brak tego typu zaburzających elementów na platformie.
 - *Czy jest automatycznie uruchamiany dźwięk, którego nie da się zatrzymać?* \
   -> _pozytywna, zgodna_ - testy były wolne od obciążeń dźwiękowych narzuconych z góry.
 
@@ -276,7 +274,7 @@ W celu jednoznacznego zlokalizowania problemów, poniżej zestawiono konkretne, 
 // ── 4. Conclusions ────────────────────────────────────────────────────────
 = Conclusions and Implications of the Study
 
-Przeprowadzone badanie pozwala stwierdzić, że Allegro jest nowoczesną platformą e-commerce o wysokiej ogólnej dostępności cyfrowej. Główne i najbardziej krytyczne ścieżki (od wyszukania po finalizację koszyka) zostały poprawnie oprogramowane pod kątem nawigacji bez użycia myszy oraz odczytu przez asystentów głosowych.
+Przeprowadzone badanie pozwala stwierdzić, że Allegro jest nowoczesną platformą e-commerce o wysokiej ogólnej dostępności cyfrowej w badanej ścieżce. Główne i najbardziej krytyczne kroki (od wyszukania po finalizację koszyka) były możliwe do przejścia bez użycia myszy oraz z wykorzystaniem technologii wspierających, choć audyt wykazał kilka istotnych barier.
 
 Mimo to, audyt uwidocznił kilka powtarzających się barier, które obniżają komfort osób niepełnosprawnych, a zignorowane mogą miejscami wykluczać użytkowników. 
 
