@@ -51,7 +51,7 @@
 // ── 2. User analysis ──────────────────────────────────────────────────────
 = User Analysis
 
-W ramach analizy dostępności (accessibility), wyodrębniono three główne grupy użytkowników platformy, które zmagają się ze specyficznymi trudnościami:
+W ramach analizy dostępności (accessibility), wyodrębniono trzy główne grupy użytkowników platformy, które zmagają się ze specyficznymi trudnościami:
 
 *1. Użytkownicy z niepełnosprawnością wzroku (Visually Impaired Users)*
 - *Charakterystyka:* Do tej grupy zaliczają się osoby niewidome oraz osoby ze znacznym osłabieniem wzroku (np. z powodu zaćmy czy jaskry). Wymagają one wsparcia w postaci czytników ekranu lub oprogramowania silnie powiększającego interfejs.
@@ -91,7 +91,7 @@ W ramach analizy dostępności (accessibility), wyodrębniono three główne gru
 == Study Plan
 
 *Uzasadnienie metodyki (Ekspercka ewaluacja vs Badanie z użytkownikami):*
-Przystępując do planowania audytu, rozważaliśmy przeprowadzenie testów bezpośrednio z udziałem osób z niepełnosprawnościami. Ostatecznie zdecydowaliśmy się na ekspercką ewaluację opartą na liście kontrolnej z dwóch kluczowych powodów. Po pierwsze, organizacja badań z użytkownikami wiąże się z bardzo dużą trudnością w uzyskaniu dostępu do specyficznych, silnie zróżnicowanych grup docelowych (rekrutacja osób całkowicie niewidomych czy z głębokimi dysfunkcjami motorycznymi w krótkim czasie trwania projektu akademickiego była nierealna). Po drugie, profesjonalna lista kontrolna WCAG 2.1 AA w sposób systematyczny pokrywa najważniejsze, elementarne wymagania techniczne i semantyczne. Pozwala ona precyzyjnie zasymulować i zmapować najpoważniejsze trudności oraz krytyczne blokady, na które te grupy użytkowników bezwzględnie natknęłyby się w pierwszej kolejności podczas próby zakupu.
+Przystępując do planowania audytu, rozważaliśmy przeprowadzenie testów bezpośrednio z udziałem osób z niepełnosprawnościami. Ostatecznie zdecydowaliśmy się na ekspercką ewaluację opartą na liście kontrolnej z dwóch kluczowych powodów. Po pierwsze, organizacja badań z użytkownikami wiąże się z bardzo dużą trudnością w uzyskaniu dostępu do specyficznych, silnie zróżnicowanych grup docelowych (rekrutacja osób całkowicie niewidomych czy z głębokimi dysfunkcjami motorycznymi w krótkim czasie trwania projektu akademickiego była nierealna). Po drugie, profesjonalna lista kontrolna WCAG 2.1 AA w sposób systematyczny pokrywa najważniejsze, elementarne wymagania techniczne i semantyczne. Pozwala ona precyzyjnie zasymulować i zmapować najpoważniejsze trudności oraz krytyczne blokady, na które te grupy użytkowników na pewno natknęłyby się w pierwszej kolejności podczas próby zakupu.
 
 *Metodologia:* Zastosujemy ewaluację ekspercką dostępności opartą na liście kontrolnej WCAG 2.1 na poziomie AA, wspartą testami manualnymi i narzędziami automatycznymi. Badanie nie będzie polegało wyłącznie na automatycznym skanowaniu strony, ponieważ narzędzia takie jak WAVE i Axe DevTools nie wykrywają wszystkich problemów dostępności, np. jakości tekstów alternatywnych, logiczności kolejności fokusu czy zrozumiałości komunikatów.
 
@@ -102,6 +102,7 @@ Lista kontrolna zostanie zbudowana na podstawie wybranych kryteriów WCAG 2.1 AA
 - *1.3.2 Meaningful Sequence* - logiczna kolejność odczytu treści przez technologie asystujące (np. NVDA).
 - *1.3.5 Identify Input Purpose* - wsparcie atrybutów `autocomplete` określających przeznaczenie pól formularzy.
 - *1.4.1 Use of Color* - przekazywanie informacji wizualnych nie opiera się wyłącznie na kolorze.
+- *1.4.2 Audio Control* - możliwość wyciszenia lub zatrzymania automatycznie odtwarzanego dźwięku.
 - *1.4.3 Contrast (Minimum)* - kontrast tekstu i istotnych elementów interfejsu minimum 4.5:1.
 - *1.4.4 Resize Text* - możliwość korzystania ze strony przy powiększeniu tekstu lub interfejsu do 200%.
 - *1.4.5 Images of Text* - unikanie tekstu w postaci grafik na rzecz stylizowanego tekstu HTML/CSS.
@@ -126,24 +127,24 @@ Lista kontrolna zostanie zbudowana na podstawie wybranych kryteriów WCAG 2.1 AA
 Do każdego pytania kontrolnego przypiszemy ocenę: *Spełnia*, *Nie spełnia* albo *Nie dotyczy*. Przypadki częściowe zostaną opisane w komentarzach do problemów oraz w rozbieżnościach między ewaluatorami. Dla każdego wykrytego problemu zapiszemy widok, opis bariery, przewidywany wpływ na wykonanie zadania oraz rekomendację naprawczą.
 
 *Uzasadnienie wyboru i opis narzędzi:* Ewaluacja ekspercka z checklistą WCAG jest odpowiednia dla tego projektu, ponieważ pozwala systematycznie sprawdzić dostępność tej samej ścieżki zakupowej, która była analizowana w Task 1 pod kątem użyteczności. Dzięki temu możemy porównać, czy elementy problematyczne dla użytkowników okazjonalnych są również barierami dla osób z deficytami wzrokowymi, motorycznymi lub poznawczymi. Połączenie metod manualnych i teoretycznie automatycznych miało zwiększyć rzetelność badania, dlatego do testów wybraliśmy zestaw trzech zróżnicowanych narzędzi:
-- *NVDA (NonVisual Desktop Access):* Specjalistyczny, darmowy czytnik ekranu (screen reader) dla systemu Windows. Jest to oprogramowanie asystujące, które przekształca tekst oraz architekturę kodu HTML na mowę syntetyczną, umożliwiając osobom niewidomym pełną, bezwzrokową interakcję z komputerem. NVDA okazało się w naszym projekcie narzędziem niezwykle przydatnym i pomogło nam w tej checkliście w stopniu fundamentalnym, pozwalając realnie "usłyszeć" i zrozumieć bariery na stronie. Jednocześnie próg wejścia był bardzo wysoki – poprawne posługiwanie się nim, nauka skomplikowanych skrótów klawiszowych oraz interpretacja komunikatów dynamicznych były dla nas dosyć skomplikowane.
+- *NVDA (NonVisual Desktop Access):* Specjalistyczny, darmowy czytnik ekranu (screen reader) dla systemu Windows. Jest to oprogramowanie asystujące, które przekształca tekst oraz architekturę kodu HTML na mowę syntetyczną, umożliwiając osobom niewidomym pełną, bezwzrokową interakcję z komputerem. NVDA okazało się w naszym projekcie narzędziem niezwykle przydatnym i pomogło nam w wypełnieniu checklisty, pozwalając realnie "usłyszeć" i zrozumieć bariery na stronie. Jednocześnie próg wejścia był bardzo wysoki - poprawne posługiwanie się nim, nauka skomplikowanych skrótów klawiszowych oraz interpretacja komunikatów dynamicznych były dla nas dosyć skomplikowane.
 - *WAVE (Web Accessibility Evaluation Tool):* Popularna wtyczka przeglądarkowa służąca do automatycznej oceny dostępności witryn internetowych. Działa poprzez nakładanie wizualnych ikon (alertów i błędów) bezpośrednio na strukturę renderowanej strony.
 - *Axe DevTools:* Zautomatyzowane narzędzie testowe zintegrowane bezpośrednio z konsolą deweloperską przeglądarki, przeznaczone do szybkiego skanowania kodu źródłowego pod kątem zgodności ze standardami WCAG.
 
-W praktyce testowej okazało się, że wtyczki *WAVE oraz Axe DevTools* nie zastąpiły całkowicie analizy manualnej, jedynie wsparły nas w poszukiwaniu błędów. Narzędzia automatyczne potrafią wykryć jedynie proste, ściśle techniczne usterki ukryte w kodzie (np. całkowity brak znacznika alt czy jawne błędy w zadeklarowanych poziomach nagłówków). Całkowicie zawodzą jednak przy ocenie kontekstu, kognitywnej poprawności opisów alternatywnych czy zachowania złożonych elementów dynamicznych (jak filtry AJAX czy modalne galerie). Z tego powodu automatyzację potraktowaliśmy jedynie jako powierzchowny wstęp, a *głównie weryfikowaliśmy wszystkie rzeczy ręcznie*. Skrupulatna ocena manualna, samodzielna bezmyszkowa nawigacja klawiszem Tab oraz bezpośrednie, ręczne badanie interfejsu czytnikiem NVDA okazały się absolutnie konieczne wszędzie tam, gdzie algorytm nie jest w stanie ocenić jakości i logiki realnego doświadczenia użytkownika.
+W praktyce testowej okazało się, że wtyczki *WAVE oraz Axe DevTools* nie były w stanie całkowicie zastąpić analizy manualnej, więc zostały wykorzystane jedynie jako wsparcie w poszukiwaniu błędów. Narzędzia automatyczne potrafią wykryć jedynie proste, ściśle techniczne usterki ukryte w kodzie (np. całkowity brak znacznika alt czy jawne błędy w zadeklarowanych poziomach nagłówków). Całkowicie zawodzą jednak przy ocenie kontekstu, sensowności opisów alternatywnych czy zachowania złożonych elementów dynamicznych (jak filtry AJAX czy modalne galerie). Z tego powodu automatyzację potraktowaliśmy jedynie jako powierzchowny wstęp, a *głównie weryfikowaliśmy wszystkie rzeczy ręcznie*. Skrupulatna ocena manualna, samodzielna bezmyszkowa nawigacja klawiszem Tab oraz bezpośrednie, ręczne badanie interfejsu czytnikiem NVDA okazały się absolutnie konieczne wszędzie tam, gdzie algorytm nie jest w stanie ocenić jakości i logiki realnego doświadczenia użytkownika.
 
 *Założenia projektowe (Study design):*
 1. *Narzędzie główne:* Posłużymy się oficjalną matrycą do badania dostępności cyfrowej. Aby zachować realistyczne ramy czasowe projektu, ocenie poddamy jedynie zagadnienia z poziomu podstawowego (basic) i średniego (intermediate), rezygnując z dogłębnej analizy zaawansowanych skryptów.
 2. *Ujednolicona procedura przygotowania stanowiska (Setup):* Aby zapewnić rzetelność i możliwość ścisłego odtworzenia wyników badania, wdrożyliśmy rygorystyczną procedurę przygotowania stanowiska roboczego. Weryfikacja setupu odbyła się na serwerze Discord przed rozpoczęciem pracy przez któregokolwiek z badaczy. Każdy członek zespołu udostępniał ekran, a przynajmniej jedna osoba weryfikowała, czy wszystko jest poprawnie skonfigurowane, by zagwarantować stuprocentową spójność. Każdy z ewaluatorów musiał spełnić następujące wymogi testowe:
-   - *System i monitor:* System operacyjny Windows (niezbędny dla spójnego działania NVDA) oraz identyczna rozdzielczość monitora: Full HD (1920x1080). Gwarantowało to identyczne punkty załamania interfejsu (breakpoints) u każdego badacza.
+   - *System i monitor:* System operacyjny Windows (niezbędny dla spójnego działania NVDA) oraz identyczna rozdzielczość monitora: Full HD (1920x1080). Gwarantowało to identyczne punkty załamania interfejsu u każdego badacza.
    - *Przeglądarka:* Google Chrome uruchomiona w trybie Incognito, z bazowym powiększeniem ustawionym dokładnie na 100%.
-   - *Czystość środowiska:* Bezwzględny brak włączonych wtyczek blokujących reklamy (AdBlock, uBlock itp.).
+   - *Czystość środowiska:* Brak włączonych wtyczek blokujących reklamy (AdBlock, uBlock itp.).
    - *Konto badawcze:* Wszyscy badacze byli zalogowani na to samo, specjalnie utworzone konto współdzielone na Allegro, co gwarantowało pusty koszyk na start i brak spersonalizowanej historii wyszukiwania.
 3. *Zaplecze techniczne:*
    - Darmowy program NVDA symulujący odbiór strony przez osoby niewidome (uruchamiany na domyślnych ustawieniach),
    - Rozszerzenia przeglądarkowe (WAVE oraz Axe DevTools) do błyskawicznego wyłapywania błędów semantycznych,
    - Badanie nawigacji przeprowadzane wyłącznie bez użycia urządzenia wskazującego (myszy).
-4. *Sposób realizacji (Triangulacja):* Każda z czterech osób w zespole niezależnie przeprowadzi inspekcję czterech podstron, zaznaczając na swoim arkuszu zgodność z każdym punktem listy (Spełnia / Nie spełnia / Nie dotyczy). Następnie zespół zestawi swoje indywidualne arkusze do wspólnej dyskusji.
+4. *Sposób realizacji:* Każda z czterech osób w zespole niezależnie przeprowadzi inspekcję czterech podstron, zaznaczając na swoim arkuszu zgodność z każdym punktem listy (Spełnia / Nie spełnia / Nie dotyczy). Następnie zespół zestawi swoje indywidualne arkusze do wspólnej dyskusji.
 
 *Scenariusz audytu dostępności:* Audyt zostanie przeprowadzony na tej samej podstawowej ścieżce zakupowej, która była analizowana w Task 1. Dzięki temu wyniki badania dostępności będzie można bezpośrednio odnieść do wcześniejszych obserwacji użyteczności.
 1. *Strona główna i wyszukiwanie:*
@@ -184,14 +185,14 @@ Wyniki zostaną zestawione w tabeli zawierającej: kryterium WCAG, badany widok,
 *Harmonogram prac badawczych (Study Schedule):*
 - *Etap 1 (Przygotowawczy):* Wybór i adaptacja adekwatnej listy weryfikacyjnej WCAG 2.1. Konfiguracja sprzętu, instalacja technologii asystujących i formalna weryfikacja stanowisk testowych na Discordzie.
 - *Etap 2 (Audyt indywidualny):* Każdy z badaczy samodzielnie ocenia wskazane widoki platformy, szczegółowo wypełniając własną kartę ocen na zunifikowanym środowisku.
-- *Etap 3 (Konsolidacja wyników):* Zebranie danych z czterech arkuszy w jedną bazę. Wyłonienie pytań konfliktowych (rozbieżności w zespole) i wspólne obrady mające na celu ustalenie jednolitego stanowiska.
+- *Etap 3 (Konsolidacja wyników):* Zebranie danych z czterech arkuszy w jedną bazę. Wyłonienie pytań konfliktowych (rozbieżności w zespole) i wspólna dyskusja mające na celu ustalenie jednolitego stanowiska.
 - *Etap 4 (Tworzenie raportu):* Kategoryzacja znalezionych błędów, obliczenie statystyk zgodności (metryki sumaryczne) oraz opracowanie końcowych wniosków i porad dotyczących naprawy interfejsu.
 
 == Study Execution
 
-W badaniu wzięła udział nasza czteroosobowa grupa badawcza (Adrian, Juliusz, Maciej, Sebastian). Każdy z członków zespołu niezależnie przeanalizował wyznaczoną ścieżkę zakupową na platformie Allegro, posiłkując się przygotowaną listą 30 kluczowych pytań kontrolnych z poziomów podstawowego i średnio-zaawansowanego standardu WCAG 2.1. Oceny wprowadzano indywidualnie do tabeli, przypisując każdemu kryterium wartość: "pozytywna" (zgodna), "negatywna" (niezgodna) lub "nie dotyczy".
+W badaniu wzięła udział czteroosobowa grupa badawcza. Każdy z członków zespołu niezależnie przeanalizował wyznaczoną ścieżkę zakupową na platformie Allegro, posiłkując się przygotowaną listą 30 kluczowych pytań kontrolnych z poziomów podstawowego i średnio-zaawansowanego standardu WCAG 2.1. Oceny wprowadzano indywidualnie do tabeli, przypisując każdemu kryterium wartość: "pozytywna" (zgodna), "negatywna" (niezgodna) lub "nie dotyczy".
 
-Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uzyskanych danych. Zależało nam na wypracowaniu twardych, realistycznych metryk ilościowych. *Metodologia ustalania metryk* opierała się na następującym procesie: jeśli wszyscy 4 badacze zaznaczyli ten sam błąd (pełna zgodność), usterka od razu zasilała nasze statystyki. W sytuacjach, gdzie oceny były rozbieżne (np. jedna osoba znalazła pułapkę klawiaturową, a pozostałe nie), wstrzymywaliśmy się od pochopnych wniosków. Zespół siadał do wspólnej dyskusji i przechodził przez dany element interfejsu na żywo, powtarzając czynność krok po kroku. Ustalaliśmy wtedy jedną, ostateczną wersję wydarzeń – czy błąd faktycznie występuje dla każdego, czy wynikał jedynie z chwilowego błędu przeglądarki u jednego z nas. Metryki w sekcji "Odpowiedzi na pytania badawcze" reprezentują wyłącznie ten w pełni przedyskutowany i zgodny konsensus naszej czwórki.
+Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uzyskanych danych. Zależało nam na wypracowaniu twardych, realistycznych metryk ilościowych. *Metodologia ustalania metryk* opierała się na następującym procesie: jeśli wszyscy 4 badacze zaznaczyli ten sam błąd (pełna zgodność), usterka była uwzględniana w wynikach. W sytuacjach, gdzie oceny były rozbieżne (np. jedna osoba znalazła pułapkę klawiaturową, a pozostałe nie), wstrzymywaliśmy się z ostateczną oceną. Zespół siadał do wspólnej dyskusji i przechodził przez dany element interfejsu na żywo, powtarzając czynność krok po kroku. Ustalaliśmy wtedy jedną, ostateczną wersję wydarzeń - czy błąd faktycznie występuje dla każdego, czy wynikał jedynie z chwilowego błędu przeglądarki u jednego z nas. Metryki w sekcji "Odpowiedzi na pytania badawcze" reprezentują wyłącznie ten w pełni przedyskutowany i zgodny konsensus naszej czwórki.
 
 *Napotkane problemy podczas weryfikacji:*
 - *Dynamiczne moduły reklamowe i A/B testy:* Pomimo skrupulatnie ujednoliconego stanowiska badawczego (to samo konto, brak blokerów, tryb Incognito), mechanizmy platformy e-commerce tej skali potrafiły okazjonalnie serwować poszczególnym audytorom nieco inne rekomendacje lub banery marketingowe. Sprawiało to, że nie zawsze trafialiśmy na w 100% identyczny układ strony na etapie testów indywidualnych.
@@ -200,7 +201,7 @@ Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uz
 
 == Study Results
 
-Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (15 z 30) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. W wyniku wspólnych dyskusji wypracowano twarde stanowiska co do największych błędów interfejsu. Co istotne, udało nam się w pełni uzgodnić stanowiska wobec pułapek klawiaturowych, problemów z kontrastem i braków w opisach alternatywnych. 1 kryterium zostało uznane jednomyślnie za nieaplikowalne w badanych obszarach ("nie dotyczy").
+Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (15 z 30) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. W wyniku dyskusji wypracowano stanowiska co do największych błędów interfejsu - pułapek klawiaturowych, problemów z kontrastem i braków w opisach alternatywnych. 1 kryterium zostało uznane jednomyślnie za nieaplikowalne w badanych obszarach ("nie dotyczy").
 
 *Skróty stosowane w poniższej tabeli zbiorczej:*
 - *P (pozytywna)* - oznacza pełną zgodność z wytycznymi WCAG 2.1,
@@ -249,6 +250,8 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
 )
 #text(size: 9pt)[[K] - Pytanie kluczowe z punktu widzenia powodzenia całej operacji.]
 
+#text(size: 9pt)[Puste pole w pierwszej kolumnie oznacza, że dane pytanie kontrolne należy do tego samego kryterium WCAG, które wymieniono w wierszu powyżej.]
+
 #v(1em)
 #align(center)[
   #image("chart_answers.png", width: 80%)
@@ -286,14 +289,14 @@ Poniżej przypisano wyniki w 100% skonsolidowanych metryk ilościowych do pytań
 - Braki w uzupełnieniu atrybutów autocomplete: *1* (usterka nr 10, brak autouzupełniania dla formularzy dostawy).
 - Błędy w logicznym układzie nagłówków (H1, H2, itd.): *1* powtarzalny problem systemowy w szablonach tworzonych przez sprzedawców.
 
-*Wniosek:* Czytnik ekranu pozwala przejść przez zasadnicze elementy ścieżki, ale architektura informacji kuleje na stronach samych produktów z powodu rażącej ilości grafik od sprzedawców bez opisów alternatywnych oraz braku komunikowania zmian dynamicznych (np. po zastosowaniu filtra AJAX).
+*Wniosek:* Czytnik ekranu pozwala przejść przez zasadnicze elementy ścieżki, ale architektura informacji jest niskiej jakości na stronach samych produktów przez dużą ilość grafik od sprzedawców bez opisów alternatywnych oraz braku komunikowania zmian dynamicznych (np. po zastosowaniu filtra AJAX).
 
 === Q3: Czy szata graficzna i formularze są przyjazne dla osób z dysleksją i słabowidzących?
 
 *Odpowiedź:* W warstwie ogólnej czytelności tak, lecz zidentyfikowano braki w doborze kontrastu dla mniejszych tekstów oraz w sposobie prezentacji błędów.
 
 *Wyniki metryk:*
-- Liczba elementów nieosiągających minimalnego kontrastu tekstu do tła (4.5:1): *4*. Znaleźliśmy 4 elementy posiadające niewystarczający kontrast – w większości jest to jasnoszary tekst na białym tle (np. mniejsze dopiski u sprzedawców lub tekst w stopce strony).
+- Liczba elementów nieosiągających minimalnego kontrastu tekstu do tła (4.5:1): *4*. Znaleźliśmy 4 elementy posiadające niewystarczający kontrast - w większości jest to jasnoszary tekst na białym tle (np. mniejsze dopiski u sprzedawców lub tekst w stopce strony).
 - Błędy renderowania przy powiększeniu interfejsu do 200%: *1* (usterka nr 7: nakładanie się na siebie ikon i tekstu dostawy na liście wyników).
 - Liczba niejasnych komunikatów w procesie zgłaszania błędów walidacji: *3* (usterka nr 5: prawidłowe opisy są obecne, ale wyskakują asynchronicznie, bez przeniesienia fokusu dla osób potrzebujących natychmiastowej uwagi).
 
@@ -301,14 +304,14 @@ Poniżej przypisano wyniki w 100% skonsolidowanych metryk ilościowych do pytań
 
 === Q4: Jaki jest zbiorczy poziom dostępności cyfrowej dla analizowanego procesu?
 
-*Odpowiedź:* Zbiorczy poziom dostępności jest umiarkowanie dobry. Po wspólnych poprawkach i konsensusie wyeliminowano część rozbieżności, co pozwala na twarde zidentyfikowanie najsłabszych obszarów serwisu.
+*Odpowiedź:* Zbiorczy poziom dostępności jest umiarkowanie dobry. Po wspólnych poprawkach i dyskusji wyeliminowano część rozbieżności, co pozwala na zidentyfikowanie najsłabszych obszarów serwisu.
 
 *Wyniki metryk zbiorczych:*
-- Zsumowana liczba kryteriów z oceną pozytywną (zgodnych z WCAG): *77* oceny cząstkowe.
+- Zsumowana liczba kryteriów z oceną pozytywną (zgodnych z WCAG): *77* ocen cząstkowych.
 - Zsumowana liczba kryteriów oblanych (oceny negatywne): *38* ocen cząstkowych.
 - Zsumowana liczba kryteriów o statusie "nie dotyczy": *5* ocen cząstkowych.
 - Średni odsetek zgodności ze standardem dla wybranych kryteriów z listy kontrolnej: *66.96%* nie biorąc pod uwagę statusu nie dotyczy (77/115)
-- Podział wykrytych usterek ze względu na ich krytyczność: zidentyfikowano łącznie *11* unikalnych usterek (6 istotnych i 5 nieistotnych).
+- Podział wykrytych usterek ze względu na ich krytyczność: zidentyfikowano łącznie *11* unikalnych usterek (7 istotnych i 4 nieistotne).
 - Liczba punktów spornych między ewaluatorami wyniosła 10. W przypadku metryk ilościowych (np. ilość pułapek klawiaturowych) dane te były szczegółowo ustalane w przypadku rozbieżności całym zespołem.
 
 *Wniosek:* Po wypracowaniu wspólnych wniosków stało się jasne, że chociaż silnik Allegro jest zoptymalizowany, realne zagrożenie dla użyteczności platformy stanowią treści dodawane od strony sprzedawców (galerie bez Esc, brak "altów", szare teksty).
@@ -362,24 +365,24 @@ Przeprowadzone badanie pozwala stwierdzić, że Allegro jest nowoczesną platfor
 Mimo to, audyt uwidocznił powtarzające się bariery, które obniżają komfort osób niepełnosprawnych, a zignorowane mogą miejscami wykluczać użytkowników. 
 
 *Najistotniejsze zidentyfikowane problemy:*
-- *Zjawisko pułapek klawiaturowych (Keyboard traps)* występujące aż trzykrotnie na przestrzeni całego doświadczenia, w tym najbardziej drastyczne w obrębie zdjęć u poszczególnych sprzedawców, permanentnie blokujące dalszą ścieżkę.
-- *Braki semantyczne i tekstowe:* Wykrycie aż 7 rażących braków w atrybutach alternatywnych grafik oraz obecność tekstów poniżej wytycznych kontrastu (szary na białym) dowodzą, że pomimo poprawnego kodu rdzenia Allegro, nie panuje wystarczająca kontrola nad treściami wlewanymi bezpośrednio przez sprzedawców.
+- *Obecność pułapek klawiaturowych (Keyboard traps)* występujące aż trzykrotnie w tym najbardziej drastyczne w obrębie zdjęć u poszczególnych sprzedawców, permanentnie blokujące dalszą ścieżkę.
+- *Braki semantyczne i tekstowe:* Wykrycie aż 7 rażących braków w atrybutach alternatywnych grafik oraz obecność tekstów poniżej wytycznych kontrastu (szary na białym) dowodzą, że pomimo poprawnej budowy samej strony Allegro, nie panuje wystarczająca kontrola nad treściami wprowadzanymi bezpośrednio przez sprzedawców.
 - *Dynamiczne przeładowania list (AJAX/Fetch)* przy wyborze filtrów bocznych bez wykorzystania odpowiednich regionów ARIA (`aria-live`).
 
 *Ograniczenia badania i idealny model badawczy:*
-Należy podkreślić, że nasze wnioski opierają się wyłącznie na audycie eksperckim (liście kontrolnej). Z biznesowego i użytecznościowego punktu widzenia, znacznie lepszym rozwiązaniem byłoby przeprowadzenie testów z prawdziwymi osobami z określonymi deficytami (wzrokowymi, motorycznymi, poznawczymi). Wymagałoby to stworzenia docelowych person i zrekrutowania rzeczywistych badanych, do których w warunkach tego projektu akademickiego nie mieliśmy jednak dostępu. Docelowo dobrą i najbardziej kompletną opcją byłoby połączenie obu tych rozwiązań (podejście hybrydowe). Połączenie technicznej ewaluacji z listą kontrolną z empirycznymi testami przejścia przez proces zakupowy przez rzeczywiste osoby z niepełnosprawnościami, pozwoliłoby zmierzyć zarówno zgodność z normami (WCAG), jak i realny stopień frustracji użytkowników.
+Należy podkreślić, że nasze wnioski opierają się wyłącznie na audycie eksperckim (liście kontrolnej). Z biznesowego i użytecznościowego punktu widzenia, znacznie lepszym rozwiązaniem byłoby przeprowadzenie testów z rzeczywistymi użytkownikami z określonymi deficytami (wzrokowymi, motorycznymi, poznawczymi). Wymagałoby to stworzenia docelowych person i zrekrutowania rzeczywistych badanych, do których w warunkach tego projektu akademickiego nie mieliśmy jednak dostępu. Docelowo dobrą i najbardziej kompletną opcją byłoby połączenie obu tych rozwiązań (podejście hybrydowe). Połączenie technicznej ewaluacji z listą kontrolną z empirycznymi testami przejścia przez proces zakupowy przez rzeczywiste osoby z niepełnosprawnościami, pozwoliłoby zmierzyć zarówno zgodność z normami (WCAG), jak i realny stopień frustracji użytkowników.
 
 *Implikacje dla rozwoju aplikacji:*
-Platforma powinna zainwestować w ujednolicenie komponentów galerii modalnych, by zawsze respektowały one ucieczkę przez "Esc" (WCAG 2.1.2). Ponadto system dodawania aukcji (od strony sprzedawcy) mógłby wdrożyć automatyczne walidatory wymuszające podstawową dostępność, na przykład podpowiadające dodanie `alt` tekstu po przesłaniu grafiki produktu i blokujące dodawanie stylów CSS nadpisujących kolor tekstu na szarości nieprzechodzące walidacji kontrastu.
+Platforma powinna zainwestować w ujednolicenie komponentów galerii modalnych, by zawsze dało się je zamknąć klawiszem "Esc" (zgodnie z WCAG 2.1.2). Ponadto system dodawania aukcji (od strony sprzedawcy) mógłby wdrożyć automatyczne walidatory wymuszające podstawową dostępność, na przykład podpowiadające dodanie `alt` tekstu po przesłaniu grafiki produktu i blokujące dodawanie stylów CSS ustawiających kolor tekstu na tak jasny odcień szarości, że nie przechodzi on walidacji kontrastu.
 
 // ── 5. Lessons learned ────────────────────────────────────────────────────
 = Lessons Learned
 
 *Co poszło dobrze:*
-Skrupulatnie przeprowadzona procedura weryfikacji stanowiska (rozdzielczość 24 cali, Incognito, to samo konto testowe) z wykorzystaniem serwera Discord była dobrą decyzją - zostało to poprawione względem poprzedniego etapu projektu. Pozwoliło to uniknąć błędów pomiarowych wynikających z różnic sprzętowych czy zainstalowanych wtyczek użytkownika. Faza dyskusji grupowej nad spornymi elementami zaowocowała ostatecznym, pewnym konsensusem (np. w przypadku 3 zidentyfikowanych pułapek klawiaturowych), co pozwoliło ustalić niezwykle twarde metryki ilościowe pozbawione domysłów.
+Skrupulatnie przeprowadzona procedura weryfikacji stanowiska (rozdzielczość 24 cali, Incognito, to samo konto testowe) z wykorzystaniem serwera Discord była dobrą decyzją. Pozwoliło to uniknąć błędów pomiarowych wynikających z różnic sprzętowych czy zainstalowanych wtyczek użytkownika. Faza dyskusji grupowej nad spornymi elementami zaowocowała ostatecznym, pewnym konsensusem (np. w przypadku 3 zidentyfikowanych pułapek klawiaturowych), co pozwoliło ustalić konkretne metryki ilościowe pozbawione domysłów.
 
 *Czego się nauczyliśmy:*
-Doświadczenie z oprogramowaniem czytającym ekran (NVDA) znacząco zmieniło nasze postrzeganie semantyki kodu HTML. Nawet strona przechodząca poprawnie automatyczne audyty, wciąż może stanowić wyzwanie ze względu na szum informacyjny lub zawartość wprowadzaną asynchronicznie, czy wręcz przez użytkowników (sprzedawców Allegro), z pominięciem zasad projektowania włączającego. Ponadto, zrozumieliśmy, że nawet najbardziej systematyczna ewaluacja ekspercka jest w pewnym sensie symulacją i nie jest w stanie w 100% oddać codziennych wyzwań i prawdziwej nawigacji osób trwale borykających się z niepełnosprawnościami.
+Doświadczenie z oprogramowaniem czytającym ekran (NVDA) znacząco zmieniło nasze postrzeganie semantyki kodu HTML. Nawet strona przechodząca poprawnie automatyczne audyty, wciąż może stanowić wyzwanie ze względu na szum informacyjny lub zawartość wprowadzaną asynchronicznie, czy wręcz przez użytkowników (sprzedawców Allegro), z pominięciem zasad projektowania włączającego. Ponadto, zrozumieliśmy, że nawet najbardziej systematyczna ewaluacja ekspercka jest w pewnym sensie symulacją i nie jest w stanie w 100% oddać codziennych wyzwań i prawdziwej nawigacji osób trwale borykających się z niepełnosprawnościami. Przy odpowiednich zasobach oraz możliwościach, testy z rzeczywistymi użytkownikami z deficytami prawdopodobnie byłyby najbardziej wartościowym źródłem informacji o realnych barierach i frustracjach.
 
 *Co byśmy zrobili inaczej (refleksja nad planem):*
-Pomimo rygorystycznego ujednolicenia naszego sprzętu, rozdzielczości ekranów i trybu przeglądarki, przekonaliśmy się, jak silnie spersonalizowanym i dynamicznym organizmem jest Allegro. Platformy o takiej skali nieustannie prowadzą wewnętrzne testy A/B interfejsu. Skutkowało to tym, że algorytmy i tak potrafiły zaserwować różnym audytorom minimalnie inny układ okien reklamowych czy wariant koszyka, co wywoływało zjawiska takie jak zablokowanie fokusu w popupach u części z nas, a u części nie. Gdybyśmy mieli powtórzyć to badanie z większymi zasobami, staralibyśmy się wdrożyć rozwiązanie hybrydowe: zorganizowalibyśmy proces rekrutacji, określili persony i zestawili naszą listę kontrolną bezpośrednio z wynikami przejścia ścieżki zakupowej (walkthrough) przez rzeczywiste osoby z deficytami, oraz dodatkowo wymusili stałe parametry sesji A/B platformy dla ujednolicenia wzasobamiidoków.
+Pomimo rygorystycznego ujednolicenia naszego sprzętu, rozdzielczości ekranów i trybu przeglądarki, przekonaliśmy się, jak silnie spersonalizowaną i dynamiczną stroną jest Allegro. Platformy o takiej skali nieustannie prowadzą wewnętrzne testy A/B interfejsu. Skutkowało to tym, że algorytmy i tak potrafiły zaserwować różnym audytorom minimalnie inny układ okien reklamowych czy wariant koszyka, co wywoływało zjawiska takie jak zablokowanie fokusu w popupach u części z nas, a u części nie. Gdybyśmy mieli powtórzyć to badanie z większymi zasobami, staralibyśmy się wdrożyć rozwiązanie hybrydowe: zorganizowalibyśmy proces rekrutacji, określili persony i zestawili naszą listę kontrolną bezpośrednio z wynikami przejścia ścieżki zakupowej (walkthrough) przez rzeczywiste osoby z deficytami, oraz dodatkowo wymusili stałe parametry sesji A/B platformy dla ujednolicenia widoków.
