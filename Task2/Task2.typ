@@ -189,7 +189,7 @@ Po zakończeniu fazy audytów indywidualnych przeprowadziliśmy konsolidację uz
 
 == Study Results
 
-Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (15 z 30) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. Zespół zidentyfikował jednak 11 zagadnień konfliktowych (gdzie oceny końcowe różniły się między badaczami) oraz 3 kryteria, które zostały ocenione w większości lub w pełni negatywnie, a 1 kryterium zostało uznane jednomyślnie za nieaplikowalne w badanych obszarach ("nie dotyczy").
+Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji platformy Allegro. Dokładnie połowa z analizowanych kryteriów (15 z 30) uzyskała jednomyślnie pozytywną ocenę u wszystkich audytorów, co świadczy o solidnych fundamentach dostępności systemu. Zespół zidentyfikował jednak 12 zagadnień konfliktowych (gdzie oceny końcowe różniły się między badaczami) oraz 6 kryteriów, które uzyskały co najmniej trzy oceny negatywne albo zostały ocenione w pełni negatywnie. 1 kryterium zostało uznane jednomyślnie za nieaplikowalne w badanych obszarach ("nie dotyczy").
 
 *Skróty stosowane w poniższej tabeli zbiorczej:*
 - *P (pozytywna)* - oznacza pełną zgodność z wytycznymi WCAG 2.1,
@@ -247,6 +247,77 @@ Zbiorcza analiza wykazała zróżnicowany poziom dostosowania desktopowej wersji
 #align(center)[
   #image("chart_consistency.png", width: 80%)
 ]
+
+#v(1.5em)
+
+== Odpowiedzi na pytania badawcze Q1-Q4
+
+Poniżej przypisano wyniki wcześniej zebranych metryk do pytań badawczych zdefiniowanych w części "Questions and Metrics". Dzięki temu liczby z tabeli nie są wyłącznie ogólnym podsumowaniem audytu, ale bezpośrednio odpowiadają na każde pytanie Q.
+
+=== Q1: Czy interfejs jest w pełni użyteczny dla osób nawigujących wyłącznie klawiaturą?
+
+*Odpowiedź:* Nie w pełni. Główna ścieżka zakupowa była możliwa do przejścia klawiaturą, ale audyt wykazał sporadyczne bariery w elementach modalnych i galerii zdjęć.
+
+*Wyniki metryk:*
+- Dostępność elementów aktywnych klawiaturą: *4/4 oceny P* dla kryterium 2.1.1.
+- Logiczna kolejność fokusu: *4/4 oceny P* dla kryterium 2.4.3.
+- Widoczność fokusu: *4/4 oceny P* dla kryterium 2.4.7.
+- Pułapki klawiaturowe: *2/4 oceny N* dla kryterium 2.1.2; wykryto konkretny problem z uwięzieniem fokusu w galerii zdjęć lub popupach.
+- Mechanizm pomijania powtarzalnych bloków: *3/4 oceny P* dla kryterium 2.4.1.
+
+*Wniosek:* Allegro spełnia podstawowy warunek obsługi bez myszy w głównym procesie zakupowym, ale nie można uznać interfejsu za w pełni dostępny dla użytkowników klawiatury. Najważniejsza poprawka dotyczy stabilnego opuszczania popupów i galerii klawiszem Esc oraz zachowania fokusu po zamknięciu modalnego elementu.
+
+=== Q2: Czy architektura informacji jest poprawnie interpretowana przez czytniki ekranu?
+
+*Odpowiedź:* Częściowo. Podstawowa struktura wielu elementów jest odczytywana poprawnie, ale problemy pojawiają się przy grafikach promocyjnych, opisach sprzedawców, dynamicznych filtrach i elementach otwierających nową kartę.
+
+*Wyniki metryk:*
+- Standardowe atrybuty `alt` przy elementach `img`: *4/4 oceny P* w badanym zakresie.
+- Złożone grafiki informacyjne: *2 oceny N, 1 P, 1 ND*; część grafik promocyjnych nie miała wystarczającego opisu.
+- Dekoracyjne grafiki: *3 oceny N, 1 ND*; audytorzy wskazali ryzyko odczytywania elementów, które nie powinny wnosić treści.
+- Logiczna struktura nagłówków: *3/4 oceny N* dla kryterium 1.3.1; problem dotyczył głównie opisów tworzonych przez sprzedawców.
+- Kolejność odczytu przez czytnik ekranu: *4/4 oceny P* dla kryterium 1.3.2.
+- Etykiety i instrukcje formularzy: *4/4 oceny P* dla kryterium 3.3.2, ale atrybuty `autocomplete` uzyskały *3/4 oceny P*.
+- Nazwa, rola i wartość dynamicznych komponentów: *3/4 oceny N* dla kryterium 4.1.2; problem wiązał się między innymi z dynamicznymi filtrami bez czytelnego komunikatu dla czytnika.
+- Ostrzeganie o linkach otwieranych w nowej karcie: *4/4 oceny N* dla kryterium 2.4.4.
+
+*Wniosek:* Czytnik ekranu pozwala przejść przez zasadnicze elementy ścieżki, ale architektura informacji nie jest konsekwentnie poprawna. Największy wpływ mają braki w opisach grafik, tekst umieszczony w obrazach, nieuporządkowane nagłówki sprzedawców oraz brak komunikowania zmian dynamicznych, np. po zastosowaniu filtrów.
+
+=== Q3: Czy szata graficzna i formularze są przyjazne dla osób z dysleksją i słabowidzących?
+
+*Odpowiedź:* Raczej tak w warstwie podstawowej czytelności, ale z istotnymi wyjątkami dotyczącymi tekstu w grafikach, powiększenia oraz komunikatów błędów.
+
+*Wyniki metryk:*
+- Minimalny kontrast tekstu 4,5:1: *4/4 oceny P* dla kryterium 1.4.3.
+- Kontrast elementów nietekstowych: *3/4 oceny P* dla kryterium 1.4.11.
+- Przekazywanie informacji nie tylko kolorem: *4/4 oceny P* dla kryterium 1.4.1.
+- Powiększenie widoku do 200%: *3/4 oceny P* dla kryterium 1.4.4; odnotowano nakładanie się drobnych ikon dostawy na tekst na stronie wyników.
+- Reflow bez przewijania poziomego: *4/4 oceny P* dla kryterium 1.4.10.
+- Odstępy w tekście: *4/4 oceny P* dla kryterium 1.4.12.
+- Tekst w postaci obrazów: *4/4 oceny N* dla kryterium 1.4.5; problem dotyczył między innymi opisów i tabel umieszczanych jako grafiki przez sprzedawców.
+- Identyfikacja błędów formularzy: *3/4 oceny P* dla kryterium 3.3.1; wykryto przypadek komunikatów walidacyjnych bez przeniesienia fokusu.
+
+*Wniosek:* Warstwa wizualna Allegro jest zasadniczo czytelna pod względem kontrastu i skalowania, ale użytkownicy słabowidzący lub z trudnościami poznawczymi mogą napotkać bariery w miejscach mniej kontrolowanych systemowo: opisach sprzedawców, grafikach z tekstem oraz formularzach, w których błąd pojawia się poza aktualnym fokusem.
+
+=== Q4: Jaki jest zbiorczy poziom dostępności cyfrowej dla analizowanego procesu?
+
+*Odpowiedź:* Zbiorczy poziom dostępności można ocenić jako dobry, ale niepełny. Platforma ma mocne podstawy dostępności w badanej ścieżce, jednak liczba negatywnych ocen i rozbieżności pokazuje, że nie jest to poziom pełnej zgodności WCAG 2.1 AA.
+
+*Wyniki metryk zbiorczych:*
+- Liczba pytań kontrolnych: *30*.
+- Liczba audytorów: *4*.
+- Łączna liczba ocen cząstkowych: *120*.
+- Oceny pozytywne: *84/120*, czyli *70,0% wszystkich ocen*.
+- Oceny negatywne: *30/120*, czyli *25,0% wszystkich ocen*.
+- Oceny "nie dotyczy": *6/120*, czyli *5,0% wszystkich ocen*.
+- Odsetek zgodności po wyłączeniu odpowiedzi ND: *84/114*, czyli około *73,7% ocen aplikowalnych*.
+- Pytania ocenione jednomyślnie pozytywnie: *15/30*.
+- Pytania ocenione spójnie przez wszystkich audytorów: *18/30*, czyli *60,0%*.
+- Pytania z rozbieżnościami między audytorami: *12/30*, czyli *40,0%*.
+- Kryteria z co najmniej trzema ocenami negatywnymi albo pełną niezgodnością: *6/30*.
+- Wykryte konkretne usterki: *10*, w tym *6 istotnych* i *4 nieistotne*. W tabeli usterek nie oznaczono osobnej bariery jako krytycznej dla całej ścieżki.
+
+*Wniosek:* Wynik 70,0% ocen pozytywnych pokazuje, że badany proces zakupowy jest w większości dostępny, ale nie wolny od barier. Najbardziej ryzykowne obszary to elementy dynamiczne, grafiki z tekstem, linki otwierające nowe okna, galerie/popupy oraz walidacja formularzy. Są to problemy punktowe, lecz dotyczą kluczowych grup użytkowników: osób korzystających z klawiatury, czytnika ekranu i powiększenia.
 
 #v(1.5em)
 
