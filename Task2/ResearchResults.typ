@@ -77,7 +77,5 @@
   -> _pozytywna, zgodna_ – oznaczono na podstawie braku jakichkolwiek problemów przy nawigacji procesem zakupowym.
 - *Czy jest na stronie pułapka klawiaturowa?* \
   -> _niezgodne, 50/50_ – napotkano sporadyczne utknięcia w pop-upach i zdjęciach zależne od stanu sesji badacza.
-- *Czy są elementy, które szybko błyskają na czerwono lub gwałtownie zmieniają jasność?* \
-  -> _pozytywna, zgodna_ – brak tego typu zaburzających elementów na platformie.
 - *Czy jest automatycznie uruchamiany dźwięk, którego nie da się zatrzymać?* \
   -> _pozytywna, zgodna_ – testy były wolne od obciążeń dźwiękowych narzuconych z góry.
