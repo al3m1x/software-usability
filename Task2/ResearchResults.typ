@@ -82,7 +82,9 @@
   [5.], [Koszyk / Formularz dostawy], [Ostrzeżenia dotyczące nieprawidłowego numeru paczkomatu lub braku danych wyskakują z boku, bez automatycznego przeniesienia fokusu na komunikat błędu.], [istotne],
   [6.], [Stopka strony], [Linki odsyłające do zewnętrznych stron "Dla Sprzedających" otwierają się w nowej karcie bez powiadomienia wizualnego i głosowego dla czytnika.], [istotne],
   [7.], [Strona wyników wyszukiwania], [Przy powiększeniu widoku do 200% niektóre drobne ikonki informujące o darmowej dostawie nakładają się na nazwę sprzedawcy.], [nieistotne],
-  [8.], [Strona wyboru płatności], [Przycisk "Przejdź do płatności" zawiera powtarzalny tekst dla czytnika, co objawia się tzw. "efektem jąkania".], [nieistotne]
+  [8.], [Strona wyboru płatności], [Przycisk "Przejdź do płatności" zawiera powtarzalny tekst dla czytnika, co objawia się tzw. "efektem jąkania".], [nieistotne],
+  [9.], [Szczegóły oferty (sekcja "Opis")], [Część sprzedawców umieszcza ważne informacje (np. tabele rozmiarów) jako nieedytowalne grafiki z tekstem, co uniemożliwia ich odczytanie przez NVDA.], [istotne],
+  [10.], [Koszyk / Formularz dostawy], [Brak atrybutów `autocomplete` na polach danych zamawiającego (np. email, telefon), co utrudnia automatyczne wypełnianie formularza.], [nieistotne]
 )
 
 #v(2em)

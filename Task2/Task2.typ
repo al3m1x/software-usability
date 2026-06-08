@@ -95,13 +95,28 @@ W ramach analizy dostępności (accessibility), wyodrębniono trzy główne grup
 
 Lista kontrolna zostanie zbudowana na podstawie wybranych kryteriów WCAG 2.1 AA istotnych dla analizowanej ścieżki zakupowej:
 - *1.1.1 Non-text Content* - obecność i sensowność tekstów alternatywnych dla grafik informacyjnych.
+- *1.2.2 Captions (Prerecorded)* - dostępność napisów rozszerzonych dla materiałów wideo.
 - *1.3.1 Info and Relationships* - poprawna struktura nagłówków, etykiet i relacji między elementami formularzy.
+- *1.3.2 Meaningful Sequence* - logiczna kolejność odczytu treści przez technologie asystujące (np. NVDA).
+- *1.3.5 Identify Input Purpose* - wsparcie atrybutów `autocomplete` określających przeznaczenie pól formularzy.
+- *1.4.1 Use of Color* - przekazywanie informacji wizualnych nie opiera się wyłącznie na kolorze.
 - *1.4.3 Contrast (Minimum)* - kontrast tekstu i istotnych elementów interfejsu minimum 4.5:1.
 - *1.4.4 Resize Text* - możliwość korzystania ze strony przy powiększeniu tekstu lub interfejsu do 200%.
+- *1.4.5 Images of Text* - unikanie tekstu w postaci grafik na rzecz stylizowanego tekstu HTML/CSS.
+- *1.4.10 Reflow* - responsywność interfejsu eliminująca konieczność przewijania ekranu w poziomie.
+- *1.4.11 Non-text Contrast* - odpowiedni kontrast (minimum 3:1) dla ważnych elementów nietekstowych (np. ikony).
+- *1.4.12 Text Spacing* - zachowanie czytelności i struktury po powiększeniu odstępów między wierszami/literami.
 - *2.1.1 Keyboard* - możliwość obsługi kluczowych funkcji wyłącznie za pomocą klawiatury.
 - *2.1.2 No Keyboard Trap* - brak sytuacji, w których użytkownik nie może opuścić elementu interfejsu klawiaturą.
+- *2.2.1 Timing Adjustable* - możliwość wydłużenia przez użytkownika limitu czasu sesji.
+- *2.4.1 Bypass Blocks* - mechanizm (tzw. "skip link") pozwalający na pominięcie powtarzających się bloków nawigacji.
+- *2.4.2 Page Titled* - unikalne i opisowe tytuły każdej podstrony ułatwiające orientację.
 - *2.4.3 Focus Order* - logiczna kolejność przechodzenia fokusu przez elementy strony.
+- *2.4.4 Link Purpose (In Context)* - ostrzeżenie przed otwarciem nowego okna/zakładki w przeglądarce.
+- *2.4.5 Multiple Ways* - dostępność wielu dróg (np. wyszukiwarka, kategorie) na odnalezienie strony.
+- *2.4.6 Headings and Labels* - jasne, zrozumiałe i trafne opisy nagłówków i etykiet.
 - *2.4.7 Focus Visible* - widoczny wskaźnik fokusu na aktywnych elementach.
+- *3.2.3 Consistent Navigation* - spójny wygląd i działanie mechanizmów nawigacyjnych na przestrzeni całego serwisu.
 - *3.3.1 Error Identification* - jasne wskazywanie błędów w formularzach.
 - *3.3.2 Labels or Instructions* - obecność czytelnych etykiet i instrukcji przy polach formularzy.
 - *4.1.2 Name, Role, Value* - poprawna interpretacja przycisków, pól i kontrolek przez technologie asystujące.
@@ -268,7 +283,9 @@ W celu jednoznacznego zlokalizowania problemów, poniżej zestawiono konkretne, 
   [5.], [Koszyk i dostawa], [Komunikaty błędów walidacji wyskakują z boku bez przeniesienia fokusu. \ *Rekomendacja:* Automatycznie kierować fokus na pole z błędem.], [istotne],
   [6.], [Stopka strony], [Otwieranie linków zewnętrznych w nowej karcie bez powiadomienia ARIA. \ *Rekomendacja:* Dodać ukryty tekst `aria-label="nowe okno"`.], [istotne],
   [7.], [Wyniki wyszukiwania], [Przy powiększeniu widoku (200%) ikonki dostawy nakładają się na tekst. \ *Rekomendacja:* Poprawić elastyczność kontenerów w CSS.], [nieistotne],
-  [8.], [Strona płatności], [Przycisk sfinalizowania zamówienia generuje powtórzenia w czytniku. \ *Rekomendacja:* Oczyścić etykietę przycisku z nadmiarowych znaczników.], [nieistotne]
+  [8.], [Strona płatności], [Przycisk sfinalizowania zamówienia generuje powtórzenia w czytniku. \ *Rekomendacja:* Oczyścić etykietę przycisku z nadmiarowych znaczników.], [nieistotne],
+  [9.], [Szczegóły oferty (sekcja "Opis")], [Część sprzedawców umieszcza ważne informacje (np. tabele rozmiarów) jako nieedytowalne grafiki z tekstem, co uniemożliwia ich odczytanie przez NVDA. \ *Rekomendacja:* Wymusić stosowanie rzeczywistego tekstu HTML z odpowiednim formatowaniem CSS.], [istotne],
+  [10.], [Koszyk / Formularz dostawy], [Brak atrybutów `autocomplete` na polach danych zamawiającego (np. email, telefon), co utrudnia automatyczne wypełnianie formularza. \ *Rekomendacja:* Uzupełnić kody inputów o właściwe tagi autocomplete (np. `email`, `tel`).], [nieistotne]
 )
 
 // ── 4. Conclusions ────────────────────────────────────────────────────────
